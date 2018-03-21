@@ -106,7 +106,7 @@
 <meta property="og:site_name" content="My 1937: Road to Rise">
 <meta property="og:description" content="About Me Who?I live in Melbourne (Australia), and work as a university faculty.    Why?It has been nearly one decade since I stopped updating public Blogs hosted on other sites. Looking back into the">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-03-21T07:31:05.000Z">
+<meta property="og:updated_time" content="2018-03-21T12:12:27.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="About">
 <meta name="twitter:description" content="About Me Who?I live in Melbourne (Australia), and work as a university faculty.    Why?It has been nearly one decade since I stopped updating public Blogs hosted on other sites. Looking back into the">
@@ -381,7 +381,30 @@
 <h2 id="Who"><a href="#Who" class="headerlink" title="Who?"></a>Who?</h2><p>I live in Melbourne (Australia), and work as a university faculty.   </p>
 <h2 id="Why"><a href="#Why" class="headerlink" title="Why?"></a>Why?</h2><p>It has been nearly one decade since I stopped updating public Blogs hosted on other sites. Looking back into the journal to today’s <a href="http://www.tulip.org.au" target="_blank" rel="noopener">TULIP Lab</a>, there are many interesting things and valuable lessons that worth to be shared or recorded. </p>
 <p>I would like to settle down here on <a href="https://www.github.com" target="_blank" rel="noopener">GitHub</a> for a self-controllable Blog hosting site, and wish the best!</p>
-<h2 id="How"><a href="#How" class="headerlink" title="How?"></a>How?</h2>
+<h2 id="How"><a href="#How" class="headerlink" title="How?"></a>How?</h2><h3 id="Packages-and-Services"><a href="#Packages-and-Services" class="headerlink" title="Packages and Services"></a>Packages and Services</h3><p>This blog is built on the top of services and tools from the following sites:</p>
+<ul>
+<li><a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a></li>
+<li><a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">Hexo-Next</a>: setup document at <a href="http://theme-next.iissnan.com" target="_blank" rel="noopener">here</a></li>
+<li><a href="https://realfavicongenerator.net" target="_blank" rel="noopener">Real Favcon Generator</a></li>
+<li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+</ul>
+<h3 id="Installation-and-Setup"><a href="#Installation-and-Setup" class="headerlink" title="Installation and Setup"></a>Installation and Setup</h3><ul>
+<li>Install <code>npm</code> and <code>hexo</code></li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">brew install npm</span><br><span class="line">npm install hexo-cli -g</span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">npm install hexo-generator-searchdb --save</span><br><span class="line">npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Setup the site</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">hexo init &lt;mysite&gt;</span><br><span class="line">cd &lt;mysite&gt;</span><br><span class="line">npm install</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> will push this workspace into a git repository</span></span><br><span class="line">git init</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Apply the theme</li>
+</ul>
+<p>Refer this <a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">document</a> for details.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd &lt;mysite&gt;</span><br><span class="line">git clone https://github.com/theme-next/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Update</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">cd &lt;mysite&gt;</span><br><span class="line">npm update -g</span><br><span class="line"></span><br><span class="line"># git</span><br><span class="line">cd themes/next</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure>
         
       </div>
       
@@ -575,7 +598,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Who"><span class="nav-number">1.</span> <span class="nav-text">Who?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Why"><span class="nav-number">2.</span> <span class="nav-text">Why?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#How"><span class="nav-number">3.</span> <span class="nav-text">How?</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Who"><span class="nav-number">1.</span> <span class="nav-text">Who?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Why"><span class="nav-number">2.</span> <span class="nav-text">Why?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#How"><span class="nav-number">3.</span> <span class="nav-text">How?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Packages-and-Services"><span class="nav-number">3.1.</span> <span class="nav-text">Packages and Services</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Installation-and-Setup"><span class="nav-number">3.2.</span> <span class="nav-text">Installation and Setup</span></a></li></ol></li></ol></div>
             
 
           </div>
