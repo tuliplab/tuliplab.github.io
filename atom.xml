@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>My 1937: Road to Rise</title>
+  <title>My 1937</title>
   
-  <subtitle>Thoughts from A Data Scientists</subtitle>
+  <subtitle>Road to Rise</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.tulip.org.au/"/>
