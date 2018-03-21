@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[My 1937]]></title>
+    <url>%2F2018%2F03%2F21%2FMy-1937%2F</url>
+    <content type="text"><![CDATA[翻出当初写的随笔，近十年过去失落低迷的感觉依旧清晰，何从何去？ 内逢风雨飘摇外临强敌压境自身势单力薄友邦军力疲软 不能宣战决不投降我的1937何去何从？ Gone …任他雨打风吹，我自巍然屹立! 『 我记得，你和我去过的每一个地方。那些地方，统统都留在我的心里面。我不会说，我老了。我只是会说，我在这里太久。时间久了，难免知道人总会慢慢将过去淡忘。也会看着些东西，无声无息地消失。我前两日不知道在想什么，无端端跑去看日落。那个日落，就同我记得和你一起去看的那个日落一模一样。我为什么要走？怪我自己啦 』]]></content>
+      <categories>
+        <category>Enterprise</category>
+      </categories>
+      <tags>
+        <tag>mood</tag>
+        <tag>team</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2018%2F03%2F21%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+</search>
