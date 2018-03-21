@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>My 1937: Road to Rise</title>
+  
+  <subtitle>Thoughts from A Data Scientists</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://blog.tulip.org.au/"/>
+  <updated>2018-03-21T09:35:55.000Z</updated>
+  <id>http://blog.tulip.org.au/</id>
+  
+  <author>
+    <name>Gang Li</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>My 1937</title>
+    <link href="http://blog.tulip.org.au/2018/03/21/My-1937/"/>
+    <id>http://blog.tulip.org.au/2018/03/21/My-1937/</id>
+    <published>2018-03-21T03:09:46.000Z</published>
+    <updated>2018-03-21T09:35:55.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;翻出当初写的随笔，近十年过去失落低迷的感觉依旧清晰，何从何去？&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;内逢风雨飘摇&lt;br&gt;外临强敌压境&lt;br&gt;自身势单力薄&lt;br&gt;友邦军力疲软&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;不能宣战&lt;br&gt;决不投降&lt;b
+        
+      
+    
+    </summary>
+    
+      <category term="Enterprise" scheme="http://blog.tulip.org.au/categories/Enterprise/"/>
+    
+    
+      <category term="mood" scheme="http://blog.tulip.org.au/tags/mood/"/>
+    
+      <category term="team" scheme="http://blog.tulip.org.au/tags/team/"/>
+    
+      <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://blog.tulip.org.au/2018/03/21/hello-world/"/>
+    <id>http://blog.tulip.org.au/2018/03/21/hello-world/</id>
+    <published>2018-03-21T01:15:24.000Z</published>
+    <updated>2018-03-21T01:15:24.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
