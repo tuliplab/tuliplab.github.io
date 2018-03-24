@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.tulip.org.au/"/>
-  <updated>2018-03-21T14:26:46.000Z</updated>
+  <updated>2018-03-24T12:14:54.000Z</updated>
   <id>http://blog.tulip.org.au/</id>
   
   <author>
@@ -17,32 +17,48 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>The Art of Taoci</title>
+    <link href="http://blog.tulip.org.au/2018/03/24/The-Art-of-Taoci/"/>
+    <id>http://blog.tulip.org.au/2018/03/24/The-Art-of-Taoci/</id>
+    <published>2018-03-24T12:14:53.000Z</published>
+    <updated>2018-03-24T12:14:54.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;套磁是一门艺术！&lt;br&gt;&lt;cite&gt;Bear Guts&lt;/cite&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;由于研究方向比较热门并且所在的管理职位和博士生入学相关，我差不多每周都能收到10多封套磁信，主要来源于中国、大印度、马来、印尼、中东、还有荷兰。估计由于模板的存在，大多数套磁信还是有礼有节。主要给我印象比较深刻的问题只有如下几个：&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Workflow" scheme="http://blog.tulip.org.au/categories/Workflow/"/>
+    
+    
+      <category term="GTD" scheme="http://blog.tulip.org.au/tags/GTD/"/>
+    
+  </entry>
+  
+  <entry>
     <title>My 1937</title>
     <link href="http://blog.tulip.org.au/2018/03/21/My-1937/"/>
     <id>http://blog.tulip.org.au/2018/03/21/My-1937/</id>
     <published>2018-03-21T03:09:46.000Z</published>
-    <updated>2018-03-21T14:26:46.000Z</updated>
+    <updated>2018-03-24T12:03:59.000Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;So-loooooog…&quot;&gt;&lt;a href=&quot;#So-loooooog…&quot; class=&quot;headerlink&quot; title=&quot;So loooooog…&quot;&gt;&lt;/a&gt;So
-        
-      
+      &lt;h2 id=&quot;So-loooooog…&quot;&gt;&lt;a href=&quot;#So-loooooog…&quot; class=&quot;headerlink&quot; title=&quot;So loooooog…&quot;&gt;&lt;/a&gt;So loooooog…&lt;/h2&gt;&lt;p&gt;翻出十年前的随笔，多年以后失落低迷的感觉依旧清晰，何从何去？&lt;/p&gt;
     
     </summary>
     
       <category term="Enterprise" scheme="http://blog.tulip.org.au/categories/Enterprise/"/>
     
     
+      <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
+    
       <category term="mood" scheme="http://blog.tulip.org.au/tags/mood/"/>
     
       <category term="team" scheme="http://blog.tulip.org.au/tags/team/"/>
-    
-      <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
     
   </entry>
   
