@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.tulip.org.au/about/index.html</loc>
+    <loc>http://blog.tulip.org.au/2018/04/21/Tools-Info-Management/</loc>
     
-    <lastmod>2018-04-07T00:08:23.000Z</lastmod>
+    <lastmod>2018-04-21T10:46:36.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.tulip.org.au/2018/03/24/The-Art-of-Taoci/</loc>
+    
+    <lastmod>2018-04-21T10:45:27.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://blog.tulip.org.au/2018/04/07/Advices-to-Trainee/</loc>
     
-    <lastmod>2018-04-07T00:03:25.000Z</lastmod>
+    <lastmod>2018-04-21T06:12:53.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.tulip.org.au/about/index.html</loc>
+    
+    <lastmod>2018-04-11T11:36:36.000Z</lastmod>
     
   </url>
   
@@ -19,13 +33,6 @@
     <loc>http://blog.tulip.org.au/2018/03/21/My-1937/</loc>
     
     <lastmod>2018-03-26T05:47:04.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.tulip.org.au/2018/03/24/The-Art-of-Taoci/</loc>
-    
-    <lastmod>2018-03-26T05:46:27.000Z</lastmod>
     
   </url>
   

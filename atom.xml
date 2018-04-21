@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.tulip.org.au/"/>
-  <updated>2018-04-07T00:03:25.000Z</updated>
+  <updated>2018-04-21T10:46:36.000Z</updated>
   <id>http://blog.tulip.org.au/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>欲善其事先利其器（信息管理篇）</title>
+    <link href="http://blog.tulip.org.au/2018/04/21/Tools-Info-Management/"/>
+    <id>http://blog.tulip.org.au/2018/04/21/Tools-Info-Management/</id>
+    <published>2018-04-21T10:42:45.000Z</published>
+    <updated>2018-04-21T10:46:36.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;信息爆炸时代，如何筛选、阅读、分享自己喜欢的文章，尤显重要。&lt;/p&gt;
+&lt;p&gt;这里给大家介绍我多年偷懒如风的Workflow以及支撑工具：&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Workflow" scheme="http://blog.tulip.org.au/categories/Workflow/"/>
+    
+    
+      <category term="GTD" scheme="http://blog.tulip.org.au/tags/GTD/"/>
+    
+      <category term="Tools" scheme="http://blog.tulip.org.au/tags/Tools/"/>
+    
+      <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Advices to Undergraduate Research Trainee</title>
     <link href="http://blog.tulip.org.au/2018/04/07/Advices-to-Trainee/"/>
     <id>http://blog.tulip.org.au/2018/04/07/Advices-to-Trainee/</id>
     <published>2018-04-06T23:39:56.000Z</published>
-    <updated>2018-04-07T00:03:25.000Z</updated>
+    <updated>2018-04-21T06:12:53.000Z</updated>
     
     <summary type="html">
     
@@ -32,7 +57,7 @@
       <category term="Students" scheme="http://blog.tulip.org.au/categories/Students/"/>
     
     
-      <category term="Applications" scheme="http://blog.tulip.org.au/tags/Applications/"/>
+      <category term="Methodology" scheme="http://blog.tulip.org.au/tags/Methodology/"/>
     
   </entry>
   
@@ -41,7 +66,7 @@
     <link href="http://blog.tulip.org.au/2018/03/24/The-Art-of-Taoci/"/>
     <id>http://blog.tulip.org.au/2018/03/24/The-Art-of-Taoci/</id>
     <published>2018-03-24T12:14:53.000Z</published>
-    <updated>2018-03-26T05:46:27.000Z</updated>
+    <updated>2018-04-21T10:45:27.000Z</updated>
     
     <summary type="html">
     
@@ -53,6 +78,8 @@
     
       <category term="Students" scheme="http://blog.tulip.org.au/categories/Students/"/>
     
+    
+      <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
     
       <category term="Applications" scheme="http://blog.tulip.org.au/tags/Applications/"/>
     
