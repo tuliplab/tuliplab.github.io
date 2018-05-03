@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.tulip.org.au/"/>
-  <updated>2018-04-21T10:46:36.000Z</updated>
+  <updated>2018-05-03T04:46:55.000Z</updated>
   <id>http://blog.tulip.org.au/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Puppy</title>
+    <link href="http://blog.tulip.org.au/2018/05/02/Puppy/"/>
+    <id>http://blog.tulip.org.au/2018/05/02/Puppy/</id>
+    <published>2018-05-02T04:09:46.000Z</published>
+    <updated>2018-05-03T04:46:55.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;A student pursuing a PhD is somehow like a dog chewing bones: novel ideas leading into great achievements are like fresh meats between bones. The first step is to sense where the meat bones are. Normally, wherever the dogs are gathering, the bones are abundant ;)&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Students" scheme="http://blog.tulip.org.au/categories/Students/"/>
+    
+    
+      <category term="Methodology" scheme="http://blog.tulip.org.au/tags/Methodology/"/>
+    
+  </entry>
   
   <entry>
     <title>欲善其事先利其器（信息管理篇）</title>
@@ -33,11 +53,11 @@
       <category term="Workflow" scheme="http://blog.tulip.org.au/categories/Workflow/"/>
     
     
+      <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
+    
       <category term="GTD" scheme="http://blog.tulip.org.au/tags/GTD/"/>
     
       <category term="Tools" scheme="http://blog.tulip.org.au/tags/Tools/"/>
-    
-      <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
     
   </entry>
   
@@ -101,9 +121,9 @@
       <category term="Enterprise" scheme="http://blog.tulip.org.au/categories/Enterprise/"/>
     
     
-      <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
-    
       <category term="mood" scheme="http://blog.tulip.org.au/tags/mood/"/>
+    
+      <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
     
   </entry>
   
