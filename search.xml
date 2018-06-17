@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[欲善其事先利其器（信息安全篇）]]></title>
+    <url>%2F2018%2F06%2F17%2FTools-Security%2F</url>
+    <content type="text"><![CDATA[我习惯以工作流（Workflow）的自动化程度、安全程度、以及核心任务效率来选择工作环境和软件工具。10年前，办公室用的是ArchLinux，后来换用Laptop后发现Linux系统通常电源管理效率不高：Windows可以跑4个小时的ThinkPad，Linux差不多1个半小时就撑不住了。2010年左右，毅然投入了Mac阵营，当然更重要的原因可能是： 男人有钱就变坏，Linux用户有钱就用Mac！ Anonymous Mac的方便之处在于可以无缝接入Unix/Linux技巧，特别是~/.ssh、~/.config、~/.gnupg等各类配置文件拿来就用。多年来积累下的许多偷懒技巧都是跨平台的，在心情和状态不好的时候，打算把这些常用的工作流整理总结一下，也许还有优化的余地。 这篇介绍网络环境下的远程协作常用的信息安全工具。 网络工具即时通讯 钉钉： 如果单纯看集成功能，钉钉是用过的最方便、最大方的系统。可以提供全球手机短信、中国手机语音提示等功能，内置邮件管理系统、石墨文档、Teambition、共享空间等附加功能，对于中小研究团队非常合适。 Use anything by Open Whisper Systems.Edward Snowden Signal：Snowden推荐的即时通讯协议，按说不大容易被偷听到吧。 WhatsApp：不熟悉Signal的人喜欢用这个，现在归Facebook了，慎用。 VPN许多大学和公司都提供了VPN服务，但是在许多时候会有必要使用自己的VPN服务器。这方面网络上有许多不错的教程，通常需要的平台和服务类似于： GoDaddy：域名注册和管理 Amazon EC2：设置虚拟服务器VPS WhatsMyDNS：测试DNS 有了自己完全控制的VPS，你可以安装不同的服务包括VPN。用过最方便的是： Algo 服务器设置好后，别忘记了在自己的手机和计算机上面安装VPN服务器的Apple Profile或者Certificate。连上后，用Whoer或者WhatisMyIP查看一下显示的IP信息是否如你所愿： 触网无痕 Tor：著名的洋葱网络，通常配置起来不大容易。好在现在可以直接下载Tor Browser，即装即用1。 DNSCrypt：洋葱网络也不能完全保证安全，DNS查询时大多数ISP会知道你访问的是什么网站，这就是DNS Leakage问题，如下图所示： 你的公司或者大学尽管不知道你在每个网站访问了什么内容，但通常非常清楚你访问了什么网站，甚至一些中间DNS也会知道这些。你可以用DNSLeakTest.com检查目前DNS查询是否不安全。采用DNSCrypt应该可以避免这些问题。当然，你的公司或者大学也会有其他手段，包括防止你采用DNSCrypt2。 如果你使用OpenVPN的话，可以在VPN服务器配置 .conf (or .ovpn)上面设置关闭外界DNS。 1block-outside-dns DuckDuckGo：网络搜索引擎采用这个。学术论文搜索可以用Google或者Bing补充。 浏览器扩展：大多数浏览器都有扩展功能，我自己使用下面这些： Ghostery uBlock，upstream软件在是uBlock，需要熟悉一下文档。 DuckDuckGo 工作SSH ConnectionSSH Keys可以让你在远程ssh登陆服务器的时候，不需要每次都输入命令。这方面的中英文教程非常多，随便哪一篇都可以。 https://help.github.com/categories/authenticating-to-github https://confluence.atlassian.com/bitbucket/ssh-keys-935365775.html SSH 公钥私钥目前情况下，建议采用4096 bits RSA key。 1ssh-keygen -b 4096 生成密钥的时候别忘记设置passphrase，这个在文件被人拿走的时候可以多一层保护。生成完成的话，会在~/.ssh目录下产生2个文件：私钥id_rsa和公钥id_rsa.pub。这个私钥非常重要，必须千方百计保护好；公钥可以发送到ssh服务器上面。下面的命令可以检查，这个公钥是不是有效编码：1ssh-keygen -l -f .ssh/id_rsa.pub 如果你只有私钥，你可以用下面的命令重新生成公钥：1ssh-keygen -y -f ~/.ssh/id_rsa &gt; ~/.ssh/id_rsa.pub SSH 公钥上传所有你需要使用的ssh服务器，都可以放一份公钥到~/.ssh/authorized_keys文件中，命令如下：1ssh-copy-id user@remote.example.com 对于GitHub，你可以把公钥内容通过浏览器贴到Personal Settings里面：1cat ~/.ssh/id_rsa.pub|pbcopy GitHub测试命令如下：1ssh -T git@github.com 让系统记住你的Passphrase:1/usr/bin/ssh-add -K PGP Encryption如果你觉得保密性不重要，那么想想你会把情书用明信片寄出去吗？GPG公钥/私钥模式，把如同明信片一样明文通信内容，加上了一个只有收件人才能打开的信封。GPG是PGP的GPL实现，和ssh密钥类似，也是有公钥、私钥之分。见到一个比较有意思的类比：公钥相当于你的银行帐号，私钥相当于你的银行卡。银行帐号是公开的，朋友可以用这个来给你汇钱；银行卡需要小心藏好，你需要凭它以去取你的钱。在通讯中，可以用私钥签名数据，用公钥验证签名；或者用对方的公钥加密数据，对方利用其私钥才解密，具体如下图示： 这里的逻辑和名字一样有些绕，建议参考这篇网文。 PGP 公钥私钥许多参考文献3都提供了详细的命令行用法。MacOS有一个很方便的GUI工具GPG Suite，可以管理密钥，也提供了Apple Mail和Services的扩展，可以方便进行邮件、文件还有文字的签名。 密钥生成的时候，需要注意如下几点： 密钥长度至少设置为4096 设置passphrase 生成revocation certificate1gpg --output revoke.asc --gen-revoke &lt;myKeyID&gt; PGP私钥和撤销钥都需要小心保护。公钥可以发布出去，供和你加密通讯或确认你的签名。公钥可以用下面生成：1gpg -a --output key.public --export &lt;myKeyID&gt; 此外，你还可以发布你的fingerprint。例如我的fingerprint是：123fingerprint: B288 97A6 061C 8228 7E27 E9D4 4CBE EB6E CA42 5B3Dlong id: 4CBE EB6E CA42 5B3Dshort id: CA42 5B3D 你可以基于fingerprint找到公钥：1gpg --recv-keys CA425B3D 加密签名文件签名如果你打算对一个文件MyDoc.pdf签名，下面命令可以生成独立签名文件MyDoc.pdf.sig：1gpg -b MyDoc.pdf 收到这两个文件的时候，可以验证签名：1gpg --verify MyDoc.pdf.sig 加密解密比如如果你打算加密后送给我文件MyDoc.pdf，可以用下面命令生成一个新文件MyDoc.pdf.gpg：1gpg -r gangli -e myDoc.pdf 我收到后，可以解密：1gpg -d myDoc.pdf.gpg --output myDoc.pdf Visual Studio Code设置VSC有个GPG扩展，可以对文本编辑器中的内容进行加密、解密。 账号管理注册的网站多了，有时会遇见一个苦恼：密码大体记得，跑不了是常用的若干个之一，但是用户名忘记了。这里最好是采用Password Manager。著名的包括1Password、LastPass等，另外一个好用的是KeePass及其KeePassXC。你的所有账户信息、甚至密钥都可以放同一个.kdbx数据文件中，保护好这个文件并且别忘记添加passphrase。 1: 不小心发现大学的网络一直不让大家链接到Tor。↩ 2: 我的大学网络上面居然不能使用DNSCrpyt，只能在家里网络上面使用。 ↩ 参考文献↩ https://confluence.atlassian.com/bitbucket/set-up-an-ssh-key-728138079.html https://help.github.com/articles/generating-a-new-gpg-key/ http://aplawrence.com/Basics/gpg.html https://www.lifehacker.com.au/2013/08/how-to-encrypt-your-email-and-keep-your-conversations-private/ http://www.ruanyifeng.com/blog/2013/07/gpg.html http://www.alexgao.com/2009/01/24/gpg/ http://blog.csdn.net/heavenboya/article/details/6684800]]></content>
+      <categories>
+        <category>Workflow</category>
+      </categories>
+      <tags>
+        <tag>GTD</tag>
+        <tag>中文</tag>
+        <tag>Tools</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[振雄兄和倪墨姐]]></title>
+    <url>%2F2018%2F06%2F11%2FNemo%2F</url>
+    <content type="text"><![CDATA[All of life is an act of letting go,but what hurts the most is not taking a moment to say goodbye. 我比较有影响力的科研工作都是和合作者一起做出来的。纵横江湖二十年，对我的影响特别大是两位合作者：一直视我为小弟的振雄兄，以及一直视我为大哥的倪墨妹。 某种程度上来说，振雄兄是我科研的引路人。和他合作伊始，我便观摩、学习他系统的研究方法、研究规划，以及学术交流的技巧等；而倪墨妹呢，最开始算是我的学生，而我的各种心得体会都悉心传授。可是，为什么我称呼她倪墨姐呢？ 这得从她思维方式谈起，女生最大的加分项就是兼具某些男性化的思维方式。当一个女人表达出卓越的理性和洞察力，对男人当前面临的难题发表出一针见血的见解，这个时候在异性眼中简直是满分。倪墨就是这种神一样的存在，特别是在2012-2014年，她经常能够对我各个方面规划都给出了令我大开眼界的建议，所以，我尊称她为倪魔羯。这世上有魅力的人，总是那些同时具有男女两种思维方式的人，很幸运我这辈子碰到的振雄兄和倪魔羯都有这样的魅力。 只可惜人生是一场停不下的旅程，守住一个地方，也挡不住头上的白发，留不住飞去的时光。]]></content>
+      <categories>
+        <category>Enterprise</category>
+      </categories>
+      <tags>
+        <tag>mood</tag>
+        <tag>中文</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Puppy]]></title>
     <url>%2F2018%2F05%2F02%2FPuppy%2F</url>
     <content type="text"><![CDATA[A student pursuing a PhD is somehow like a dog chewing bones: novel ideas leading into great achievements are like fresh meats between bones. The first step is to sense where the meat bones are. Normally, wherever the dogs are gathering, the bones are abundant ;) A creative dog will feed itself with fresh meat before the others finish it all, or be a dog explorer, questing in the desert where no other dog is around: When you find a pile of bones, congratulations, there are no competitors, hence all the bones are yours. If you finish all of the bones, you will grow into a big cow. Usually, these kinds of dogs will be awarded as Turing winner ;) For the puppies that are pursuing a PhD, it is always a good idea to find a guide dog with a great sense of smell, who knows better on where there may be bones. What the puppies need to do is to simply follow the guidance and eat up the meat from the the bones. Unfortunately, in most of the cases, the guide dogs are pretty stupid themselves, and know nothing about bone-seeking, or may only lick leftover bones. The puppies under their guidance will suffer from starvation and tear for their empty tummy. However, as it is hard for puppies to break a clue, it is miserable. 读ph.d.做研究, 就像一条狗在啃骨头.做出新意出成就来, 就是在骨头里面发现了fresh的肉.首先, 要判断哪里能找到还有肉的骨头,一般而言, 狗群最多的地方, 骨头也最多;)做条creative的狗, 在别人吃精光以前, 发现一点肉填肚子;还有一种可能, 就是在完全看不到狗,还是有可能有骨头的沙漠中探索, 如果发现一堆骨头, 那么恭喜你, 没别的狗和你抢,这堆骨头全是你的,吃完就成了big cow,呵呵. 这种狗会被授予图灵奖;)去读ph.d.做research的小狗们呢, 最好找个嗅觉灵敏的大狗做advisor,他们知道什么地方可能有骨头, 在大狗的带领下去努力的发现骨头里面的肉就行了.而普遍的情况是, 大狗也笨得很, 不知道哪里有骨头, 或者只会舔吃剩的骨头,跟在后面的小狗, 没有肉吃, 肚子饿的汪汪叫, 独自去闯又难以摸着头绪,比较惨.]]></content>
@@ -15,18 +40,6 @@
     <title><![CDATA[我是人间惆怅客]]></title>
     <url>%2F2018%2F04%2F21%2FMelancholy%2F</url>
     <content type="text"><![CDATA[这些年来不时会听到一个声音在耳边回响： 早些结束吧，这样的僵持对谁都是一种煎熬。 尽管一直处于弱势而苦苦支撑，但忽然发现不止我熬不下去的时候，刹那间如释重负，可一转头又心如刀绞。 跨越这段艰苦岁月，忽然觉得日子过的真快呀，看到十年前的照片我居然震惊地问：那个清淳中透着甜意的人到哪去啦？这些年到底发生了什么？ 对中年的我来讲，十多年只是弹指一挥间：刚涉足江湖的我，青春年少，以诚挚的心对待着每一个人。现在的我，自带一种戒备之心，常常不自觉地审视周遭。这十多年，该是一种怎样的磨砺和成长？ 那年你意气风发，艺成下山，恰逢与我同道，四方觊觎，我挡在前，力保你不受侵害，我双手战多人，虽吃力但仍可支撑。 忽觉背后一箭飞至，知你会替我挡下。你扬起宝剑，与那小小箭簇，一起刺进我的后心。 我拔出利刃，但无法回刺，只能笑敲你额头说：兵器拿好呀你冷静得我很陌生：你太幼稚一瞬间难以置信人生最黑暗的时刻痛到死的恍然大悟此生都不愿再重复心疼自己 其实仍在同一片江湖，每闻你们笑傲的身影时，眼前总是浮现出当年那个聪明伶俐的小跟屁虫，可那已经是好多年前的事情了点点滴滴雨，冷去故人心江湖路远，再也不见。 残雪凝辉冷画屏。落梅横笛已三更。更无人处月胧明。我是人间惆怅客，知君何事泪纵横。断肠声里忆平生。——《浣溪沙》纳兰容若]]></content>
-      <categories>
-        <category>Enterprise</category>
-      </categories>
-      <tags>
-        <tag>mood</tag>
-        <tag>中文</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[振雄兄和倪墨姐]]></title>
-    <url>%2F2018%2F04%2F21%2FNemo%2F</url>
-    <content type="text"><![CDATA[All of life is an act of letting go,but what hurts the most is not taking a moment to say goodbye. 我比较有影响力的科研工作都是和合作者一起做出来的。纵横江湖二十年，对我的影响特别大是两位合作者：一直视我为小弟的振雄兄，以及一直视我为大哥的倪墨妹。 某种程度上来说，振雄兄是我科研的引路人。和他合作伊始，我便观摩、学习他系统的研究方法、研究规划，以及学术交流的技巧等；而倪墨妹呢，最开始算是我的学生，而我的各种心得体会都悉心传授。可是，为什么我称呼她倪墨姐呢？ 这得从她思维方式谈起，女生最大的加分项就是兼具某些男性化的思维方式。当一个女人表达出卓越的理性和洞察力，对男人当前面临的难题发表出一针见血的见解，这个时候在异性眼中简直是满分。倪墨就是这种神一样的存在，特别是在2012-2014年，她经常能够对我各个方面规划都给出了令我大开眼界的建议，所以，我尊称她为倪魔羯。这世上有魅力的人，总是那些同时具有男女两种思维方式的人，很幸运我这辈子碰到的振雄兄和倪魔羯都有这样的魅力。 只可惜人生是一场停不下的旅程，守住一个地方，也挡不住头上的白发，留不住飞去的时光。]]></content>
       <categories>
         <category>Enterprise</category>
       </categories>
