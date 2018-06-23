@@ -107,13 +107,13 @@
 <meta property="og:site_name" content="My 1937">
 <meta property="og:description" content="我习惯以工作流（Workflow）的自动化程度、安全程度、以及核心任务效率来选择工作环境和软件工具。10年前，办公室用的是ArchLinux，后来换用Laptop后发现Linux系统通常电源管理效率不高：Windows可以跑4个小时的ThinkPad，Linux差不多1个半小时就撑不住了。2010年左右，毅然投入了Mac阵营，当然更重要的原因可能是：   男人有钱就变坏，Linux用户有钱就用Ma">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://dnsleaktest.com/img/what-is-a-dns-leak.png">
-<meta property="og:image" content="https://img.gawkerassets.com/img/18wzbncpwgcrxpng/original.png">
-<meta property="og:updated_time" content="2018-06-17T07:56:58.000Z">
+<meta property="og:image" content="http://blog.tulip.org.au/images/DNS-Leak.png">
+<meta property="og:image" content="http://blog.tulip.org.au/images/EnDecrypt.png">
+<meta property="og:updated_time" content="2018-06-23T11:12:09.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="欲善其事先利其器（信息安全篇）">
 <meta name="twitter:description" content="我习惯以工作流（Workflow）的自动化程度、安全程度、以及核心任务效率来选择工作环境和软件工具。10年前，办公室用的是ArchLinux，后来换用Laptop后发现Linux系统通常电源管理效率不高：Windows可以跑4个小时的ThinkPad，Linux差不多1个半小时就撑不住了。2010年左右，毅然投入了Mac阵营，当然更重要的原因可能是：   男人有钱就变坏，Linux用户有钱就用Ma">
-<meta name="twitter:image" content="https://dnsleaktest.com/img/what-is-a-dns-leak.png">
+<meta name="twitter:image" content="http://blog.tulip.org.au/images/DNS-Leak.png">
 
 
 
@@ -491,7 +491,7 @@
 <li><p><a href="https://www.opendns.com/about/innovations/dnscrypt/" target="_blank" rel="noopener">DNSCrypt</a>：洋葱网络也不能完全保证安全，DNS查询时大多数ISP会知道你访问的是什么网站，这就是<a href="https://dnsleaktest.com/what-is-a-dns-leak.html" target="_blank" rel="noopener"><code>DNS Leakage</code></a>问题，如下图所示：</p>
 </li>
 </ul>
-<p><img src="https://dnsleaktest.com/img/what-is-a-dns-leak.png" alt="DNS Leakage"></p>
+<p><img src="/images/DNS-Leak.png" alt="DNS Leakage"></p>
 <p>你的公司或者大学尽管不知道你在每个网站访问了什么内容，但通常非常清楚你访问了什么网站，甚至一些中间DNS也会知道这些。你可以用<a href="https://dnsleaktest.com/what-is-a-dns-leak.html" target="_blank" rel="noopener">DNSLeakTest.com</a>检查目前DNS查询是否不安全。采用<code>DNSCrypt</code>应该可以避免这些问题。当然，你的公司或者大学也会有<a href="https://dnsleaktest.com/what-is-transparent-dns-proxy.html" target="_blank" rel="noopener">其他手段</a>，包括防止你采用<code>DNSCrypt</code><sup id="a2"><a href="#fn2">2</a></sup>。</p>
 <p>如果你使用OpenVPN的话，可以在VPN服务器配置 <code>.conf</code> (or <code>.ovpn</code>)上面设置<a href="https://dnsleaktest.com/how-to-fix-a-dns-leak.html" target="_blank" rel="noopener">关闭外界DNS</a>。</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">block-outside-dns</span><br></pre></td></tr></table></figure>
@@ -520,7 +520,7 @@
 <p>GitHub测试命令如下：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure></p>
 <p>让系统记住你的Passphrase:<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/bin/ssh-add -K</span><br></pre></td></tr></table></figure></p>
 <h3 id="PGP-Encryption"><a href="#PGP-Encryption" class="headerlink" title="PGP Encryption"></a><code>PGP</code> Encryption</h3><p>如果你觉得保密性不重要，那么想想你会把情书用明信片寄出去吗？GPG公钥/私钥模式，把如同明信片一样明文通信内容，加上了一个只有收件人才能打开的信封。GPG是PGP的GPL实现，和<code>ssh</code>密钥类似，也是有公钥、私钥之分。见到一个比较有意思的类比：公钥相当于你的银行帐号，私钥相当于你的银行卡。银行帐号是公开的，朋友可以用这个来给你汇钱；银行卡需要小心藏好，你需要凭它以去取你的钱。在通讯中，可以用私钥签名数据，用公钥验证签名；或者用对方的公钥加密数据，对方利用其私钥才解密，具体如下图示：</p>
-<p><img src="https://img.gawkerassets.com/img/18wzbncpwgcrxpng/original.png" alt="EnDecrypt"></p>
+<p><img src="/images/EnDecrypt.png" alt="EnDecrypt"></p>
 <p>这里的逻辑和名字一样有些绕，建议参考这篇<a href="https://zhuanlan.zhihu.com/p/29575509?utm_medium=social&amp;utm_source=ZHShareTargetIDMore" target="_blank" rel="noopener">网文</a>。</p>
 <h4 id="PGP-公钥私钥"><a href="#PGP-公钥私钥" class="headerlink" title="PGP 公钥私钥"></a><code>PGP</code> 公钥私钥</h4><p>许多参考文献<sup id="a3"><a href="#ref">3</a></sup>都提供了详细的命令行用法。<code>MacOS</code>有一个很方便的GUI工具<a href="https://gpgtools.org" target="_blank" rel="noopener">GPG Suite</a>，可以管理密钥，也提供了<code>Apple Mail</code>和<code>Services</code>的扩展，可以方便进行邮件、文件还有文字的签名。</p>
 <p>密钥生成的时候，需要注意如下几点：</p>
