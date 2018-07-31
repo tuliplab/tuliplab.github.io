@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.tulip.org.au/"/>
-  <updated>2018-06-23T11:12:09.000Z</updated>
+  <updated>2018-07-31T04:40:36.000Z</updated>
   <id>http://blog.tulip.org.au/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>欲善其事先利其器（LaTeX Workflow）</title>
+    <link href="http://blog.tulip.org.au/2018/07/31/Tools-LaTeX/"/>
+    <id>http://blog.tulip.org.au/2018/07/31/Tools-LaTeX/</id>
+    <published>2018-07-30T15:22:19.000Z</published>
+    <updated>2018-07-31T04:40:36.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;In the past three decades, I have spent most of my writing time in typing &lt;code&gt;LaTeX&lt;/code&gt; for academic papers, research presentations, assignments and even examination papers. As is the natural inclination for computer scientists, I have been improving my workflow for many years so that I can maximize the productivity while minimizing the labour work. Here is the &lt;code&gt;LaTeX&lt;/code&gt; workflow with which I feel comfortable. &lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Workflow" scheme="http://blog.tulip.org.au/categories/Workflow/"/>
+    
+    
+      <category term="GTD" scheme="http://blog.tulip.org.au/tags/GTD/"/>
+    
+      <category term="Tools" scheme="http://blog.tulip.org.au/tags/Tools/"/>
+    
+      <category term="Workflow" scheme="http://blog.tulip.org.au/tags/Workflow/"/>
+    
+  </entry>
   
   <entry>
     <title>欲善其事先利其器（信息安全篇）</title>
@@ -46,7 +70,7 @@
     <link href="http://blog.tulip.org.au/2018/06/11/Nemo/"/>
     <id>http://blog.tulip.org.au/2018/06/11/Nemo/</id>
     <published>2018-06-11T10:50:30.000Z</published>
-    <updated>2018-06-23T11:26:16.000Z</updated>
+    <updated>2018-07-31T04:44:38.000Z</updated>
     
     <summary type="html">
     
