@@ -1,0 +1,1383 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.0.6" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/vi/apple-touch-icon.png?v=6.0.6">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/vi/favicon-32x32.png?v=6.0.6">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/vi/favicon-16x16.png?v=6.0.6">
+
+
+  <link rel="mask-icon" href="/vi/safari-pinned-tab.svg?v=6.0.6" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '6.0.6',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="In the past three decades, I have spent most of my writing time in typing LaTeX for academic papers, research presentations, assignments and even examination papers. As is the natural inclination for">
+<meta name="keywords" content="GTD,Tools,Workflow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="欲善其事先利其器（LaTeX Workflow）">
+<meta property="og:url" content="http://blog.tulip.org.au/2018/07/30/Tools-LaTeX/index.html">
+<meta property="og:site_name" content="My 1937">
+<meta property="og:description" content="In the past three decades, I have spent most of my writing time in typing LaTeX for academic papers, research presentations, assignments and even examination papers. As is the natural inclination for">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://blog.tulip.org.au/images/gitlatex-flow01.png">
+<meta property="og:image" content="http://blog.tulip.org.au/images/gitlatex-flow02.png">
+<meta property="og:image" content="http://blog.tulip.org.au/images/git-flow.png">
+<meta property="og:image" content="http://blog.tulip.org.au/images/gitlatex-flow03.png">
+<meta property="og:updated_time" content="2018-07-31T04:40:36.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="欲善其事先利其器（LaTeX Workflow）">
+<meta name="twitter:description" content="In the past three decades, I have spent most of my writing time in typing LaTeX for academic papers, research presentations, assignments and even examination papers. As is the natural inclination for">
+<meta name="twitter:image" content="http://blog.tulip.org.au/images/gitlatex-flow01.png">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="My 1937" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="http://blog.tulip.org.au/2018/07/30/Tools-LaTeX/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>欲善其事先利其器（LaTeX Workflow） | My 1937</title>
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-10909670-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-10909670-2');
+</script>
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> 
+
+<div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">My 1937</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Road to Rise</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+          
+  <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
+</li>
+
+      
+        
+        
+          
+  <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />About</a>
+</li>
+
+      
+        
+        
+          
+  <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />Tags</a>
+</li>
+
+      
+        
+        
+          
+  <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />Categories</a>
+</li>
+
+      
+        
+        
+          
+  <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
+</li>
+
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />Search</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    
+
+    
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+    
+
+  
+
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.tulip.org.au/2018/07/30/Tools-LaTeX/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Gang Li">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/vi/graffiti-gli.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="My 1937">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">欲善其事先利其器（LaTeX Workflow）</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-31T01:22:19+10:00">2018-07-31</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Workflow/" itemprop="url" rel="index"><span itemprop="name">Workflow</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>In the past three decades, I have spent most of my writing time in typing <code>LaTeX</code> for academic papers, research presentations, assignments and even examination papers. As is the natural inclination for computer scientists, I have been improving my workflow for many years so that I can maximize the productivity while minimizing the labour work. Here is the <code>LaTeX</code> workflow with which I feel comfortable. </p>
+<a id="more"></a>
+<h2 id="LaTeX-Foundations"><a href="#LaTeX-Foundations" class="headerlink" title="LaTeX Foundations"></a>LaTeX Foundations</h2><p>There is no need to emphasize more on the convenience of using <code>LaTeX</code> for academic writing. If this sounds geek to you, you need to read some foundational materials such as <a href="https://en.wikibooks.org/wiki/LaTeX" target="_blank" rel="noopener">WikiBook</a>. </p>
+<p>For the workflow related to <code>LaTeX</code> writing, I recommend the following cross platform packages:</p>
+<ul>
+<li><a href="https://tug.org/texlive/" target="_blank" rel="noopener">TeXLive!</a>: <code>LaTeX</code> distribution</li>
+<li><a href="https://code.visualstudio.com/" target="_blank" rel="noopener">Visual Studio Code</a>: with extensions such as <code>LaTeX Workshop</code>, <code>Markdown All in One</code>, etc.</li>
+<li><a href="https://www.ctan.org/pkg/latexdiff?lang=en" target="_blank" rel="noopener">LaTeXDiff</a> and <a href="https://gitlab.com/git-latexdiff/git-latexdiff" target="_blank" rel="noopener">Git-LaTeXDiff</a>: Version difference extraction and visualization</li>
+<li><a href="https://www.syntevo.com/smartgit/" target="_blank" rel="noopener">SmartGit</a>: free for non-commertial use</li>
+<li><a href="http://bitbucket.org" target="_blank" rel="noopener">Bitbucket</a> or <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>: <code>git</code> Repository</li>
+</ul>
+<h3 id="Grammar-Spelling-Checking-for-LaTeX"><a href="#Grammar-Spelling-Checking-for-LaTeX" class="headerlink" title="Grammar/Spelling Checking for LaTeX"></a>Grammar/Spelling Checking for <code>LaTeX</code></h3><h4 id="ASpell"><a href="#ASpell" class="headerlink" title="ASpell"></a><code>ASpell</code></h4><p>Many excellent spell checkers for the <code>LaTeZ</code> are available, such as <a href="http://aspell.net" target="_blank" rel="noopener">ASpell</a>, which can be incorporated into the compilation process. Before you compile you can do</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">aspell -t -c report.tex</span><br></pre></td></tr></table></figure>
+<p>It lets you interactively spell check the whole file. The <code>-t</code> option is to tell the spell checker that the file is in <code>TeX</code> or <code>LaTeX</code> format so that it will ignore macros.</p>
+<p>If you prefer to simply get a list of misspelled words non-interactively, you can run:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat file.tex | aspell list -t | sort | uniq</span><br></pre></td></tr></table></figure>
+<h4 id="Grammar-Checking-Tools"><a href="#Grammar-Checking-Tools" class="headerlink" title="Grammar Checking Tools"></a>Grammar Checking Tools</h4><h5 id="Queequeg"><a href="#Queequeg" class="headerlink" title="Queequeg"></a><code>Queequeg</code></h5><p><a href="http://queequeg.sourceforge.net/index-e.html" target="_blank" rel="noopener">Queequeg</a> is a simple command-line tool aimed exactly at finding concordance errors in English. It works with <code>LaTeX</code> sources out of the box.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">qq -t mainbody.tex</span><br></pre></td></tr></table></figure>
+<h5 id="TeXtidote"><a href="#TeXtidote" class="headerlink" title="TeXtidote"></a><code>TeXtidote</code></h5><p><a href="https://github.com/sylvainhalle/textidote" target="_blank" rel="noopener">TeXtidote</a> is a command-line tool based on <a href="https://www.languagetool.org/" target="_blank" rel="noopener">LanguageTool</a> so that it can work on <code>LaTeX</code> files. </p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -jar textidote.jar --html mainbody.tex &gt; checkreport.html</span><br></pre></td></tr></table></figure>
+<h3 id="Polymorphical-Editions"><a href="#Polymorphical-Editions" class="headerlink" title="Polymorphical Editions"></a>Polymorphical Editions</h3><p>As a researcher, you might need to prepare different editions of the same technical report for different submitting channel: the conference, the journal, etc.</p>
+<p>You should be aware of the difference between two terms:</p>
+<ul>
+<li><code>Revision</code>: One particular state of the files in a project, positioned along one or more lines of the development history</li>
+<li><code>Edition</code>: One particular variation which has a purpose in being different from other variations, such as the conference edition, the journal edition, the technical report edition etc.</li>
+</ul>
+<p>Notice that I have avoided using the word <code>version</code>, which is too ambiguous.</p>
+<p>The method to maintain multiple editions is to create a configurable master file, and to include it from a series of top-level files, one for each <code>Edition</code> that is required. For an illustration of general principles for making polymorphic editions, we can use the following example using Viktor Eijkhout’s <code>comment</code> package and Hendrik Mittby’s todonotes package. Suppose three editions with 4 <code>TeX</code> files are:</p>
+<ul>
+<li>The conference edition: with some block for conference only </li>
+<li>The journal edition: with some block for journal only </li>
+<li>The report edition: with all blocks</li>
+</ul>
+<h4 id="Conference-tex"><a href="#Conference-tex" class="headerlink" title="Conference.tex:"></a>Conference.tex:</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">%=================================================================</span><br><span class="line">\usepackage&#123;comment&#125;</span><br><span class="line">%=================================================================</span><br><span class="line">%</span><br><span class="line">\excludecomment&#123;JournalOnly&#125;  </span><br><span class="line">\includecomment&#123;ConferenceOnly&#125;  </span><br><span class="line">%</span><br><span class="line">%=================================================================</span><br><span class="line"></span><br><span class="line">\input&#123;mainbody&#125;</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<h4 id="Journal-tex"><a href="#Journal-tex" class="headerlink" title="Journal.tex:"></a>Journal.tex:</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">%=================================================================</span><br><span class="line">\usepackage&#123;comment&#125;</span><br><span class="line">%=================================================================</span><br><span class="line">%</span><br><span class="line">\excludecomment&#123;JournalOnly&#125;  </span><br><span class="line">\includecomment&#123;ConferenceOnly&#125;  </span><br><span class="line">%</span><br><span class="line">%=================================================================</span><br><span class="line"></span><br><span class="line">\input&#123;mainbody&#125;</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<h4 id="Report-tex"><a href="#Report-tex" class="headerlink" title="Report.tex:"></a>Report.tex:</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">%=================================================================</span><br><span class="line">\usepackage&#123;comment&#125;</span><br><span class="line">%=================================================================</span><br><span class="line">%</span><br><span class="line">\includecomment&#123;JournalOnly&#125;  </span><br><span class="line">\includecomment&#123;ConferenceOnly&#125;  </span><br><span class="line">%</span><br><span class="line">%=================================================================</span><br><span class="line"></span><br><span class="line">\input&#123;mainbody&#125;</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<h4 id="mainbody-tex"><a href="#mainbody-tex" class="headerlink" title="mainbody.tex:"></a>mainbody.tex:</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">\usepackage&#123;comment&#125;</span><br><span class="line"></span><br><span class="line">\begin&#123;ConferenceOnly&#125;</span><br><span class="line">We have \SI&#123;10&#125;&#123;\hertz&#125;,</span><br><span class="line">\si&#123;\kilogram\metre\per\second&#125;,</span><br><span class="line">the range: \SIrange&#123;10&#125;&#123;100&#125;&#123;\hertz&#125;.</span><br><span class="line">$\nicefrac[]&#123;1&#125;&#123;2&#125;$.</span><br><span class="line">\missingfigure&#123;Make a sketch of the structure of a trebuchet.&#125;</span><br><span class="line">\end&#123;ConferenceOnly&#125;</span><br><span class="line"></span><br><span class="line">\begin&#123;JournalOnly&#125;</span><br><span class="line">This is a paragraph which is only available in journal edition,</span><br><span class="line">and the conference one will not include it.</span><br><span class="line">\end&#123;JournalOnly&#125;</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<h2 id="Collaborative-Writing-in-Git-LaTeX"><a href="#Collaborative-Writing-in-Git-LaTeX" class="headerlink" title="Collaborative Writing in Git + LaTeX"></a>Collaborative Writing in <code>Git</code> + <code>LaTeX</code></h2><p><code>Git</code> is mainly used as the repository for code. Considering that <code>LaTeX</code> is a kind of scripting, it is a natural choice to put your writing under version control systems such as <code>git</code>. You may wonder what are the advantages of this over GUI tools such as <code>Microsoft Word</code>. I can quickly list some of the things that I find not easy to do in <code>Microsoft Word</code>:</p>
+<ul>
+<li>Maintain a full editing history, and quantify the line by line contributions from co-authors;</li>
+<li>Tag, Release and Branch the project;</li>
+<li>Easily creating a PDF with revision details;</li>
+<li>Adding comments by hiding the source in the <code>LaTeX</code> source;</li>
+<li>Multiple authors writing at the same time, on the same file!</li>
+</ul>
+<h3 id="Setup-Git-Repositories"><a href="#Setup-Git-Repositories" class="headerlink" title="Setup Git Repositories"></a>Setup <code>Git</code> Repositories</h3><h4 id="One-Repository-in-local-texmf-tree-For-All-Papers"><a href="#One-Repository-in-local-texmf-tree-For-All-Papers" class="headerlink" title="One Repository in local texmf tree For All Papers"></a>One Repository in local <code>texmf</code> tree For All Papers</h4><p>A local <code>texmf</code> tree is for putting various package-like-artifacts, that are not proper packages managed through your package manager (e.g. <code>Miktex</code> or <code>TeXLive</code>). How to setup a local tex tree is beyond the scope of this answer but it isn’t hard: for Windows, most likelty the home directory under <code>~/texmf/tex/</code>; for <code>macOS</code>, please put it under <code>/usr/local/texlive/texmf-local</code>. For <code>MkTex</code> on Windows, you can run <code>mktexlsr</code>; For <code>TexLive</code> you can type the following command:<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span></span><br><span class="line">sudo texhash</span><br></pre></td></tr></table></figure></p>
+<p>The local <code>texmf</code> tree means that you never have to use absolute, or even relative paths for your bibliography <code>bib</code> files. It is also very useful as many conferences and journals distribute their own templates and styles not through <a href="https://ctan.org" target="_blank" rel="noopener">CTAN</a>, but just as <code>.sty</code> and <code>.bst</code> files.</p>
+<h5 id="Put-the-bib-in-local-texmf-tree"><a href="#Put-the-bib-in-local-texmf-tree" class="headerlink" title="Put the .bib in local texmf tree"></a>Put the <code>.bib</code> in local <code>texmf</code> tree</h5><p>At our team, we have several common bibliographic files in the BibTeX format: <code>tuliplab.bib</code>, <code>deeplearning.bib</code>, <code>tourism.bib</code> and <code>hospitality.bib</code> etc. They reside in our common texmf tree in the subfolder <code>/bibtex/bib/</code>. Hence, all members can specify the bibliography by only using the file name (such as <code>\bibliography{tuliplab}</code> without the full path) — no matter where your working copy of the common <code>texmf</code> tree is located.</p>
+<h5 id="Add-local-texmf-tree-to-git"><a href="#Add-local-texmf-tree-to-git" class="headerlink" title="Add local texmf tree to git"></a>Add local <code>texmf</code> tree to git</h5><p>Once you have created that tree, add it to git. Then when ever you work on a new computer check out the repo from git, and tell your <code>TeX</code> distribution to know about the local <code>texmf</code> tree.</p>
+<h4 id="One-Repository-Per-Paper"><a href="#One-Repository-Per-Paper" class="headerlink" title="One Repository Per Paper"></a>One Repository Per Paper</h4><p>There are many free or public available platforms for <code>Git</code>, such as <code>GitHub</code> or <code>Bitbucket</code>. You need to create one new repository in your chosen <code>git</code> platform, and initialize it with all the necessary <code>.tex</code> and <code>.bib</code> files. We recommend the following folder structure:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">├── .git                        # Git folder automatically created upon git checkout.</span><br><span class="line">│   ├── ...                </span><br><span class="line">│   ├── gitHeadInfo.gin         # auto generated git information </span><br><span class="line">│   └── hooks                   # store those triggers so that gitinfo can be auto generated</span><br><span class="line">├── Data                        # contains the training data, test data, validation data sets</span><br><span class="line">├── Code                        # contains the source code, script, or Python notebook </span><br><span class="line">└── Report                      # tex, bib files</span><br><span class="line">    ├── figures                 # subfolder</span><br><span class="line">    ├── Report.tex</span><br><span class="line">    ├── Slides.tex</span><br><span class="line">    ├── Poster.tex</span><br><span class="line">    └── ...</span><br><span class="line">`</span><br></pre></td></tr></table></figure>
+<p>For version information, you need to use the following package:</p>
+<ul>
+<li><p><a href="https://www.ctan.org/pkg/gitinfo2" target="_blank" rel="noopener">GitInfo2</a>: This package requires some configurations under your project’s <code>.git/hooks</code> folder, and after that it will work like a charm. </p>
+<p>You can test it by checking out or pulling/pushing your repository, and it should generate/update the file <code>./git/gitHeadInfo.gin</code> in the local project repository, such as <code>~/MyFancyPaper/.git/gitHeadInfo.gin</code>.</p>
+<p>Here is one example of using <code>GitInfo2</code> in the LaTeX file. </p>
+<p><img src="/images/gitlatex-flow01.png" alt="Workflow"></p>
+</li>
+<li><p><a href="https://www.ctan.org/pkg/latexdiff?lang=en" target="_blank" rel="noopener">LaTeXDiff</a> and <a href="https://gitlab.com/git-latexdiff/git-latexdiff" target="_blank" rel="noopener">Git-LaTeXDiff</a>: <code>LaTeXDiff</code> will take two LaTeX files and produce a formatted difference output in <code>PDF</code>, while <code>Git-LaTeXDiff</code> combines <code>git</code> and <code>LaTexDiff</code> together such that you can easily view the difference between two committed versions.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git latexdiff HEAD~N                           # diff between your work tree and the N commits back </span><br><span class="line">git latexdiff HEAD~1  --main MyFile.tex        # can specify the main tex file</span><br><span class="line">git latexdiff HEAD~3 HEAD~5 --main MyFile.tex  # diff between the 3rd and the 5th commits back</span><br></pre></td></tr></table></figure>
+<p>Here is one sample output of the difference <code>PDF</code>:</p>
+<p><img src="/images/gitlatex-flow02.png" alt="Workflow"></p>
+</li>
+</ul>
+<h3 id="LaTeX-git-workflow"><a href="#LaTeX-git-workflow" class="headerlink" title="LaTeX git workflow"></a><code>LaTeX</code> git workflow</h3><h4 id="Git-Flow"><a href="#Git-Flow" class="headerlink" title="Git-Flow"></a><code>Git-Flow</code></h4><p>If you didn’t use branches sufficiently, you can use <code>git</code> in the old fashion of <code>svn</code>. However, branches allow much more flexible development of the project, and you should learn it from <a href="https://learngitbranching.js.org" target="_blank" rel="noopener">here</a>. </p>
+<p>Once you have some general knowledge of git branches, I recommend to use the <code>Git-Flow</code>, <a href="https://nvie.com/posts/a-successful-git-branching-model/" target="_blank" rel="noopener">a branch-based workflow</a> that supports teams and projects where deployments are made regularly and development is continuous. A good tutorial on it can be found at <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow" target="_blank" rel="noopener">Bitbucket</a>.</p>
+<p>  <img src="/images/git-flow.png" alt="Workflow"></p>
+<p>Typically, you will have two major kinds of branches:</p>
+<ul>
+<li><code>master</code> branch should be treated as the main flow of your work, and it should be always production ready, and in a <code>ready to submit</code> state. </li>
+<li><code>develop</code> branch is parallel to the <code>master</code> branch, it is the main branch where the source code of <code>HEAD</code> always reflects a state with the latest delivered development changes for the next release.</li>
+</ul>
+<p>Next to the main branches <code>master</code> and <code>develop</code>, the development model uses a variety of supporting branches to aid parallel development between collaborators, ease tracking of features, prepare for submission and to assist in quickly fixing problems. </p>
+<ul>
+<li><code>Feature</code> branches: branch off from and merge back into <code>develop</code> branch. They are used to develop new subsections (features) for the paper.</li>
+<li><code>Release</code> branches: branch off from <code>develop</code> and merge back into <code>develop</code> and <code>master</code>. When the state of <code>develop</code> is ready for a submission, we branch off and give the release branch a name reflecting the submission, such as <code>IJCAI2018</code>.</li>
+<li><code>Hotfix</code> branches: branch off from <code>master</code> and merge back into <code>develop</code> and <code>master</code>. It is typically used to fix those identified issues existing in all existing and working branches. So we use it when revising based on the review comments of the submission.</li>
+</ul>
+<h4 id="LaTeX-Git-Flow"><a href="#LaTeX-Git-Flow" class="headerlink" title="LaTeX + Git-Flow"></a><code>LaTeX</code> + <code>Git-Flow</code></h4><p>The main idea is that we will create one repository with different subfolders for one project (paper), and use the <code>git-flow</code> and <code>tagging</code> to develop the paper. The following figure illustrate the commit history of one paper repository.</p>
+<p>  <img src="/images/gitlatex-flow03.png" alt="Workflow"></p>
+<h2 id="Rules-for-Collaborative-LaTeXing"><a href="#Rules-for-Collaborative-LaTeXing" class="headerlink" title="Rules for Collaborative LaTeXing"></a>Rules for Collaborative LaTeXing</h2><p>You MUST follow the following rules when writing collaboratively. Otherwise, your co-author will find it impossible to work together.</p>
+<h3 id="Rules-for-LaTeX-Source-Code"><a href="#Rules-for-LaTeX-Source-Code" class="headerlink" title="Rules for LaTeX Source Code"></a>Rules for <code>LaTeX</code> Source Code</h3><ol>
+<li>Avoid <strong>ineffective</strong> modifications.</li>
+<li>Do not change line breaks without good reason.</li>
+<li>Turn off automatic line wrapping of your <code>LaTeX</code> editor.</li>
+<li>Start each new sentence in a new line.</li>
+<li>Split long sentences into several lines so that each line has at most <code>80</code> characters.</li>
+<li><p>For all the marginal comments by other co-authors, you <strong>MUST</strong> responed to them using a responsive marginal comment, such as</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">\gangli&#123;What is wrong here?&#125;</span><br><span class="line">\qwu&#123;This is my response ...&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>If your comment has been properly addressed by co-authors, you <strong>MUST</strong> remove or comment out both the <em>original</em> and the <em>response</em> marginal comments.</p>
+</li>
+<li>You can use the following code to indicate where you are updating up to: <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\HRule %TODO: YourName up to here!</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="Rules-for-LaTeX-Git-Workflow"><a href="#Rules-for-LaTeX-Git-Workflow" class="headerlink" title="Rules for LaTeX+Git Workflow"></a>Rules for <code>LaTeX</code>+<code>Git</code> Workflow</h3><ol>
+<li>Put only those files that are directly modified by the user under version control.</li>
+<li>Frequent commits of minor changes: add a meaningful and descriptive comment when committing your modifications to the repository</li>
+<li>Don’t commit a broken version: verify that your code can be compiled flawlessly before committing.</li>
+<li>Use <code>git-latexdiff</code> or <code>latexdiff</code> (or <code>git</code> compare tools) to critically review your modifications before committing them to the repository.</li>
+<li>Use the <code>git</code> client for copying, moving, or renaming files and folders that are under revision control.</li>
+<li>Use <code>git-flow</code> scheme to create <code>feature</code>, <code>branch</code>, <code>release</code> and <code>version</code> of your paper. Be really careful when you are touching <code>develop</code> or <code>master</code> branch.<ul>
+<li><code>master</code> branch represents the life of the public document, which should always be ready for releasing to others;</li>
+<li><code>develop</code> branch accumulates all finished <code>features</code> and keeps the lifecycle of all development before release.</li>
+<li><code>feature</code> branch for major items of work, for example, <code>I am adding the section of experiment</code> etc. If you are quite sure that it can be done without affecting other collaborating author’s workflow, you can directly work on the <code>develop</code> branch.</li>
+</ul>
+</li>
+<li>Using <code>tagging</code> extensively to keep notes on what a given point in the history means. You may need to familiar with <a href="https://semver.org/lang/zh-CN/" target="_blank" rel="noopener">SemVer</a>.</li>
+</ol>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/GTD/" rel="tag"># GTD</a>
+          
+            <a href="/tags/Tools/" rel="tag"># Tools</a>
+          
+            <a href="/tags/Workflow/" rel="tag"># Workflow</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/06/16/Tools-Security/" rel="next" title="欲善其事先利其器（信息安全篇）">
+                <i class="fa fa-chevron-left"></i> 欲善其事先利其器（信息安全篇）
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/09/02/Advices-to-Trainee-CN/" rel="prev" title="研究生训练概要">
+                研究生训练概要 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNTA3MS8xMTYwNg=="></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/vi/graffiti-gli.jpg"
+                alt="Gang Li" />
+            
+              <p class="site-author-name" itemprop="name">Gang Li</p>
+              <p class="site-description motion-element" itemprop="description">帮主随笔</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">categories</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/tuliplab" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i></a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://goo.gl/gnjEJn" target="_blank" title="Google Scholar"><i class="fa fa-fw fa-google"></i></a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://twitter.com/gangli" target="_blank" title="Twitter"><i class="fa fa-fw fa-twitter"></i></a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://www.linkedin.com/in/ligang" target="_blank" title="Linkedin"><i class="fa fa-fw fa-linkedin"></i></a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://www.reddit.com/r/tuliplab/" target="_blank" title="Reddit (tuliplab)"><i class="fa fa-fw fa-reddit"></i></a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+            <div class="cc-license motion-element" itemprop="license">
+              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank">
+                <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+              </a>
+            </div>
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.tulip.org.au" title="TULIP Lab" target="_blank">TULIP Lab</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#LaTeX-Foundations"><span class="nav-number">1.</span> <span class="nav-text">LaTeX Foundations</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Grammar-Spelling-Checking-for-LaTeX"><span class="nav-number">1.1.</span> <span class="nav-text">Grammar/Spelling Checking for LaTeX</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#ASpell"><span class="nav-number">1.1.1.</span> <span class="nav-text">ASpell</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Grammar-Checking-Tools"><span class="nav-number">1.1.2.</span> <span class="nav-text">Grammar Checking Tools</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Queequeg"><span class="nav-number">1.1.2.1.</span> <span class="nav-text">Queequeg</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#TeXtidote"><span class="nav-number">1.1.2.2.</span> <span class="nav-text">TeXtidote</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Polymorphical-Editions"><span class="nav-number">1.2.</span> <span class="nav-text">Polymorphical Editions</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Conference-tex"><span class="nav-number">1.2.1.</span> <span class="nav-text">Conference.tex:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Journal-tex"><span class="nav-number">1.2.2.</span> <span class="nav-text">Journal.tex:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Report-tex"><span class="nav-number">1.2.3.</span> <span class="nav-text">Report.tex:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mainbody-tex"><span class="nav-number">1.2.4.</span> <span class="nav-text">mainbody.tex:</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Collaborative-Writing-in-Git-LaTeX"><span class="nav-number">2.</span> <span class="nav-text">Collaborative Writing in Git + LaTeX</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Setup-Git-Repositories"><span class="nav-number">2.1.</span> <span class="nav-text">Setup Git Repositories</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#One-Repository-in-local-texmf-tree-For-All-Papers"><span class="nav-number">2.1.1.</span> <span class="nav-text">One Repository in local texmf tree For All Papers</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Put-the-bib-in-local-texmf-tree"><span class="nav-number">2.1.1.1.</span> <span class="nav-text">Put the .bib in local texmf tree</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Add-local-texmf-tree-to-git"><span class="nav-number">2.1.1.2.</span> <span class="nav-text">Add local texmf tree to git</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#One-Repository-Per-Paper"><span class="nav-number">2.1.2.</span> <span class="nav-text">One Repository Per Paper</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#LaTeX-git-workflow"><span class="nav-number">2.2.</span> <span class="nav-text">LaTeX git workflow</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Git-Flow"><span class="nav-number">2.2.1.</span> <span class="nav-text">Git-Flow</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#LaTeX-Git-Flow"><span class="nav-number">2.2.2.</span> <span class="nav-text">LaTeX + Git-Flow</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Rules-for-Collaborative-LaTeXing"><span class="nav-number">3.</span> <span class="nav-text">Rules for Collaborative LaTeXing</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Rules-for-LaTeX-Source-Code"><span class="nav-number">3.1.</span> <span class="nav-text">Rules for LaTeX Source Code</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Rules-for-LaTeX-Git-Workflow"><span class="nav-number">3.2.</span> <span class="nav-text">Rules for LaTeX+Git Workflow</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Gang Li</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Mist</a> v6.0.6</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.6"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.6"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.6"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.6"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.6"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

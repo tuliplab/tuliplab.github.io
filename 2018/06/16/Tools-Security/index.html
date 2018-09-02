@@ -99,18 +99,21 @@
 
 
 
-  <meta name="description" content="All of life is an act of letting go,but what hurts the most is not taking a moment to say goodbye.">
-<meta name="keywords" content="mood,中文">
+  <meta name="description" content="我习惯以工作流（Workflow）的自动化程度、安全程度、以及核心任务效率来选择工作环境和软件工具。10年前，办公室用的是ArchLinux，后来换用Laptop后发现Linux系统通常电源管理效率不高：Windows可以跑4个小时的ThinkPad，Linux差不多1个半小时就撑不住了。2010年左右，毅然投入了Mac阵营，当然更重要的原因可能是：   男人有钱就变坏，Linux用户有钱就用Ma">
+<meta name="keywords" content="GTD,中文,Tools">
 <meta property="og:type" content="article">
-<meta property="og:title" content="振雄兄和倪墨姐">
-<meta property="og:url" content="http://blog.tulip.org.au/2018/06/11/Nemo/index.html">
+<meta property="og:title" content="欲善其事先利其器（信息安全篇）">
+<meta property="og:url" content="http://blog.tulip.org.au/2018/06/16/Tools-Security/index.html">
 <meta property="og:site_name" content="My 1937">
-<meta property="og:description" content="All of life is an act of letting go,but what hurts the most is not taking a moment to say goodbye.">
+<meta property="og:description" content="我习惯以工作流（Workflow）的自动化程度、安全程度、以及核心任务效率来选择工作环境和软件工具。10年前，办公室用的是ArchLinux，后来换用Laptop后发现Linux系统通常电源管理效率不高：Windows可以跑4个小时的ThinkPad，Linux差不多1个半小时就撑不住了。2010年左右，毅然投入了Mac阵营，当然更重要的原因可能是：   男人有钱就变坏，Linux用户有钱就用Ma">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-07-31T04:44:38.000Z">
+<meta property="og:image" content="http://blog.tulip.org.au/images/DNS-Leak.png">
+<meta property="og:image" content="http://blog.tulip.org.au/images/EnDecrypt.png">
+<meta property="og:updated_time" content="2018-06-23T11:12:09.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="振雄兄和倪墨姐">
-<meta name="twitter:description" content="All of life is an act of letting go,but what hurts the most is not taking a moment to say goodbye.">
+<meta name="twitter:title" content="欲善其事先利其器（信息安全篇）">
+<meta name="twitter:description" content="我习惯以工作流（Workflow）的自动化程度、安全程度、以及核心任务效率来选择工作环境和软件工具。10年前，办公室用的是ArchLinux，后来换用Laptop后发现Linux系统通常电源管理效率不高：Windows可以跑4个小时的ThinkPad，Linux差不多1个半小时就撑不住了。2010年左右，毅然投入了Mac阵营，当然更重要的原因可能是：   男人有钱就变坏，Linux用户有钱就用Ma">
+<meta name="twitter:image" content="http://blog.tulip.org.au/images/DNS-Leak.png">
 
 
 
@@ -119,7 +122,7 @@
 
 
 
-  <link rel="canonical" href="http://blog.tulip.org.au/2018/06/11/Nemo/"/>
+  <link rel="canonical" href="http://blog.tulip.org.au/2018/06/16/Tools-Security/"/>
 
 
 
@@ -129,7 +132,7 @@
   };
 </script>
 
-  <title>振雄兄和倪墨姐 | My 1937</title>
+  <title>欲善其事先利其器（信息安全篇） | My 1937</title>
   
 
 
@@ -367,7 +370,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.tulip.org.au/2018/06/11/Nemo/">
+    <link itemprop="mainEntityOfPage" href="http://blog.tulip.org.au/2018/06/16/Tools-Security/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Gang Li">
@@ -384,7 +387,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">振雄兄和倪墨姐</h1>
+          <h1 class="post-title" itemprop="name headline">欲善其事先利其器（信息安全篇）</h1>
         
 
         <div class="post-meta">
@@ -396,7 +399,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-06-11T18:50:30+08:00">2018-06-11</time>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-06-17T01:22:19+10:00">2018-06-17</time>
             
 
             
@@ -417,7 +420,7 @@
                 <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Enterprise/" itemprop="url" rel="index"><span itemprop="name">Enterprise</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Workflow/" itemprop="url" rel="index"><span itemprop="name">Workflow</span></a></span>
 
                 
                 
@@ -451,17 +454,103 @@
       
 
       
-        <blockquote class="blockquote-center">All of life is an act of letting go,<br>but what hurts the most is not taking a moment to say goodbye.<br></blockquote>
+        <p>我习惯以工作流（Workflow）的自动化程度、安全程度、以及核心任务效率来选择工作环境和软件工具。10年前，办公室用的是<code>ArchLinux</code>，后来换用Laptop后发现<code>Linux</code>系统通常电源管理效率不高：<code>Windows</code>可以跑4个小时的ThinkPad，<code>Linux</code>差不多1个半小时就撑不住了。2010年左右，毅然投入了<code>Mac</code>阵营，当然更重要的原因可能是：</p>
+  <blockquote class="blockquote-center">男人有钱就变坏，Linux用户有钱就用Mac！<br>  <cite>Anonymous</cite></blockquote>
 
 <a id="more"></a>
-<p>我比较有影响力的科研工作都是和合作者一起做出来的。纵横江湖二十年，对我的影响特别大是两位合作者：一直视我为小弟的振雄兄，以及一直视我为大哥的倪墨妹。</p>
-<p>某种程度上来说，振雄兄是我科研的引路人。和他合作伊始，我便观摩、学习他系统的研究方法、研究规划，以及学术交流的技巧等；而倪墨妹呢，最开始算是我的学生，而我的各种心得体会都悉心传授。可是，为什么我称呼她倪墨姐呢？</p>
-<p>这得从她思维方式谈起，女生最大的加分项就是兼具某些男性化的思维方式。当一个女人表达出卓越的理性和洞察力，对男人当前面临的难题发表出一针见血的见解，这个时候在异性眼中简直是满分。倪墨就是这种神一样的存在，特别是在2012-2014年，她经常能够对我各个方面规划都给出了令我大开眼界的建议，所以，我尊称她为倪魔羯。这世上有魅力的人，总是那些同时具有男女两种思维方式的人，很幸运我这辈子碰到的振雄兄和倪魔姐都有这样的魅力。</p>
-<p>只可惜人生是一场停不下的旅程，守住一个地方，也挡不住头上的白发，留不住飞去的时光。</p>
-<blockquote class="blockquote-center">任何一件匪夷所思的事情背后，<br>都有一个不为人知的真实原因，以及一个明显非常有说服力所以广为大家接受的公开原因！<br></blockquote>
+<p><code>Mac</code>的方便之处在于可以无缝接入<code>Unix/Linux</code>技巧，特别是<code>~/.ssh</code>、<code>~/.config</code>、<code>~/.gnupg</code>等各类配置文件拿来就用。多年来积累下的许多偷懒技巧都是跨平台的，在心情和状态不好的时候，打算把这些常用的工作流整理总结一下，也许还有优化的余地。</p>
+<p>这篇介绍网络环境下的远程协作常用的信息安全工具。</p>
+<h2 id="网络工具"><a href="#网络工具" class="headerlink" title="网络工具"></a>网络工具</h2><h3 id="即时通讯"><a href="#即时通讯" class="headerlink" title="即时通讯"></a>即时通讯</h3><ul>
+<li><a href="https://www.dingtalk.com" target="_blank" rel="noopener">钉钉</a>： 如果单纯看集成功能，钉钉是用过的最方便、最大方的系统。可以提供全球手机短信、中国手机语音提示等功能，内置邮件管理系统、<code>石墨文档</code>、<code>Teambition</code>、<code>共享空间</code>等附加功能，对于中小研究团队非常合适。</li>
+</ul>
+<blockquote class="blockquote-center"> Use anything by Open Whisper Systems.<br><cite>Edward Snowden</cite></blockquote>
 
-
-
+<ul>
+<li><p><a href="https://signal.org" target="_blank" rel="noopener">Signal</a>：Snowden推荐的即时通讯协议，按说不大容易被偷听到吧。</p>
+</li>
+<li><p><a href="https://www.whatsapp.com" target="_blank" rel="noopener">WhatsApp</a>：不熟悉<code>Signal</code>的人喜欢用这个，现在归Facebook了，慎用。</p>
+</li>
+</ul>
+<h3 id="VPN"><a href="#VPN" class="headerlink" title="VPN"></a>VPN</h3><p>许多大学和公司都提供了<code>VPN</code>服务，但是在许多时候会有必要使用自己的<code>VPN</code>服务器。这方面网络上有许多不错的<a href="https://www.lifehacker.com.au/2017/04/how-to-set-up-your-own-completely-free-vpn-in-the-cloud/" target="_blank" rel="noopener">教程</a>，通常需要的平台和服务类似于：</p>
+<ul>
+<li><p><a href="https://www.godaddy.com" target="_blank" rel="noopener">GoDaddy</a>：域名注册和管理</p>
+</li>
+<li><p><a href="https://aws.amazon.com/ec2/" target="_blank" rel="noopener">Amazon EC2</a>：设置虚拟服务器<code>VPS</code></p>
+</li>
+<li><p><a href="https://www.whatsmydns.net" target="_blank" rel="noopener">WhatsMyDNS</a>：测试DNS</p>
+</li>
+</ul>
+<p>有了自己完全控制的<code>VPS</code>，你可以安装不同的服务包括<code>VPN</code>。用过最方便的是：</p>
+<ul>
+<li><a href="https://github.com/trailofbits/algo" target="_blank" rel="noopener">Algo</a></li>
+</ul>
+<p>服务器设置好后，别忘记了在自己的手机和计算机上面安装<code>VPN</code>服务器的<code>Apple Profile</code>或者<code>Certificate</code>。连上后，用<a href="https://whoer.net" target="_blank" rel="noopener">Whoer</a>或者<a href="https://www.whatismyip.com" target="_blank" rel="noopener">WhatisMyIP</a>查看一下显示的<code>IP</code>信息是否如你所愿：</p>
+<h3 id="触网无痕"><a href="#触网无痕" class="headerlink" title="触网无痕"></a>触网无痕</h3><ul>
+<li><p><a href="https://www.torproject.org" target="_blank" rel="noopener">Tor</a>：著名的洋葱网络，通常配置起来不大容易。好在现在可以直接下载<a href="https://www.torproject.org/projects/torbrowser.html.en" target="_blank" rel="noopener">Tor Browser</a>，即装即用<sup id="a1"><a href="#fn1">1</a></sup>。</p>
+</li>
+<li><p><a href="https://www.opendns.com/about/innovations/dnscrypt/" target="_blank" rel="noopener">DNSCrypt</a>：洋葱网络也不能完全保证安全，DNS查询时大多数ISP会知道你访问的是什么网站，这就是<a href="https://dnsleaktest.com/what-is-a-dns-leak.html" target="_blank" rel="noopener"><code>DNS Leakage</code></a>问题，如下图所示：</p>
+</li>
+</ul>
+<p><img src="/images/DNS-Leak.png" alt="DNS Leakage"></p>
+<p>你的公司或者大学尽管不知道你在每个网站访问了什么内容，但通常非常清楚你访问了什么网站，甚至一些中间DNS也会知道这些。你可以用<a href="https://dnsleaktest.com/what-is-a-dns-leak.html" target="_blank" rel="noopener">DNSLeakTest.com</a>检查目前DNS查询是否不安全。采用<code>DNSCrypt</code>应该可以避免这些问题。当然，你的公司或者大学也会有<a href="https://dnsleaktest.com/what-is-transparent-dns-proxy.html" target="_blank" rel="noopener">其他手段</a>，包括防止你采用<code>DNSCrypt</code><sup id="a2"><a href="#fn2">2</a></sup>。</p>
+<p>如果你使用OpenVPN的话，可以在VPN服务器配置 <code>.conf</code> (or <code>.ovpn</code>)上面设置<a href="https://dnsleaktest.com/how-to-fix-a-dns-leak.html" target="_blank" rel="noopener">关闭外界DNS</a>。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">block-outside-dns</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p><a href="https://duckduckgo.com" target="_blank" rel="noopener">DuckDuckGo</a>：网络搜索引擎采用这个。学术论文搜索可以用<a href="https://wwww.google.com" target="_blank" rel="noopener">Google</a>或者<a href="https://wwww.bing.com" target="_blank" rel="noopener">Bing</a>补充。</p>
+</li>
+<li><p>浏览器扩展：大多数浏览器都有扩展功能，我自己使用下面这些：</p>
+<ul>
+<li><a href="https://www.ghostery.com" target="_blank" rel="noopener">Ghostery</a> </li>
+<li><a href="https://github.com/el1t/uBlock-Safari" target="_blank" rel="noopener">uBlock</a>，upstream软件在是<a href="https://github.com/gorhill/uBlock" target="_blank" rel="noopener">uBlock</a>，需要熟悉一下<a href="https://github.com/fang5566/uBlock/wiki/动态过滤快速指南" target="_blank" rel="noopener">文档</a>。</li>
+<li><a href="https://duckduckgo.com/app" target="_blank" rel="noopener">DuckDuckGo</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h2><h3 id="SSH-Connection"><a href="#SSH-Connection" class="headerlink" title="SSH Connection"></a><code>SSH</code> Connection</h3><p><code>SSH Keys</code>可以让你在远程<code>ssh</code>登陆服务器的时候，不需要每次都输入命令。这方面的中英文教程非常多，随便哪一篇都可以。</p>
+<ul>
+<li><a href="https://help.github.com/categories/authenticating-to-github" target="_blank" rel="noopener">https://help.github.com/categories/authenticating-to-github</a></li>
+<li><a href="https://confluence.atlassian.com/bitbucket/ssh-keys-935365775.html" target="_blank" rel="noopener">https://confluence.atlassian.com/bitbucket/ssh-keys-935365775.html</a></li>
+</ul>
+<h4 id="SSH-公钥私钥"><a href="#SSH-公钥私钥" class="headerlink" title="SSH 公钥私钥"></a><code>SSH</code> 公钥私钥</h4><p>目前情况下，建议采用<code>4096 bits</code> RSA key。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -b 4096</span><br></pre></td></tr></table></figure>
+<p>生成密钥的时候别忘记设置<code>passphrase</code>，这个在文件被人拿走的时候可以多一层保护。生成完成的话，会在<code>~/.ssh</code>目录下产生2个文件：私钥<code>id_rsa</code>和公钥<code>id_rsa.pub</code>。这个私钥非常重要，必须千方百计保护好；公钥可以发送到<code>ssh</code>服务器上面。下面的命令可以检查，这个公钥是不是有效编码：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -l -f .ssh/id_rsa.pub</span><br></pre></td></tr></table></figure></p>
+<p>如果你只有私钥，你可以用下面的命令重新生成公钥：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -y -f ~/.ssh/id_rsa &gt; ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure></p>
+<h4 id="SSH-公钥上传"><a href="#SSH-公钥上传" class="headerlink" title="SSH 公钥上传"></a><code>SSH</code> 公钥上传</h4><p>所有你需要使用的<code>ssh</code>服务器，都可以放一份公钥到<code>~/.ssh/authorized_keys</code>文件中，命令如下：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-copy-id user@remote.example.com</span><br></pre></td></tr></table></figure></p>
+<p>对于<a href="https://www.github.com" target="_blank" rel="noopener">GitHub</a>，你可以把公钥内容通过浏览器贴到<a href="https://github.com/settings/keys" target="_blank" rel="noopener">Personal Settings</a>里面：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub|pbcopy</span><br></pre></td></tr></table></figure></p>
+<p>GitHub测试命令如下：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure></p>
+<p>让系统记住你的Passphrase:<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/bin/ssh-add -K</span><br></pre></td></tr></table></figure></p>
+<h3 id="PGP-Encryption"><a href="#PGP-Encryption" class="headerlink" title="PGP Encryption"></a><code>PGP</code> Encryption</h3><p>如果你觉得保密性不重要，那么想想你会把情书用明信片寄出去吗？GPG公钥/私钥模式，把如同明信片一样明文通信内容，加上了一个只有收件人才能打开的信封。GPG是PGP的GPL实现，和<code>ssh</code>密钥类似，也是有公钥、私钥之分。见到一个比较有意思的类比：公钥相当于你的银行帐号，私钥相当于你的银行卡。银行帐号是公开的，朋友可以用这个来给你汇钱；银行卡需要小心藏好，你需要凭它以去取你的钱。在通讯中，可以用私钥签名数据，用公钥验证签名；或者用对方的公钥加密数据，对方利用其私钥才解密，具体如下图示：</p>
+<p><img src="/images/EnDecrypt.png" alt="EnDecrypt"></p>
+<p>这里的逻辑和名字一样有些绕，建议参考这篇<a href="https://zhuanlan.zhihu.com/p/29575509?utm_medium=social&amp;utm_source=ZHShareTargetIDMore" target="_blank" rel="noopener">网文</a>。</p>
+<h4 id="PGP-公钥私钥"><a href="#PGP-公钥私钥" class="headerlink" title="PGP 公钥私钥"></a><code>PGP</code> 公钥私钥</h4><p>许多参考文献<sup id="a3"><a href="#ref">3</a></sup>都提供了详细的命令行用法。<code>MacOS</code>有一个很方便的GUI工具<a href="https://gpgtools.org" target="_blank" rel="noopener">GPG Suite</a>，可以管理密钥，也提供了<code>Apple Mail</code>和<code>Services</code>的扩展，可以方便进行邮件、文件还有文字的签名。</p>
+<p>密钥生成的时候，需要注意如下几点：</p>
+<ul>
+<li>密钥长度至少设置为<code>4096</code></li>
+<li>设置<code>passphrase</code></li>
+<li>生成<code>revocation certificate</code><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gpg --output revoke.asc --gen-revoke &lt;myKeyID&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>PGP私钥和撤销钥都需要小心保护。公钥可以发布出去，供和你加密通讯或确认你的签名。公钥可以用下面生成：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gpg -a --output key.public --export &lt;myKeyID&gt;</span><br></pre></td></tr></table></figure></p>
+<p>此外，你还可以发布你的<code>fingerprint</code>。例如我的<code>fingerprint</code>是：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">fingerprint:  B288 97A6 061C 8228 7E27 E9D4 4CBE EB6E CA42 5B3D</span><br><span class="line">long id:                                    4CBE EB6E CA42 5B3D</span><br><span class="line">short id:                                             CA42 5B3D</span><br></pre></td></tr></table></figure></p>
+<p>你可以基于<code>fingerprint</code>找到公钥：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gpg --recv-keys CA425B3D</span><br></pre></td></tr></table></figure></p>
+<h4 id="加密签名"><a href="#加密签名" class="headerlink" title="加密签名"></a>加密签名</h4><h5 id="文件签名"><a href="#文件签名" class="headerlink" title="文件签名"></a>文件签名</h5><p>如果你打算对一个文件<code>MyDoc.pdf</code>签名，下面命令可以生成独立签名文件<code>MyDoc.pdf.sig</code>：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gpg -b MyDoc.pdf</span><br></pre></td></tr></table></figure></p>
+<p>收到这两个文件的时候，可以验证签名：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gpg --verify MyDoc.pdf.sig</span><br></pre></td></tr></table></figure></p>
+<h5 id="加密解密"><a href="#加密解密" class="headerlink" title="加密解密"></a>加密解密</h5><p>比如如果你打算加密后送给我文件<code>MyDoc.pdf</code>，可以用下面命令生成一个新文件<code>MyDoc.pdf.gpg</code>：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gpg -r gangli -e myDoc.pdf</span><br></pre></td></tr></table></figure></p>
+<p>我收到后，可以解密：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gpg -d myDoc.pdf.gpg --output myDoc.pdf</span><br></pre></td></tr></table></figure></p>
+<h4 id="Visual-Studio-Code设置"><a href="#Visual-Studio-Code设置" class="headerlink" title="Visual Studio Code设置"></a><code>Visual Studio Code</code>设置</h4><p>VSC有个<code>GPG</code>扩展，可以对文本编辑器中的内容进行加密、解密。</p>
+<h3 id="账号管理"><a href="#账号管理" class="headerlink" title="账号管理"></a>账号管理</h3><p>注册的网站多了，有时会遇见一个苦恼：密码大体记得，跑不了是常用的若干个之一，但是用户名忘记了。这里最好是采用<code>Password Manager</code>。著名的包括<code>1Password</code>、<code>LastPass</code>等，另外一个好用的是<a href="https://keepass.info" target="_blank" rel="noopener">KeePass</a>及其<a href="https://www.keepassxc.org" target="_blank" rel="noopener">KeePassXC</a>。你的所有账户信息、甚至密钥都可以放同一个<code>.kdbx</code>数据文件中，保护好这个文件并且别忘记添加<code>passphrase</code>。</p>
+<hr>
+<p><a name="fn1">1</a>: 不小心发现大学的网络一直不让大家链接到<a href="https://www.torproject.org" target="_blank" rel="noopener">Tor</a>。<a href="#a1">↩</a></p>
+<p><a name="fn2">2</a>: 我的大学网络上面居然不能使用DNSCrpyt，只能在家里网络上面使用。 <a href="#a2">↩</a></p>
+<h2 id="参考文献↩"><a href="#参考文献↩" class="headerlink" title="参考文献↩"></a><a name="ref">参考文献</a><a href="#a3">↩</a></h2><ul>
+<li><a href="https://confluence.atlassian.com/bitbucket/set-up-an-ssh-key-728138079.html" target="_blank" rel="noopener">https://confluence.atlassian.com/bitbucket/set-up-an-ssh-key-728138079.html</a></li>
+<li><a href="https://help.github.com/articles/generating-a-new-gpg-key/" target="_blank" rel="noopener">https://help.github.com/articles/generating-a-new-gpg-key/</a></li>
+<li><a href="http://aplawrence.com/Basics/gpg.html" target="_blank" rel="noopener">http://aplawrence.com/Basics/gpg.html</a></li>
+<li><a href="https://www.lifehacker.com.au/2013/08/how-to-encrypt-your-email-and-keep-your-conversations-private/" target="_blank" rel="noopener">https://www.lifehacker.com.au/2013/08/how-to-encrypt-your-email-and-keep-your-conversations-private/</a> </li>
+<li><a href="http://www.ruanyifeng.com/blog/2013/07/gpg.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2013/07/gpg.html</a></li>
+<li><a href="http://www.alexgao.com/2009/01/24/gpg/" target="_blank" rel="noopener">http://www.alexgao.com/2009/01/24/gpg/</a></li>
+<li><a href="http://blog.csdn.net/heavenboya/article/details/6684800" target="_blank" rel="noopener">http://blog.csdn.net/heavenboya/article/details/6684800</a></li>
+</ul>
 
       
     </div>
@@ -482,9 +571,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/mood/" rel="tag"># mood</a>
+            <a href="/tags/GTD/" rel="tag"># GTD</a>
           
             <a href="/tags/Chinese/" rel="tag"># 中文</a>
+          
+            <a href="/tags/Tools/" rel="tag"># Tools</a>
           
         </div>
       
@@ -497,8 +588,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/02/Puppy/" rel="next" title="Puppy">
-                <i class="fa fa-chevron-left"></i> Puppy
+              <a href="/2018/06/11/Nemo/" rel="next" title="振雄兄和倪墨姐">
+                <i class="fa fa-chevron-left"></i> 振雄兄和倪墨姐
               </a>
             
           </div>
@@ -507,8 +598,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/06/16/Tools-Security/" rel="prev" title="欲善其事先利其器（信息安全篇）">
-                欲善其事先利其器（信息安全篇） <i class="fa fa-chevron-right"></i>
+              <a href="/2018/07/30/Tools-LaTeX/" rel="prev" title="欲善其事先利其器（LaTeX Workflow）">
+                欲善其事先利其器（LaTeX Workflow） <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -563,8 +654,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -713,6 +813,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#网络工具"><span class="nav-number">1.</span> <span class="nav-text">网络工具</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#即时通讯"><span class="nav-number">1.1.</span> <span class="nav-text">即时通讯</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#VPN"><span class="nav-number">1.2.</span> <span class="nav-text">VPN</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#触网无痕"><span class="nav-number">1.3.</span> <span class="nav-text">触网无痕</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#工作"><span class="nav-number">2.</span> <span class="nav-text">工作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#SSH-Connection"><span class="nav-number">2.1.</span> <span class="nav-text">SSH Connection</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#SSH-公钥私钥"><span class="nav-number">2.1.1.</span> <span class="nav-text">SSH 公钥私钥</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#SSH-公钥上传"><span class="nav-number">2.1.2.</span> <span class="nav-text">SSH 公钥上传</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PGP-Encryption"><span class="nav-number">2.2.</span> <span class="nav-text">PGP Encryption</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#PGP-公钥私钥"><span class="nav-number">2.2.1.</span> <span class="nav-text">PGP 公钥私钥</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#加密签名"><span class="nav-number">2.2.2.</span> <span class="nav-text">加密签名</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#文件签名"><span class="nav-number">2.2.2.1.</span> <span class="nav-text">文件签名</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#加密解密"><span class="nav-number">2.2.2.2.</span> <span class="nav-text">加密解密</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Visual-Studio-Code设置"><span class="nav-number">2.2.3.</span> <span class="nav-text">Visual Studio Code设置</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#账号管理"><span class="nav-number">2.3.</span> <span class="nav-text">账号管理</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考文献↩"><span class="nav-number">3.</span> <span class="nav-text">参考文献↩</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
