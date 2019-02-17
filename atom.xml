@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.tulip.org.au/"/>
-  <updated>2019-02-17T04:46:38.000Z</updated>
+  <updated>2019-02-17T09:46:07.000Z</updated>
   <id>http://blog.tulip.org.au/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>以油腻避免油腻</title>
+    <link href="http://blog.tulip.org.au/2019/02/17/Fitness/"/>
+    <id>http://blog.tulip.org.au/2019/02/17/Fitness/</id>
+    <published>2019-02-17T09:35:09.000Z</published>
+    <updated>2019-02-17T09:46:07.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;The best of all medicines are resting and fasting！&lt;br&gt;&lt;cite&gt;Benjamin Franklin&lt;/cite&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;最近与二十年前的同学、学弟和朋友联系得比较多，不熟悉的人通常会惊讶于一群人中的老大居然看起来最年轻，往往会打听驻颜秘诀。思考了一番，觉得这得益于20、30年来成长在一个未来非常明晰的环境，所以能够有规划地工作、生活，也避免了许多无谓的烦恼和纠结。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Workflow" scheme="http://blog.tulip.org.au/categories/Workflow/"/>
+    
+    
+      <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
+    
+      <category term="GTD" scheme="http://blog.tulip.org.au/tags/GTD/"/>
+    
+  </entry>
   
   <entry>
     <title>Acknowlegement 2018</title>
@@ -102,9 +127,9 @@
       <category term="Workflow" scheme="http://blog.tulip.org.au/categories/Workflow/"/>
     
     
-      <category term="GTD" scheme="http://blog.tulip.org.au/tags/GTD/"/>
-    
       <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
+    
+      <category term="GTD" scheme="http://blog.tulip.org.au/tags/GTD/"/>
     
       <category term="Tools" scheme="http://blog.tulip.org.au/tags/Tools/"/>
     
@@ -194,9 +219,9 @@
       <category term="Workflow" scheme="http://blog.tulip.org.au/categories/Workflow/"/>
     
     
-      <category term="GTD" scheme="http://blog.tulip.org.au/tags/GTD/"/>
-    
       <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
+    
+      <category term="GTD" scheme="http://blog.tulip.org.au/tags/GTD/"/>
     
       <category term="Tools" scheme="http://blog.tulip.org.au/tags/Tools/"/>
     
