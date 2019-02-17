@@ -111,7 +111,7 @@
 <meta property="og:image" content="http://blog.tulip.org.au/images/gitlatex-flow02.png">
 <meta property="og:image" content="http://blog.tulip.org.au/images/git-flow.png">
 <meta property="og:image" content="http://blog.tulip.org.au/images/gitlatex-flow03.png">
-<meta property="og:updated_time" content="2018-09-06T01:57:03.000Z">
+<meta property="og:updated_time" content="2019-02-17T03:17:01.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="欲善其事先利其器（LaTeX Workflow）">
 <meta name="twitter:description" content="In the past three decades, I have spent most of my writing time in typing LaTeX for academic papers, research presentations, assignments and even examination papers. As is the natural inclination for">
@@ -506,7 +506,7 @@
 <h5 id="Put-the-bib-in-local-texmf-tree"><a href="#Put-the-bib-in-local-texmf-tree" class="headerlink" title="Put the .bib in local texmf tree"></a>Put the <code>.bib</code> in local <code>texmf</code> tree</h5><p>At our team, we have several common bibliographic files in the BibTeX format: <code>tuliplab.bib</code>, <code>deeplearning.bib</code>, <code>tourism.bib</code> and <code>hospitality.bib</code> etc. They reside in our common texmf tree in the subfolder <code>/bibtex/bib/</code>. Hence, all members can specify the bibliography by only using the file name (such as <code>\bibliography{tuliplab}</code> without the full path) — no matter where your working copy of the common <code>texmf</code> tree is located.</p>
 <h5 id="Add-local-texmf-tree-to-git"><a href="#Add-local-texmf-tree-to-git" class="headerlink" title="Add local texmf tree to git"></a>Add local <code>texmf</code> tree to git</h5><p>Once you have created that tree, add it to git. Then when ever you work on a new computer check out the repo from git, and tell your <code>TeX</code> distribution to know about the local <code>texmf</code> tree.</p>
 <h4 id="One-Repository-Per-Paper"><a href="#One-Repository-Per-Paper" class="headerlink" title="One Repository Per Paper"></a>One Repository Per Paper</h4><p>There are many free or public available platforms for <code>Git</code>, such as <code>GitHub</code> or <code>Bitbucket</code>. You need to create one new repository in your chosen <code>git</code> platform, and initialize it with all the necessary <code>.tex</code> and <code>.bib</code> files. We recommend the following folder structure:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">├── .git                        # Git folder automatically created upon git checkout.</span><br><span class="line">│   ├── ...                </span><br><span class="line">│   ├── gitHeadInfo.gin         # auto generated git information </span><br><span class="line">│   └── hooks                   # store those triggers so that gitinfo can be auto generated</span><br><span class="line">├── Data                        # contains the training data, test data, validation data sets</span><br><span class="line">├── Code                        # contains the source code, script, or Python notebook </span><br><span class="line">└── Report                      # tex, bib files</span><br><span class="line">    ├── figures                 # subfolder</span><br><span class="line">    ├── Report.tex</span><br><span class="line">    ├── Slides.tex</span><br><span class="line">    ├── Poster.tex</span><br><span class="line">    └── ...</span><br><span class="line">`</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">├── .git                        # Git folder automatically created upon git checkout.</span><br><span class="line">│   ├── ...                </span><br><span class="line">│   ├── gitHeadInfo.gin         # auto generated git information </span><br><span class="line">│   └── hooks                   # store those triggers so that gitinfo can be auto generated</span><br><span class="line">├── Data                        # contains the training data, test data, validation data sets</span><br><span class="line">├── Code                        # contains the source code, script, or Python notebook </span><br><span class="line">└── Report                      # tex, bib files</span><br><span class="line">    ├── figures                 # subfolder</span><br><span class="line">    ├── report.tex              # working draft master file, you should use this for CS papers</span><br><span class="line">    ├── report-htm.tex          # working draft master file, you should use this for HTM papers</span><br><span class="line">    ├── report-lncs.tex         # template master file for Springer conferences LNCS format</span><br><span class="line">    ├── report-ieee.tex         # template master file for IEEE conferences  format</span><br><span class="line">    ├── report-acm.tex          # template master file for ACM conferences  format</span><br><span class="line">    ├── mainbody.tex            # mainbody TeX file for your paper </span><br><span class="line">    ├── tuliplab.bib            # BIB file for tuliplab publications </span><br><span class="line">    ├── yourbib.bib             # BIB file for your own research paper&apos;s references  </span><br><span class="line">    ├── slides.tex</span><br><span class="line">    ├── poster.tex</span><br><span class="line">    └── ...</span><br><span class="line">`</span><br></pre></td></tr></table></figure>
 <p>For version information, you need to use the following package:</p>
 <ul>
 <li><p><a href="https://www.ctan.org/pkg/gitinfo2" target="_blank" rel="noopener">GitInfo2</a>: This package requires some configurations under your project’s <code>.git/hooks</code> folder, and after that it will work like a charm. </p>
@@ -548,7 +548,7 @@
 </li>
 <li><p>If your comment has been properly addressed by co-authors, you <strong>MUST</strong> remove or comment out both the <em>original</em> and the <em>response</em> marginal comments.</p>
 </li>
-<li>You can use the following code to indicate where you are updating up to: <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\HRule %TODO: YourName up to here!</span><br></pre></td></tr></table></figure>
+<li>You can customize related blocks and use the following code to indicate where you are updating up to: <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\gliMarker %TODO: YourName up to here!</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <h3 id="Rules-for-LaTeX-Git-Workflow"><a href="#Rules-for-LaTeX-Git-Workflow" class="headerlink" title="Rules for LaTeX+Git Workflow"></a>Rules for <code>LaTeX</code>+<code>Git</code> Workflow</h3><ol>
@@ -716,8 +716,6 @@
                     
                       
                     
-                      
-                    
                     <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
@@ -815,10 +813,6 @@
                     <a href="http://www.tulip.org.au" title="TULIP Lab" target="_blank">TULIP Lab</a>
                   </li>
                 
-                  <li class="links-of-blogroll-item">
-                    <a href="https://github.com/tulip-lab" title="GitHub (TULIP Lab)" target="_blank">GitHub (TULIP Lab)</a>
-                  </li>
-                
               </ul>
             </div>
           
@@ -861,7 +855,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

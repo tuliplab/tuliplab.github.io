@@ -109,7 +109,7 @@
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://blog.tulip.org.au/images/DNS-Leak.png">
 <meta property="og:image" content="http://blog.tulip.org.au/images/EnDecrypt.png">
-<meta property="og:updated_time" content="2018-06-23T11:12:09.000Z">
+<meta property="og:updated_time" content="2019-02-17T03:00:21.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="欲善其事先利其器（信息安全篇）">
 <meta name="twitter:description" content="我习惯以工作流（Workflow）的自动化程度、安全程度、以及核心任务效率来选择工作环境和软件工具。10年前，办公室用的是ArchLinux，后来换用Laptop后发现Linux系统通常电源管理效率不高：Windows可以跑4个小时的ThinkPad，Linux差不多1个半小时就撑不住了。2010年左右，毅然投入了Mac阵营，当然更重要的原因可能是：   男人有钱就变坏，Linux用户有钱就用Ma">
@@ -513,7 +513,7 @@
 </ul>
 <h4 id="SSH-公钥私钥"><a href="#SSH-公钥私钥" class="headerlink" title="SSH 公钥私钥"></a><code>SSH</code> 公钥私钥</h4><p>目前情况下，建议采用<code>4096 bits</code> RSA key。</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -b 4096</span><br></pre></td></tr></table></figure>
-<p>生成密钥的时候别忘记设置<code>passphrase</code>，这个在文件被人拿走的时候可以多一层保护。生成完成的话，会在<code>~/.ssh</code>目录下产生2个文件：私钥<code>id_rsa</code>和公钥<code>id_rsa.pub</code>。这个私钥非常重要，必须千方百计保护好；公钥可以发送到<code>ssh</code>服务器上面。下面的命令可以检查，这个公钥是不是有效编码：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -l -f .ssh/id_rsa.pub</span><br></pre></td></tr></table></figure></p>
+<p>生成密钥的时候别忘记设置<code>passphrase</code>，这个在文件被人拿走的时候可以多一层保护。生成完成的话，会在<code>~/.ssh</code>目录下产生2个文件：私钥<code>id_rsa</code>和公钥<code>id_rsa.pub</code>。这个私钥非常重要，必须千方百计保护好；公钥可以发送到<code>ssh</code>服务器上面。下面的命令可以检查，这个公钥是不是有效编码：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -l -f ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure></p>
 <p>如果你只有私钥，你可以用下面的命令重新生成公钥：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -y -f ~/.ssh/id_rsa &gt; ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure></p>
 <h4 id="SSH-公钥上传"><a href="#SSH-公钥上传" class="headerlink" title="SSH 公钥上传"></a><code>SSH</code> 公钥上传</h4><p>所有你需要使用的<code>ssh</code>服务器，都可以放一份公钥到<code>~/.ssh/authorized_keys</code>文件中，命令如下：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-copy-id user@remote.example.com</span><br></pre></td></tr></table></figure></p>
 <p>对于<a href="https://www.github.com" target="_blank" rel="noopener">GitHub</a>，你可以把公钥内容通过浏览器贴到<a href="https://github.com/settings/keys" target="_blank" rel="noopener">Personal Settings</a>里面：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub|pbcopy</span><br></pre></td></tr></table></figure></p>
@@ -702,8 +702,6 @@
                     
                       
                     
-                      
-                    
                     <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
@@ -801,10 +799,6 @@
                     <a href="http://www.tulip.org.au" title="TULIP Lab" target="_blank">TULIP Lab</a>
                   </li>
                 
-                  <li class="links-of-blogroll-item">
-                    <a href="https://github.com/tulip-lab" title="GitHub (TULIP Lab)" target="_blank">GitHub (TULIP Lab)</a>
-                  </li>
-                
               </ul>
             </div>
           
@@ -847,7 +841,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

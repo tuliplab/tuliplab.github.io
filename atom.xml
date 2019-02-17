@@ -33,9 +33,9 @@
       <category term="Students" scheme="http://blog.tulip.org.au/categories/Students/"/>
     
     
-      <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
-    
       <category term="Methodology" scheme="http://blog.tulip.org.au/tags/Methodology/"/>
+    
+      <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
     
   </entry>
   
@@ -44,7 +44,7 @@
     <link href="http://blog.tulip.org.au/2018/07/31/Tools-LaTeX/"/>
     <id>http://blog.tulip.org.au/2018/07/31/Tools-LaTeX/</id>
     <published>2018-07-30T15:22:19.000Z</published>
-    <updated>2018-09-06T01:57:03.000Z</updated>
+    <updated>2019-02-17T03:17:01.000Z</updated>
     
     <summary type="html">
     
@@ -68,7 +68,7 @@
     <link href="http://blog.tulip.org.au/2018/06/17/Tools-Security/"/>
     <id>http://blog.tulip.org.au/2018/06/17/Tools-Security/</id>
     <published>2018-06-16T15:22:19.000Z</published>
-    <updated>2018-06-23T11:12:09.000Z</updated>
+    <updated>2019-02-17T03:00:21.000Z</updated>
     
     <summary type="html">
     
@@ -160,7 +160,7 @@
     <link href="http://blog.tulip.org.au/2018/04/21/Tools-Info-Management/"/>
     <id>http://blog.tulip.org.au/2018/04/21/Tools-Info-Management/</id>
     <published>2018-04-21T10:42:45.000Z</published>
-    <updated>2018-10-07T12:47:38.000Z</updated>
+    <updated>2019-02-17T03:30:52.000Z</updated>
     
     <summary type="html">
     
