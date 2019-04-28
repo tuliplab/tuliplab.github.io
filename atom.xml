@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.tulip.org.au/"/>
-  <updated>2019-04-07T06:11:32.000Z</updated>
+  <updated>2019-04-28T23:42:47.000Z</updated>
   <id>http://blog.tulip.org.au/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>How I Travel</title>
+    <link href="http://blog.tulip.org.au/2019/04/29/HowITravel/"/>
+    <id>http://blog.tulip.org.au/2019/04/29/HowITravel/</id>
+    <published>2019-04-28T23:42:06.000Z</published>
+    <updated>2019-04-28T23:42:47.000Z</updated>
+    
+    <summary type="html">
+    
+      The article has been encrypted, please enter your password to view.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Workflow" scheme="http://blog.tulip.org.au/categories/Workflow/"/>
+    
+    
+      <category term="GTD" scheme="http://blog.tulip.org.au/tags/GTD/"/>
+    
+      <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
+    
+  </entry>
   
   <entry>
     <title>以油腻避免油腻</title>
@@ -35,9 +57,9 @@
       <category term="Workflow" scheme="http://blog.tulip.org.au/categories/Workflow/"/>
     
     
-      <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
-    
       <category term="GTD" scheme="http://blog.tulip.org.au/tags/GTD/"/>
+    
+      <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
     
   </entry>
   
@@ -80,9 +102,9 @@
       <category term="Students" scheme="http://blog.tulip.org.au/categories/Students/"/>
     
     
-      <category term="Methodology" scheme="http://blog.tulip.org.au/tags/Methodology/"/>
-    
       <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
+    
+      <category term="Methodology" scheme="http://blog.tulip.org.au/tags/Methodology/"/>
     
   </entry>
   
@@ -127,9 +149,9 @@
       <category term="Workflow" scheme="http://blog.tulip.org.au/categories/Workflow/"/>
     
     
-      <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
-    
       <category term="GTD" scheme="http://blog.tulip.org.au/tags/GTD/"/>
+    
+      <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
     
       <category term="Tools" scheme="http://blog.tulip.org.au/tags/Tools/"/>
     
@@ -140,7 +162,7 @@
     <link href="http://blog.tulip.org.au/2018/06/11/Nemo/"/>
     <id>http://blog.tulip.org.au/2018/06/11/Nemo/</id>
     <published>2018-06-11T10:50:30.000Z</published>
-    <updated>2019-04-15T09:23:00.000Z</updated>
+    <updated>2019-04-15T09:25:52.000Z</updated>
     
     <summary type="html">
     
@@ -216,9 +238,9 @@
       <category term="Workflow" scheme="http://blog.tulip.org.au/categories/Workflow/"/>
     
     
-      <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
-    
       <category term="GTD" scheme="http://blog.tulip.org.au/tags/GTD/"/>
+    
+      <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
     
       <category term="Tools" scheme="http://blog.tulip.org.au/tags/Tools/"/>
     
