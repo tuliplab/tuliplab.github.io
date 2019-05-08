@@ -2,29 +2,24 @@
 
 
 
+
+
+
+
+
+
+
+
+
   
 
 
 <html class="theme-next mist use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
-<meta name="theme-color" content="#222">
-
-
-
-
-
-
-
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="theme-color" content="#222"/>
 
 
 
@@ -47,37 +42,39 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=6.0.6" rel="stylesheet" type="text/css" />
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/vi/apple-touch-icon.png?v=6.0.6">
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2"/>
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.1"/>
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/vi/favicon-32x32.png?v=6.0.6">
+  <link rel="apple-touch-icon" sizes="180x180" href="/vi/apple-touch-icon.png?v=7.1.1">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/vi/favicon-16x16.png?v=6.0.6">
+  <link rel="icon" type="image/png" sizes="32x32" href="/vi/favicon-32x32.png?v=7.1.1">
 
 
-  <link rel="mask-icon" href="/vi/safari-pinned-tab.svg?v=6.0.6" color="#222">
+  <link rel="icon" type="image/png" sizes="16x16" href="/vi/favicon-16x16.png?v=7.1.1">
 
 
-
-
+  <link rel="mask-icon" href="/vi/safari-pinned-tab.svg?v=7.1.1" color="#222">
 
 
 
 
 
-<script type="text/javascript" id="hexo.configurations">
+
+
+<script id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
     scheme: 'Mist',
-    version: '6.0.6',
+    version: '7.1.1',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    back2top: ,
+    back2top_sidebar: ,
     fancybox: false,
     fastclick: false,
     lazyload: false,
@@ -112,16 +109,17 @@
 
 
 
-  <link rel="alternate" href="/atom.xml" title="My 1937" type="application/atom+xml" />
+  <link rel="alternate" href="/atom.xml" title="My 1937" type="application/atom+xml"/>
 
 
 
-
+  
+  
   <link rel="canonical" href="http://blog.tulip.org.au/"/>
 
 
 
-<script type="text/javascript" id="page.configurations">
+<script id="page.configurations">
   CONFIG.page = {
     sidebar: "",
   };
@@ -133,14 +131,8 @@
 
 
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-10909670-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-10909670-2');
-</script>
+
 
 
 
@@ -148,29 +140,27 @@
 
 
   <noscript>
-  <style type="text/css">
-    .use-motion .motion-element,
-    .use-motion .brand,
-    .use-motion .menu-item,
-    .sidebar-inner,
-    .use-motion .post-block,
-    .use-motion .pagination,
-    .use-motion .comments,
-    .use-motion .post-header,
-    .use-motion .post-body,
-    .use-motion .collection-title { opacity: initial; }
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
 
-    .use-motion .logo,
-    .use-motion .site-title,
-    .use-motion .site-subtitle {
-      opacity: initial;
-      top: initial;
-    }
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
 
-    .use-motion {
-      .logo-line-before i { left: initial; }
-      .logo-line-after i { right: initial; }
-    }
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
   </style>
 </noscript>
 
@@ -188,10 +178,8 @@
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"> 
-
-<div class="site-brand-wrapper">
-  <div class="site-meta ">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
     
 
     <div class="custom-logo-site-title">
@@ -201,9 +189,12 @@
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+    
       
         <p class="site-subtitle">Road to Rise</p>
       
+    
+    
   </div>
 
   <div class="site-nav-toggle">
@@ -215,65 +206,106 @@
   </div>
 </div>
 
-<nav class="site-nav">
-  
 
+
+<nav class="site-nav">
   
     <ul id="menu" class="menu">
       
         
         
-          
-  <li class="menu-item menu-item-home">
-    <a href="/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
-</li>
-
-      
-        
         
           
-  <li class="menu-item menu-item-about">
-    <a href="/about/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />About</a>
-</li>
+          <li class="menu-item menu-item-home menu-item-active">
 
+    
+    
+    
       
-        
-        
-          
-  <li class="menu-item menu-item-tags">
-    <a href="/tags/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />Tags</a>
-</li>
+    
 
-      
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br/>Home</a>
+
+  </li>
+        
         
         
           
-  <li class="menu-item menu-item-categories">
-    <a href="/categories/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />Categories</a>
-</li>
+          <li class="menu-item menu-item-about">
 
+    
+    
+    
       
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br/>About</a>
+
+  </li>
+        
         
         
           
-  <li class="menu-item menu-item-archives">
-    <a href="/archives/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
-</li>
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br/>Tags</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br/>Categories</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br/>Archives</a>
+
+  </li>
 
       
-
       
         <li class="menu-item menu-item-search">
           
             <a href="javascript:;" class="popup-trigger">
           
             
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />Search</a>
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br/>Search</a>
         </li>
       
     </ul>
@@ -281,28 +313,6 @@
 
   
     
-
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
 
   
 
@@ -333,11 +343,12 @@
 </nav>
 
 
+
   
 
 
 
- </div>
+</div>
     </header>
 
     
@@ -366,16 +377,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.tulip.org.au/2019/04/29/HowITravel/">
+    <link itemprop="mainEntityOfPage" href="http://blog.tulip.org.au/2019/04/29/HowITravel/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Gang Li">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/vi/graffiti-gli.jpg">
+      <meta itemprop="name" content="Gang Li"/>
+      <meta itemprop="description" content="帮主随笔"/>
+      <meta itemprop="image" content="/images/avatar.gif"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="My 1937">
+      <meta itemprop="name" content="My 1937"/>
     </span>
 
     
@@ -385,11 +396,20 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/04/29/HowITravel/" itemprop="url">How I Travel</a></h1>
+                
+                <a href="/2019/04/29/HowITravel/" class="post-title-link" itemprop="url">How I Travel</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -397,17 +417,19 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-29T09:42:06+10:00">2019-04-29</time>
-            
 
-            
+              
+                
+              
+
+              <time title="Created: 2019-04-29 09:42:06" itemprop="dateCreated datePublished" datetime="2019-04-29T09:42:06+10:00">2019-04-29</time>
             
 
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -427,6 +449,7 @@
           
 
           
+            
             
           
 
@@ -455,11 +478,7 @@
         
           The article has been encrypted, please enter your password to view.<br>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/04/29/HowITravel/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
+          
           <!--/noindex-->
         
       
@@ -473,6 +492,9 @@
 
     
 
+    
+      
+    
     
 
     
@@ -512,16 +534,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.tulip.org.au/2019/02/17/Fitness/">
+    <link itemprop="mainEntityOfPage" href="http://blog.tulip.org.au/2019/02/17/Fitness/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Gang Li">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/vi/graffiti-gli.jpg">
+      <meta itemprop="name" content="Gang Li"/>
+      <meta itemprop="description" content="帮主随笔"/>
+      <meta itemprop="image" content="/images/avatar.gif"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="My 1937">
+      <meta itemprop="name" content="My 1937"/>
     </span>
 
     
@@ -531,11 +553,20 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/02/17/Fitness/" itemprop="url">以油腻避免油腻</a></h1>
+                
+                <a href="/2019/02/17/Fitness/" class="post-title-link" itemprop="url">以油腻避免油腻</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -543,17 +574,19 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-02-17T20:35:09+11:00">2019-02-17</time>
-            
 
-            
+              
+                
+              
+
+              <time title="Created: 2019-02-17 20:35:09" itemprop="dateCreated datePublished" datetime="2019-02-17T20:35:09+11:00">2019-02-17</time>
             
 
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -573,6 +606,7 @@
           
 
           
+            
             
           
 
@@ -604,11 +638,7 @@
 
 <p>最近与二十年前的同学、学弟和朋友联系得比较多，不熟悉的人通常会惊讶于一群人中的老大居然看起来最年轻，往往会打听驻颜秘诀。思考了一番，觉得这得益于20、30年来成长在一个未来非常明晰的环境，所以能够有规划地工作、生活，也避免了许多无谓的烦恼和纠结。</p>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/02/17/Fitness/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
+          
           <!--/noindex-->
         
       
@@ -622,6 +652,9 @@
 
     
 
+    
+      
+    
     
 
     
@@ -661,16 +694,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.tulip.org.au/2019/02/04/Acknowlegement2018/">
+    <link itemprop="mainEntityOfPage" href="http://blog.tulip.org.au/2019/02/04/Acknowlegement2018/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Gang Li">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/vi/graffiti-gli.jpg">
+      <meta itemprop="name" content="Gang Li"/>
+      <meta itemprop="description" content="帮主随笔"/>
+      <meta itemprop="image" content="/images/avatar.gif"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="My 1937">
+      <meta itemprop="name" content="My 1937"/>
     </span>
 
     
@@ -680,11 +713,20 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/02/04/Acknowlegement2018/" itemprop="url">Acknowlegement 2018</a></h1>
+                
+                <a href="/2019/02/04/Acknowlegement2018/" class="post-title-link" itemprop="url">Acknowlegement 2018</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -692,17 +734,19 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-02-04T15:32:20+11:00">2019-02-04</time>
-            
 
-            
+              
+                
+              
+
+              <time title="Created: 2019-02-04 15:32:20" itemprop="dateCreated datePublished" datetime="2019-02-04T15:32:20+11:00">2019-02-04</time>
             
 
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -722,6 +766,7 @@
           
 
           
+            
             
           
 
@@ -750,11 +795,7 @@
         
           The article has been encrypted, please enter your password to view.<br>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/02/04/Acknowlegement2018/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
+          
           <!--/noindex-->
         
       
@@ -768,6 +809,9 @@
 
     
 
+    
+      
+    
     
 
     
@@ -807,16 +851,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.tulip.org.au/2018/09/02/Advices-to-Trainee-CN/">
+    <link itemprop="mainEntityOfPage" href="http://blog.tulip.org.au/2018/09/02/Advices-to-Trainee-CN/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Gang Li">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/vi/graffiti-gli.jpg">
+      <meta itemprop="name" content="Gang Li"/>
+      <meta itemprop="description" content="帮主随笔"/>
+      <meta itemprop="image" content="/images/avatar.gif"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="My 1937">
+      <meta itemprop="name" content="My 1937"/>
     </span>
 
     
@@ -826,11 +870,20 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/09/02/Advices-to-Trainee-CN/" itemprop="url">研究生训练概要</a></h1>
+                
+                <a href="/2018/09/02/Advices-to-Trainee-CN/" class="post-title-link" itemprop="url">研究生训练概要</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -838,17 +891,19 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-09-02T15:44:52+10:00">2018-09-02</time>
-            
 
-            
+              
+                
+              
+
+              <time title="Created: 2018-09-02 15:44:52" itemprop="dateCreated datePublished" datetime="2018-09-02T15:44:52+10:00">2018-09-02</time>
             
 
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -868,6 +923,7 @@
           
 
           
+            
             
           
 
@@ -897,11 +953,7 @@
           <p>2018年8月，实验室西北分舵开山女硕士的第一篇习作在<code>CCF C</code>会议<a href="http://ksem2018.venue.link/index.php?c=article&amp;id=158" target="_blank" rel="noopener"><code>KSEM 2018</code></a>上全文录用，并获得了<code>最佳学术论文</code>。这对西北分舵的硕士生是一个非常好的激励，至少树立了一个标杆，让大家看到：通过规范化的科研训练，硕士二年级在入门级国际学术会议上发表论文并不是一个高不可攀的目标。平心而论，实验室对于研究生训练方面颇有心得：自<code>2006</code>年招收研究生到现在，一共有<code>8</code>篇论文荣获最佳论文奖，包括<code>2</code>次年度最佳期刊论文。</p>
 <p>对于从本科刚刚准备进入研究生阶段、或者从本科进入<code>Honours</code>阶段的同学来讲，在学业上最关心的是<code>GPA</code>、托福/雅思成绩、甚至申报材料的多元化、套辞是否吸引人等等；但是从导师角度看，最关心的则是学生是否合适做科研，细分一下大体上会考察性格如何、相关基础知识和技能如何、抗打击能力如何等等。因为这两个方面的不一致，师生双方的接触通常都伴随着痛苦：学生总是觉得老师不欣赏自己，也找不到自己喜欢的研究组；而老师总是难以评估眼前学生的科研潜力。有鉴如此，我觉得有必要是让学生了解科研是什么、知道自己是喜欢科研这个事情还是喜欢这个学位所以不得已而为之？了解这些，可以避免后面双方合作期的大多数苦痛。</p>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/09/02/Advices-to-Trainee-CN/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
+          
           <!--/noindex-->
         
       
@@ -915,6 +967,9 @@
 
     
 
+    
+      
+    
     
 
     
@@ -954,16 +1009,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.tulip.org.au/2018/07/31/Tools-LaTeX/">
+    <link itemprop="mainEntityOfPage" href="http://blog.tulip.org.au/2018/07/31/Tools-LaTeX/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Gang Li">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/vi/graffiti-gli.jpg">
+      <meta itemprop="name" content="Gang Li"/>
+      <meta itemprop="description" content="帮主随笔"/>
+      <meta itemprop="image" content="/images/avatar.gif"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="My 1937">
+      <meta itemprop="name" content="My 1937"/>
     </span>
 
     
@@ -973,11 +1028,20 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/07/31/Tools-LaTeX/" itemprop="url">欲善其事先利其器（LaTeX Workflow）</a></h1>
+                
+                <a href="/2018/07/31/Tools-LaTeX/" class="post-title-link" itemprop="url">欲善其事先利其器（LaTeX Workflow）</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -985,17 +1049,19 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-31T01:22:19+10:00">2018-07-31</time>
-            
 
-            
+              
+                
+              
+
+              <time title="Created: 2018-07-31 01:22:19" itemprop="dateCreated datePublished" datetime="2018-07-31T01:22:19+10:00">2018-07-31</time>
             
 
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -1015,6 +1081,7 @@
           
 
           
+            
             
           
 
@@ -1043,11 +1110,7 @@
         
           <p>In the past three decades, I have spent most of my writing time in typing <code>LaTeX</code> for academic papers, research presentations, assignments and even examination papers. As is the natural inclination for computer scientists, I have been improving my workflow for many years so that I can maximize the productivity while minimizing the labour work. Here is the <code>LaTeX</code> workflow with which I feel comfortable. </p>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/07/31/Tools-LaTeX/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
+          
           <!--/noindex-->
         
       
@@ -1061,6 +1124,9 @@
 
     
 
+    
+      
+    
     
 
     
@@ -1100,16 +1166,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.tulip.org.au/2018/06/17/Tools-Security/">
+    <link itemprop="mainEntityOfPage" href="http://blog.tulip.org.au/2018/06/17/Tools-Security/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Gang Li">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/vi/graffiti-gli.jpg">
+      <meta itemprop="name" content="Gang Li"/>
+      <meta itemprop="description" content="帮主随笔"/>
+      <meta itemprop="image" content="/images/avatar.gif"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="My 1937">
+      <meta itemprop="name" content="My 1937"/>
     </span>
 
     
@@ -1119,11 +1185,20 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/06/17/Tools-Security/" itemprop="url">欲善其事先利其器（信息安全篇）</a></h1>
+                
+                <a href="/2018/06/17/Tools-Security/" class="post-title-link" itemprop="url">欲善其事先利其器（信息安全篇）</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1131,17 +1206,19 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-06-17T01:22:19+10:00">2018-06-17</time>
-            
 
-            
+              
+                
+              
+
+              <time title="Created: 2018-06-17 01:22:19" itemprop="dateCreated datePublished" datetime="2018-06-17T01:22:19+10:00">2018-06-17</time>
             
 
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -1161,6 +1238,7 @@
           
 
           
+            
             
           
 
@@ -1190,11 +1268,7 @@
           <p>我习惯以工作流（Workflow）的自动化程度、安全程度、以及核心任务效率来选择工作环境和软件工具。10年前，办公室用的是<code>ArchLinux</code>，后来换用Laptop后发现<code>Linux</code>系统通常电源管理效率不高：<code>Windows</code>可以跑4个小时的ThinkPad，<code>Linux</code>差不多1个半小时就撑不住了。2010年左右，毅然投入了<code>Mac</code>阵营，当然更重要的原因可能是：</p>
   <blockquote class="blockquote-center">男人有钱就变坏，Linux用户有钱就用Mac！<br>  <cite>Anonymous</cite></blockquote>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/06/17/Tools-Security/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
+          
           <!--/noindex-->
         
       
@@ -1208,6 +1282,9 @@
 
     
 
+    
+      
+    
     
 
     
@@ -1247,16 +1324,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.tulip.org.au/2018/06/11/Nemo/">
+    <link itemprop="mainEntityOfPage" href="http://blog.tulip.org.au/2018/06/11/Nemo/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Gang Li">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/vi/graffiti-gli.jpg">
+      <meta itemprop="name" content="Gang Li"/>
+      <meta itemprop="description" content="帮主随笔"/>
+      <meta itemprop="image" content="/images/avatar.gif"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="My 1937">
+      <meta itemprop="name" content="My 1937"/>
     </span>
 
     
@@ -1266,11 +1343,20 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/06/11/Nemo/" itemprop="url">振雄兄和倪墨姐</a></h1>
+                
+                <a href="/2018/06/11/Nemo/" class="post-title-link" itemprop="url">振雄兄和倪墨姐</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1278,17 +1364,19 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-06-11T20:50:30+10:00">2018-06-11</time>
-            
 
-            
+              
+                
+              
+
+              <time title="Created: 2018-06-11 20:50:30" itemprop="dateCreated datePublished" datetime="2018-06-11T20:50:30+10:00">2018-06-11</time>
             
 
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -1308,6 +1396,7 @@
           
 
           
+            
             
           
 
@@ -1336,11 +1425,7 @@
         
           The article has been encrypted, please enter your password to view.<br>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/06/11/Nemo/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
+          
           <!--/noindex-->
         
       
@@ -1354,6 +1439,9 @@
 
     
 
+    
+      
+    
     
 
     
@@ -1393,16 +1481,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.tulip.org.au/2018/05/02/Puppy/">
+    <link itemprop="mainEntityOfPage" href="http://blog.tulip.org.au/2018/05/02/Puppy/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Gang Li">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/vi/graffiti-gli.jpg">
+      <meta itemprop="name" content="Gang Li"/>
+      <meta itemprop="description" content="帮主随笔"/>
+      <meta itemprop="image" content="/images/avatar.gif"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="My 1937">
+      <meta itemprop="name" content="My 1937"/>
     </span>
 
     
@@ -1412,11 +1500,20 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/05/02/Puppy/" itemprop="url">Puppy</a></h1>
+                
+                <a href="/2018/05/02/Puppy/" class="post-title-link" itemprop="url">Puppy</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1424,17 +1521,19 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-02T14:09:46+10:00">2018-05-02</time>
-            
 
-            
+              
+                
+              
+
+              <time title="Created: 2018-05-02 14:09:46" itemprop="dateCreated datePublished" datetime="2018-05-02T14:09:46+10:00">2018-05-02</time>
             
 
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -1454,6 +1553,7 @@
           
 
           
+            
             
           
 
@@ -1482,11 +1582,7 @@
         
           <p>A student pursuing a PhD is somehow like a dog chewing bones: novel ideas leading into great achievements are like fresh meats between bones. The first step is to sense where the meat bones are. Normally, wherever the dogs are gathering, the bones are abundant ;)</p>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/05/02/Puppy/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
+          
           <!--/noindex-->
         
       
@@ -1500,6 +1596,9 @@
 
     
 
+    
+      
+    
     
 
     
@@ -1539,16 +1638,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.tulip.org.au/2018/04/21/Melancholy/">
+    <link itemprop="mainEntityOfPage" href="http://blog.tulip.org.au/2018/04/21/Melancholy/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Gang Li">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/vi/graffiti-gli.jpg">
+      <meta itemprop="name" content="Gang Li"/>
+      <meta itemprop="description" content="帮主随笔"/>
+      <meta itemprop="image" content="/images/avatar.gif"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="My 1937">
+      <meta itemprop="name" content="My 1937"/>
     </span>
 
     
@@ -1558,11 +1657,20 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/04/21/Melancholy/" itemprop="url">我是人间惆怅客</a></h1>
+                
+                <a href="/2018/04/21/Melancholy/" class="post-title-link" itemprop="url">我是人间惆怅客</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1570,17 +1678,19 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-21T20:50:30+10:00">2018-04-21</time>
-            
 
-            
+              
+                
+              
+
+              <time title="Created: 2018-04-21 20:50:30" itemprop="dateCreated datePublished" datetime="2018-04-21T20:50:30+10:00">2018-04-21</time>
             
 
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -1600,6 +1710,7 @@
           
 
           
+            
             
           
 
@@ -1628,11 +1739,7 @@
         
           The article has been encrypted, please enter your password to view.<br>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/04/21/Melancholy/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
+          
           <!--/noindex-->
         
       
@@ -1646,6 +1753,9 @@
 
     
 
+    
+      
+    
     
 
     
@@ -1685,16 +1795,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.tulip.org.au/2018/04/21/Tools-Info-Management/">
+    <link itemprop="mainEntityOfPage" href="http://blog.tulip.org.au/2018/04/21/Tools-Info-Management/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Gang Li">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/vi/graffiti-gli.jpg">
+      <meta itemprop="name" content="Gang Li"/>
+      <meta itemprop="description" content="帮主随笔"/>
+      <meta itemprop="image" content="/images/avatar.gif"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="My 1937">
+      <meta itemprop="name" content="My 1937"/>
     </span>
 
     
@@ -1704,11 +1814,20 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/04/21/Tools-Info-Management/" itemprop="url">欲善其事先利其器（信息管理篇）</a></h1>
+                
+                <a href="/2018/04/21/Tools-Info-Management/" class="post-title-link" itemprop="url">欲善其事先利其器（信息管理篇）</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1716,17 +1835,19 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-21T20:42:45+10:00">2018-04-21</time>
-            
 
-            
+              
+                
+              
+
+              <time title="Created: 2018-04-21 20:42:45" itemprop="dateCreated datePublished" datetime="2018-04-21T20:42:45+10:00">2018-04-21</time>
             
 
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -1746,6 +1867,7 @@
           
 
           
+            
             
           
 
@@ -1775,11 +1897,7 @@
           <p>信息爆炸时代，如何筛选、阅读、分享自己喜欢的文章，尤显重要。</p>
 <p>这里给大家介绍我多年偷懒如风的Workflow以及支撑工具：</p>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/04/21/Tools-Info-Management/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
+          
           <!--/noindex-->
         
       
@@ -1793,6 +1911,9 @@
 
     
 
+    
+      
+    
     
 
     
@@ -1842,23 +1963,18 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
-    
     <div class="sidebar-inner">
 
       
 
       
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image"
-                src="/vi/graffiti-gli.jpg"
-                alt="Gang Li" />
-            
               <p class="site-author-name" itemprop="name">Gang Li</p>
-              <p class="site-description motion-element" itemprop="description">帮主随笔</p>
+              <div class="site-description motion-element" itemprop="description">帮主随笔</div>
           </div>
 
           
@@ -1878,7 +1994,11 @@
                 
                 
                 <div class="site-state-item site-state-categories">
-                  <a href="/categories/index.html">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
                     
                     
                       
@@ -1897,7 +2017,11 @@
                 
                 
                 <div class="site-state-item site-state-tags">
-                  <a href="/tags/index.html">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
                     
                     
                       
@@ -1932,43 +2056,58 @@
           
 
           
+
+          
             <div class="links-of-author motion-element">
               
                 <span class="links-of-author-item">
-                  <a href="https://github.com/tuliplab" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i></a>
                   
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/tuliplab" title="GitHub &rarr; https://github.com/tuliplab" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i></a>
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="https://goo.gl/gnjEJn" target="_blank" title="Google Scholar"><i class="fa fa-fw fa-google"></i></a>
                   
+                  
+                  
+                    
+                  
+                  <a href="https://goo.gl/gnjEJn" title="Google Scholar &rarr; https://goo.gl/gnjEJn" rel="noopener" target="_blank"><i class="fa fa-fw fa-google"></i></a>
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="https://twitter.com/gangli" target="_blank" title="Twitter"><i class="fa fa-fw fa-twitter"></i></a>
                   
+                  
+                  
+                    
+                  
+                  <a href="https://twitter.com/gangli" title="Twitter &rarr; https://twitter.com/gangli" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i></a>
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="https://www.linkedin.com/in/ligang" target="_blank" title="Linkedin"><i class="fa fa-fw fa-linkedin"></i></a>
                   
+                  
+                  
+                    
+                  
+                  <a href="https://www.linkedin.com/in/ligang" title="Linkedin &rarr; https://www.linkedin.com/in/ligang" rel="noopener" target="_blank"><i class="fa fa-fw fa-linkedin"></i></a>
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="https://www.reddit.com/r/tuliplab/" target="_blank" title="Reddit (tuliplab)"><i class="fa fa-fw fa-reddit"></i></a>
                   
+                  
+                  
+                    
+                  
+                  <a href="https://www.reddit.com/r/tuliplab/" title="Reddit (tuliplab) &rarr; https://www.reddit.com/r/tuliplab/" rel="noopener" target="_blank"><i class="fa fa-fw fa-reddit"></i></a>
                 </span>
               
             </div>
           
 
-          
-          
-            <div class="cc-license motion-element" itemprop="license">
-              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank">
-                <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
-              </a>
-            </div>
           
 
           
@@ -1981,7 +2120,7 @@
               <ul class="links-of-blogroll-list">
                 
                   <li class="links-of-blogroll-item">
-                    <a href="http://www.tulip.org.au" title="TULIP Lab" target="_blank">TULIP Lab</a>
+                    <a href="http://www.tulip.org.au" title="http://www.tulip.org.au" rel="noopener" target="_blank">TULIP Lab</a>
                   </li>
                 
               </ul>
@@ -1994,7 +2133,7 @@
           
 
         </div>
-      </section>
+      </div>
 
       
 
@@ -2002,6 +2141,7 @@
 
     </div>
   </aside>
+  
 
 
         
@@ -2010,9 +2150,9 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2019</span>
-  <span class="with-love">
-    <i class="fa fa-user"></i>
+        <div class="copyright">&copy; 2018 – <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Gang Li</span>
 
@@ -2024,15 +2164,9 @@
 
 
 
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
 
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Mist</a> v6.0.6</div>
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.1.1</div>
 
 
 
@@ -2051,19 +2185,17 @@
     </footer>
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
 
     
 
+    
+
+    
   </div>
 
   
 
-<script type="text/javascript">
+<script>
   if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
     window.Promise = null;
   }
@@ -2082,8 +2214,6 @@
 
 
 
-  
-
 
 
 
@@ -2097,77 +2227,53 @@
 
 
   
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
 
   
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
 
   
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
-  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=6.0.6"></script>
+  <script src="/js/utils.js?v=7.1.1"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=6.0.6"></script>
+  <script src="/js/motion.js?v=7.1.1"></script>
 
 
 
   
   
 
-  
 
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.6"></script>
-
-
-
-  
-
-
-
-	
-
+  <script src="/js/schemes/muse.js?v=7.1.1"></script>
 
 
 
 
   
 
+  
 
 
+  <script src="/js/next-boot.js?v=7.1.1"></script>
 
+
+  
+
+  
+
+  
 
   
 
 
 
-
-
-
-
-
-
-
   
-
-  <script type="text/javascript">
+  <script>
     // Popup Window;
     var isfetched = false;
     var isXml = true;
@@ -2253,7 +2359,7 @@
                 var content = data.content.trim().replace(/<[^>]+>/g,"");
                 
                 var contentInLowerCase = content.toLowerCase();
-                var articleUrl = decodeURIComponent(data.url);
+                var articleUrl = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
                 var indexOfTitle = [];
                 var indexOfContent = [];
                 // only match articles with not empty titles
@@ -2422,9 +2528,9 @@
               })
             };
             if (keywords.length === 1 && keywords[0] === "") {
-              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>'
             } else if (resultItems.length === 0) {
-              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>'
             } else {
               resultItems.sort(function (resultLeft, resultRight) {
                 if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
@@ -2496,8 +2602,6 @@
   
 
   
-
-  
   
 
   
@@ -2530,30 +2634,58 @@
   
     
       <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {
-        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-        processEscapes: true,
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') { next = next.nextSibling }
+        if (next && next.nodeName.toLowerCase() === 'br') { next.parentNode.removeChild(next) }
       }
     });
+  });
 </script>
 
 <script type="text/x-mathjax-config">
-    MathJax.Hub.Queue(function() {
-      var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-    });
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      document.getElementById(all[i].inputID + '-Frame').parentNode.className += ' has-jax';
+    }
+  });
 </script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
     
   
 
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
