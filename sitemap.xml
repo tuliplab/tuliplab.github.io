@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.tulip.org.au/about/index.html</loc>
+    
+    <lastmod>2019-08-15T16:05:59.587Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.tulip.org.au/2018/07/31/Tools-VPS/</loc>
+    
+    <lastmod>2019-08-15T15:57:19.693Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.tulip.org.au/2019/04/29/HowITravel/</loc>
     
-    <lastmod>2019-04-30T00:38:53.000Z</lastmod>
+    <lastmod>2019-04-29T13:17:56.000Z</lastmod>
     
   </url>
   
@@ -53,7 +67,7 @@
   <url>
     <loc>http://blog.tulip.org.au/2018/07/31/Tools-LaTeX/</loc>
     
-    <lastmod>2019-02-17T03:17:01.000Z</lastmod>
+    <lastmod>2019-02-17T03:16:53.000Z</lastmod>
     
   </url>
   
@@ -67,14 +81,7 @@
   <url>
     <loc>http://blog.tulip.org.au/2018/09/02/Advices-to-Trainee-CN/</loc>
     
-    <lastmod>2018-09-06T07:33:59.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.tulip.org.au/about/index.html</loc>
-    
-    <lastmod>2018-09-02T07:53:09.000Z</lastmod>
+    <lastmod>2018-09-06T07:33:47.000Z</lastmod>
     
   </url>
   
@@ -95,7 +102,7 @@
   <url>
     <loc>http://blog.tulip.org.au/2018/04/07/Advices-to-Trainee/</loc>
     
-    <lastmod>2018-04-21T06:12:53.000Z</lastmod>
+    <lastmod>2018-04-21T06:11:52.000Z</lastmod>
     
   </url>
   
