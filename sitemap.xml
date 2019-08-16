@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.tulip.org.au/about/index.html</loc>
+    <loc>http://blog.tulip.org.au/2018/07/31/Tools-VPS/</loc>
     
-    <lastmod>2019-08-15T16:20:43.492Z</lastmod>
+    <lastmod>2019-08-16T08:46:58.851Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.tulip.org.au/2018/07/31/Tools-VPS/</loc>
+    <loc>http://blog.tulip.org.au/2018/04/21/Melancholy/</loc>
     
-    <lastmod>2019-08-15T15:57:19.693Z</lastmod>
+    <lastmod>2019-08-16T07:42:56.952Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.tulip.org.au/2018/06/11/Nemo/</loc>
+    
+    <lastmod>2019-08-16T07:42:50.311Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.tulip.org.au/about/index.html</loc>
+    
+    <lastmod>2019-08-15T16:20:43.492Z</lastmod>
     
   </url>
   
@@ -26,20 +40,6 @@
     <loc>http://blog.tulip.org.au/2019/02/04/Acknowlegement2018/</loc>
     
     <lastmod>2019-04-15T09:26:07.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.tulip.org.au/2018/04/21/Melancholy/</loc>
-    
-    <lastmod>2019-04-15T09:25:57.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.tulip.org.au/2018/06/11/Nemo/</loc>
-    
-    <lastmod>2019-04-15T09:25:52.000Z</lastmod>
     
   </url>
   
