@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.tulip.org.au/2019/02/17/Fitness/</loc>
+    
+    <lastmod>2019-08-19T17:16:54.740Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.tulip.org.au/about/index.html</loc>
+    
+    <lastmod>2019-08-19T17:15:33.739Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.tulip.org.au/2019/08/16/Tools-VPS/</loc>
     
-    <lastmod>2019-08-16T13:29:50.436Z</lastmod>
+    <lastmod>2019-08-18T05:36:43.071Z</lastmod>
     
   </url>
   
@@ -19,13 +33,6 @@
     <loc>http://blog.tulip.org.au/2018/06/11/Nemo/</loc>
     
     <lastmod>2019-08-16T07:42:50.311Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.tulip.org.au/about/index.html</loc>
-    
-    <lastmod>2019-08-15T16:20:43.492Z</lastmod>
     
   </url>
   
@@ -47,13 +54,6 @@
     <loc>http://blog.tulip.org.au/2018/03/21/My-1937/</loc>
     
     <lastmod>2019-04-15T09:25:47.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.tulip.org.au/2019/02/17/Fitness/</loc>
-    
-    <lastmod>2019-04-07T06:11:32.000Z</lastmod>
     
   </url>
   
