@@ -76,15 +76,22 @@
 
   <title>以油腻避免油腻 | My 1937</title>
   
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10909670-2"></script>
     <script>
-      var host = window.location.hostname;
-      if (host !== "localhost" || !true) {
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-10909670-2');
+      function sendPageView() {
+        var host = window.location.hostname;
+        if (host == "localhost" && true) return;
+        var uid = localStorage.getItem('uid') || (Math.random() + '.' + Math.random());
+        localStorage.setItem('uid', uid);
+        navigator.sendBeacon('https://www.google-analytics.com/collect', new URLSearchParams({
+          v  : 1,
+          tid: 'UA-10909670-2',
+          cid: uid,
+          t  : 'pageview',
+          dp : encodeURIComponent(location.pathname)
+        }));
       }
+      document.addEventListener('pjax:complete', sendPageView);
+      sendPageView();
     </script>
 
 
