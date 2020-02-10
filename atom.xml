@@ -32,9 +32,9 @@
       <category term="Students" scheme="http://blog.tulip.org.au/categories/Students/"/>
     
     
-      <category term="Methodology" scheme="http://blog.tulip.org.au/tags/Methodology/"/>
-    
       <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
+    
+      <category term="Methodology" scheme="http://blog.tulip.org.au/tags/Methodology/"/>
     
   </entry>
   
@@ -76,9 +76,9 @@
       <category term="Workflow" scheme="http://blog.tulip.org.au/categories/Workflow/"/>
     
     
-      <category term="GTD" scheme="http://blog.tulip.org.au/tags/GTD/"/>
-    
       <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
+    
+      <category term="GTD" scheme="http://blog.tulip.org.au/tags/GTD/"/>
     
   </entry>
   
@@ -91,9 +91,8 @@
     
     <summary type="html">
     
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt;The best of all medicines are resting and fasting！&lt;br&gt;&lt;cite&gt;Benjamin Franklin&lt;/cite&gt;&lt;/blockquote&gt;
-
-
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;The best of all medicines are resting and fasting！
+&lt;cite&gt;Benjamin Franklin&lt;/cite&gt;&lt;/blockquote&gt;
 &lt;p&gt;最近与二十年前的同学、学弟和朋友联系得比较多，不熟悉的人通常会惊讶于一群人中的老大居然看起来最年轻，往往会打听驻颜秘诀。思考了一番，觉得这得益于20、30年来成长在一个未来非常明晰的环境，所以能够有规划地工作、生活，也避免了许多无谓的烦恼和纠结。&lt;/p&gt;
     
     </summary>
@@ -101,16 +100,16 @@
       <category term="Workflow" scheme="http://blog.tulip.org.au/categories/Workflow/"/>
     
     
-      <category term="GTD" scheme="http://blog.tulip.org.au/tags/GTD/"/>
-    
       <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
+    
+      <category term="GTD" scheme="http://blog.tulip.org.au/tags/GTD/"/>
     
   </entry>
   
   <entry>
     <title>Acknowlegement 2018</title>
-    <link href="http://blog.tulip.org.au/2019/02/04/Acknowlegement2018/"/>
-    <id>http://blog.tulip.org.au/2019/02/04/Acknowlegement2018/</id>
+    <link href="http://blog.tulip.org.au/2019/02/04/Acknowledgement2018/"/>
+    <id>http://blog.tulip.org.au/2019/02/04/Acknowledgement2018/</id>
     <published>2019-02-04T04:32:20.000Z</published>
     <updated>2019-04-15T09:26:07.000Z</updated>
     
@@ -123,9 +122,31 @@
       <category term="Enterprise" scheme="http://blog.tulip.org.au/categories/Enterprise/"/>
     
     
+      <category term="mood" scheme="http://blog.tulip.org.au/tags/mood/"/>
+    
       <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
     
+  </entry>
+  
+  <entry>
+    <title>Acknowlegement 2019</title>
+    <link href="http://blog.tulip.org.au/2019/02/04/Acknowledgement2019/"/>
+    <id>http://blog.tulip.org.au/2019/02/04/Acknowledgement2019/</id>
+    <published>2019-02-04T04:32:20.000Z</published>
+    <updated>2020-02-10T05:45:41.000Z</updated>
+    
+    <summary type="html">
+    
+      The article has been encrypted, please enter your password to view.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Enterprise" scheme="http://blog.tulip.org.au/categories/Enterprise/"/>
+    
+    
       <category term="mood" scheme="http://blog.tulip.org.au/tags/mood/"/>
+    
+      <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
     
   </entry>
   
@@ -145,9 +166,9 @@
       <category term="Students" scheme="http://blog.tulip.org.au/categories/Students/"/>
     
     
-      <category term="Methodology" scheme="http://blog.tulip.org.au/tags/Methodology/"/>
-    
       <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
+    
+      <category term="Methodology" scheme="http://blog.tulip.org.au/tags/Methodology/"/>
     
   </entry>
   
@@ -160,7 +181,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;In the past three decades, I have spent most of my writing time in typing &lt;code&gt;LaTeX&lt;/code&gt; for academic papers, research presentations, assignments and even examination papers. As is the natural inclination for computer scientists, I have been improving my workflow for many years so that I can maximize the productivity while minimizing the labour work. Here is the &lt;code&gt;LaTeX&lt;/code&gt; workflow with which I feel comfortable. &lt;/p&gt;
+      &lt;p&gt;In the past three decades, I have spent most of my writing time in typing &lt;code&gt;LaTeX&lt;/code&gt; for academic papers, research presentations, assignments and even examination papers. As is the natural inclination for computer scientists, I have been improving my workflow for many years so that I can maximize the productivity while minimizing the labour work. Here is the &lt;code&gt;LaTeX&lt;/code&gt; workflow with which I feel comfortable.&lt;/p&gt;
     
     </summary>
     
@@ -191,9 +212,9 @@
       <category term="Workflow" scheme="http://blog.tulip.org.au/categories/Workflow/"/>
     
     
-      <category term="GTD" scheme="http://blog.tulip.org.au/tags/GTD/"/>
-    
       <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
+    
+      <category term="GTD" scheme="http://blog.tulip.org.au/tags/GTD/"/>
     
       <category term="Tools" scheme="http://blog.tulip.org.au/tags/Tools/"/>
     
@@ -215,9 +236,9 @@
       <category term="Enterprise" scheme="http://blog.tulip.org.au/categories/Enterprise/"/>
     
     
-      <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
-    
       <category term="mood" scheme="http://blog.tulip.org.au/tags/mood/"/>
+    
+      <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
     
   </entry>
   
@@ -230,7 +251,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;A student pursuing a PhD is somehow like a dog chewing bones: novel ideas leading into great achievements are like fresh meats between bones. The first step is to sense where the meat bones are. Normally, wherever the dogs are gathering, the bones are abundant ;)&lt;/p&gt;
+      &lt;p&gt;A student pursuing a PhD is somehow like a dog chewing bones: novel ideas leading into great achievements are like fresh meats between bones. The first step is to sense where the meat bones are. Normally, wherever the dogs are gathering, the bones are abundant 😉&lt;/p&gt;
     
     </summary>
     
@@ -257,9 +278,9 @@
       <category term="Enterprise" scheme="http://blog.tulip.org.au/categories/Enterprise/"/>
     
     
-      <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
-    
       <category term="mood" scheme="http://blog.tulip.org.au/tags/mood/"/>
+    
+      <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
     
   </entry>
   
@@ -280,9 +301,9 @@
       <category term="Workflow" scheme="http://blog.tulip.org.au/categories/Workflow/"/>
     
     
-      <category term="GTD" scheme="http://blog.tulip.org.au/tags/GTD/"/>
-    
       <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
+    
+      <category term="GTD" scheme="http://blog.tulip.org.au/tags/GTD/"/>
     
       <category term="Tools" scheme="http://blog.tulip.org.au/tags/Tools/"/>
     
@@ -317,8 +338,8 @@
     
     <summary type="html">
     
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt;套磁是一门艺术！&lt;br&gt;&lt;cite&gt;Bear Guts&lt;/cite&gt;&lt;/blockquote&gt;
-
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;套磁是一门艺术！
+&lt;cite&gt;Bear Guts&lt;/cite&gt;&lt;/blockquote&gt;
 &lt;p&gt;由于研究方向比较热门并且所在的管理职位和博士生入学相关，我差不多每周都能收到10多封套磁信，主要来源于中国、大印度、马来、印尼、中东、还有荷兰。估计由于模板的存在，大多数套磁信还是有礼有节。主要给我印象比较深刻的问题只有如下几个：&lt;/p&gt;
     
     </summary>
@@ -348,9 +369,9 @@
       <category term="Enterprise" scheme="http://blog.tulip.org.au/categories/Enterprise/"/>
     
     
-      <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
-    
       <category term="mood" scheme="http://blog.tulip.org.au/tags/mood/"/>
+    
+      <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
     
   </entry>
   
