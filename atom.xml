@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.tulip.org.au/"/>
-  <updated>2020-02-29T00:31:15.370Z</updated>
+  <updated>2020-04-27T13:58:21.844Z</updated>
   <id>http://blog.tulip.org.au/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://blog.tulip.org.au/2020/04/19/Covid-19-Days/"/>
+    <id>http://blog.tulip.org.au/2020/04/19/Covid-19-Days/</id>
+    <published>2020-04-19T09:49:01.029Z</published>
+    <updated>2020-04-27T13:58:21.844Z</updated>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;p&gt;title: Covid-19 Days&lt;br&gt;
+categories:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Life&lt;br&gt;
+tags:&lt;/li&gt;
+&lt;li&gt;中文&lt;br&gt;
+password: xxx&lt;br&gt;
+date: 2020-04-19 19:49:01&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;百年一遇？千年一遇？这小半年来全世界所经历的应该是在人类历史上值得记录的一笔。从一月底的不知所措、到二月份的心情澎湃、再到三月份的兵临城下、再到四月份的处之泰然，整个世界都被疫情牵动。幸好澳大利亚政府和维多利亚州政府处理得当，一系列Stage 1、2、3规划有序，在大多数国家有些失控的时候，能够顺利抑制住病情的扩散，从而使得许多在这边生活的人内心波澜不惊，在风云变幻中，仍然可以寻得一方宁静。&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Acknowlegement 2019</title>
@@ -98,9 +125,9 @@
       <category term="Workflow" scheme="http://blog.tulip.org.au/categories/Workflow/"/>
     
     
-      <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
-    
       <category term="GTD" scheme="http://blog.tulip.org.au/tags/GTD/"/>
+    
+      <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
     
   </entry>
   
@@ -109,7 +136,7 @@
     <link href="http://blog.tulip.org.au/2019/02/17/Fitness/"/>
     <id>http://blog.tulip.org.au/2019/02/17/Fitness/</id>
     <published>2019-02-17T09:35:09.000Z</published>
-    <updated>2019-08-19T17:16:54.740Z</updated>
+    <updated>2020-02-29T01:14:15.097Z</updated>
     
     <summary type="html">
     
@@ -123,9 +150,9 @@
       <category term="Workflow" scheme="http://blog.tulip.org.au/categories/Workflow/"/>
     
     
-      <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
-    
       <category term="GTD" scheme="http://blog.tulip.org.au/tags/GTD/"/>
+    
+      <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
     
   </entry>
   
@@ -213,9 +240,9 @@
       <category term="Workflow" scheme="http://blog.tulip.org.au/categories/Workflow/"/>
     
     
-      <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
-    
       <category term="GTD" scheme="http://blog.tulip.org.au/tags/GTD/"/>
+    
+      <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
     
       <category term="Tools" scheme="http://blog.tulip.org.au/tags/Tools/"/>
     
@@ -302,9 +329,9 @@
       <category term="Workflow" scheme="http://blog.tulip.org.au/categories/Workflow/"/>
     
     
-      <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
-    
       <category term="GTD" scheme="http://blog.tulip.org.au/tags/GTD/"/>
+    
+      <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
     
       <category term="Tools" scheme="http://blog.tulip.org.au/tags/Tools/"/>
     
