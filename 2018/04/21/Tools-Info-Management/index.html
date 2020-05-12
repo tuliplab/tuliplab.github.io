@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.6.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/vi/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/vi/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/vi/favicon-16x16.png">
+  <link rel="mask-icon" href="/vi/safari-pinned-tab.svg" color="#222">
+  <link rel="alternate" href="/atom.xml" title="My 1937" type="application/atom+xml">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '7.5.0',
+    exturl: false,
+    sidebar: {"position":"right","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: true,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="信息爆炸时代，如何筛选、阅读、分享自己喜欢的文章，尤显重要。 这里给大家介绍我多年偷懒如风的Workflow以及支撑工具：">
+<meta name="keywords" content="中文,GTD,Tools">
+<meta property="og:type" content="article">
+<meta property="og:title" content="欲善其事先利其器（信息管理篇）">
+<meta property="og:url" content="http://blog.tulip.org.au/2018/04/21/Tools-Info-Management/index.html">
+<meta property="og:site_name" content="My 1937">
+<meta property="og:description" content="信息爆炸时代，如何筛选、阅读、分享自己喜欢的文章，尤显重要。 这里给大家介绍我多年偷懒如风的Workflow以及支撑工具：">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://blog.tulip.org.au/images/workflow.png">
+<meta property="og:updated_time" content="2019-11-26T14:04:47.194Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="欲善其事先利其器（信息管理篇）">
+<meta name="twitter:description" content="信息爆炸时代，如何筛选、阅读、分享自己喜欢的文章，尤显重要。 这里给大家介绍我多年偷懒如风的Workflow以及支撑工具：">
+<meta name="twitter:image" content="http://blog.tulip.org.au/images/workflow.png">
+
+<link rel="canonical" href="http://blog.tulip.org.au/2018/04/21/Tools-Info-Management/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>欲善其事先利其器（信息管理篇） | My 1937</title>
+  
+    <script>
+      function sendPageView() {
+        var host = window.location.hostname;
+        if (host == "localhost" && true) return;
+        var uid = localStorage.getItem('uid') || (Math.random() + '.' + Math.random());
+        localStorage.setItem('uid', uid);
+        navigator.sendBeacon('https://www.google-analytics.com/collect', new URLSearchParams({
+          v  : 1,
+          tid: 'UA-10909670-2',
+          cid: uid,
+          t  : 'pageview',
+          dp : encodeURIComponent(location.pathname)
+        }));
+      }
+      document.addEventListener('pjax:complete', sendPageView);
+      sendPageView();
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">My 1937</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">Road to Rise</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+  <a href="https://github.com/tulip-lab" class="github-corner" title="Follow TULIP-Lab on GitHub" aria-label="Follow TULIP-Lab on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
+    <link itemprop="mainEntityOfPage" href="http://blog.tulip.org.au/2018/04/21/Tools-Info-Management/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/vi/graffiti-gli.jpg">
+      <meta itemprop="name" content="Gang Li">
+      <meta itemprop="description" content="帮主随笔">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="My 1937">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          欲善其事先利其器（信息管理篇）
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2018-04-21 20:42:45" itemprop="dateCreated datePublished" datetime="2018-04-21T20:42:45+10:00">2018-04-21</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-11-27 01:04:47" itemprop="dateModified" datetime="2019-11-27T01:04:47+11:00">2019-11-27</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Workflow/" itemprop="url" rel="index">
+                    <span itemprop="name">Workflow</span>
+                  </a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="Views">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-users"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span class="firestore-visitors-count"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>信息爆炸时代，如何筛选、阅读、分享自己喜欢的文章，尤显重要。</p>
+<p>这里给大家介绍我多年偷懒如风的Workflow以及支撑工具：</p>
+<a id="more"></a>
+<h2 id="电脑系统"><a href="#电脑系统" class="headerlink" title="电脑系统"></a>电脑系统</h2><div class="note info">
+            <!-- default primary success info warning danger --><p>在任何时候的事故，例如计算机丢失、硬盘损坏等，都不会影响到你：<br>你仍然可以很快地找到资料的备份，把文件重新同步回来；<br>即使被迫使用不同的操作系统（<code>Windows</code>, <code>OS X</code>, <code>Linux</code>），所有软件都应跨平台以保持工作流程不变。</p>
+          </div>
+<h3 id="文件管理"><a href="#文件管理" class="headerlink" title="文件管理"></a>文件管理</h3><p>高效率的文件管理背后是充分利用各种云存储，当前在世界各地，同步比较迅速的云存储平台包括下面几个：</p>
+<ul>
+<li><p><a href="https://www.dropbox.com" target="_blank" rel="noopener"><code>Dropbox</code></a> 免费账号可以拿到25G空间，可以作为主力同步盘。国内可以用么？</p>
+</li>
+<li><p><a href="https://www.onedrive.com" target="_blank" rel="noopener"><code>OneDrive</code></a> 免费账号可以拿到10G空间，好处是和IOS上面的各种MS工具无缝接入，所以用来存放PPTX文件，以及OneNote笔记</p>
+</li>
+<li><p><a href="https://drive.google.com" target="_blank" rel="noopener"><code>GoogleDrive</code></a> 免费账号可以有15G空间，主要用于<code>Google Doc</code>的在线编辑文档。国内使用需要翻墙</p>
+</li>
+<li><p><a href="https://pan.baidu.com" target="_blank" rel="noopener"><code>Baidu Drive</code></a> 免费账号可以有2T空间，可以用来存放各种视频和课程资料。</p>
+</li>
+</ul>
+<p>教学、研究、管理、个人、家庭事务中会有各类不同的文档，我的建议是：</p>
+<div class="note info">
+            <!-- default primary success info warning danger --><p>确定适合自己所有事务的文件目录结构，各个文件根据其主题就可以明确地归属于特定目录。</p>
+          </div>
+<p>下面是我这些年采用的文件目录结构，默认放在<code>OneDrive</code>：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line">├── Deakin</span><br><span class="line">│   ├── Career                </span><br><span class="line">│   │   ├── ASP</span><br><span class="line">│   │   ├── Letters</span><br><span class="line">│   │   ├── PPR</span><br><span class="line">│   │   ├── Profile</span><br><span class="line">│   │   ├── Promotion</span><br><span class="line">│   │   └── Training</span><br><span class="line">│   ├── Reimbursement</span><br><span class="line">│   │   ├── ...</span><br><span class="line">│   │   ├── 2018</span><br><span class="line">│   │   └── Travel</span><br><span class="line">│   ├── Research                # 研究合作文档 </span><br><span class="line">│   │   ├── Collaboration</span><br><span class="line">│   │   ├── Committee</span><br><span class="line">│   │   ├── GrantApplication   </span><br><span class="line">│   │   ├── Reviewer</span><br><span class="line">│   │   └── Talks</span><br><span class="line">│   └── Teaching                # 课程教学文档 </span><br><span class="line">│       ├── Admin</span><br><span class="line">│       ├── DEAKIN-BIT</span><br><span class="line">│       ├── DEAKIN-HDR</span><br><span class="line">│       ├── DEAKIN-MIT</span><br><span class="line">│       ├── Resources</span><br><span class="line">│       ├── ShortCourses         </span><br><span class="line">│       └── Talks</span><br><span class="line">├── GLi</span><br><span class="line">│   ├── ActiveDesk              # 当前正处理、阅读的文档，同步到OneDrive</span><br><span class="line">│   │   ├── FLIP</span><br><span class="line">│   │   ├── Meeting</span><br><span class="line">│   │   ├── Readings</span><br><span class="line">│   │   ├── Videos</span><br><span class="line">│   │   └── Writing</span><br><span class="line">│   ├── Documents</span><br><span class="line">│   └── Projects                # GIT本地目录，同步到DropBox</span><br><span class="line">├── Home</span><br><span class="line">│   ├── Family</span><br><span class="line">│   └── Finance</span><br><span class="line">├── Shared                      # DropBox共享文档</span><br><span class="line">│   ├── Collaboration</span><br><span class="line">│   ├── Home</span><br><span class="line">│   ├── TULIP</span><br><span class="line">│   └── Temp</span><br><span class="line">└── TULIP                       # 同步到OneDrive</span><br><span class="line">    ├── Admin</span><br><span class="line">    │   ├── Application</span><br><span class="line">    │   ├── GroupMeeting</span><br><span class="line">    │   ├── Induction</span><br><span class="line">    │   ├── Report</span><br><span class="line">    │   └── Regulations</span><br><span class="line">    ├── Repository              # 研究数据、代码、重要论文、博士论文、VI</span><br><span class="line">    │   ├── Codes</span><br><span class="line">    │   ├── Data</span><br><span class="line">    │   ├── Publications</span><br><span class="line">    │   ├── Thesis</span><br><span class="line">    │   └── VI</span><br><span class="line">    └── Supervision</span><br><span class="line">        ├── Archive</span><br><span class="line">        ├── Members</span><br><span class="line">        └── Notes               # 指导笔记、点子库</span><br><span class="line">`</span><br></pre></td></tr></table></figure>
+<h3 id="系统备份"><a href="#系统备份" class="headerlink" title="系统备份"></a>系统备份</h3><p>这里指的是软件系统。如果可能，尽量采用跨平台的软件，比如我经常使用的办公软件包括：</p>
+<ul>
+<li><a href="https://products.office.com" target="_blank" rel="noopener"><code>Microsoft Office</code></a>：除了常见套件，<code>OneNote</code>也是日常笔记工具</li>
+<li><a href="https://www.apple.com/safari/" target="_blank" rel="noopener"><code>Safari</code></a>：在<code>Mac</code>上运行比较节省电池电量，而且也有不错的扩展，比如<code>DuckDuckGo Privacy Essentials</code>、<code>Pocket</code>、<code>Grammarly</code>、<code>Ghostery</code>、<code>uBlock Origin</code>等。<a href="https://developer.apple.com/safari/technology-preview/" target="_blank" rel="noopener"><code>Safari Technology Preview</code></a>可以作为后备，当某些网站被安全扩展block的时候使用。另外<code>Firefox</code>、<code>TorBrowser</code>、<code>Chrome</code>、<code>Brave-Browser</code>也作为必要补充</li>
+<li><a href="https://code.visualstudio.com/" target="_blank" rel="noopener"><code>Visual Studio Code</code></a>：文本编辑器</li>
+<li><a href="https://www.syntevo.com/smartgit/" target="_blank" rel="noopener"><code>SmartGIT</code></a>：Git客户端</li>
+</ul>
+<p>软件安装不复杂，但麻烦在于怎么让这些自动化起来？以及怎么保持配置自动恢复？</p>
+<p>在<code>Mac</code>上，我把常用的软件安装写成了一个<a href="https://github.com/tuliplab/macsetup" target="_blank" rel="noopener"><code>MacSetup</code></a>，可以支持计算机上重新安装所有软件，并且一行命令升级整个系统。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./brewup.sh</span><br></pre></td></tr></table></figure>
+<p>其中使用了两个高效率的工具：</p>
+<ul>
+<li><a href="https://brew.sh" target="_blank" rel="noopener"><code>Homebrew</code></a>：用于Linux/Unix工具以及<code>Cask</code>软件的安装和升级自动化</li>
+<li><a href="https://github.com/lra/mackup" target="_blank" rel="noopener"><code>Mackup</code></a>：常用软件的配置文件备份，其实是直接放云盘，恢复的时候链接回即可</li>
+</ul>
+<h2 id="信息获取"><a href="#信息获取" class="headerlink" title="信息获取"></a>信息获取</h2><h3 id="资源管理"><a href="#资源管理" class="headerlink" title="资源管理"></a>资源管理</h3><p>信息分为两种：明确知道来源的信息，比如某大牛的微博、微信、博客等等，这种一般不会令你失望；另一种是他方推荐过来的信息，通常需要使用<code>朋友圈</code>、<code>reddit</code>来看看其他人都在阅读什么。相应地，有不同的工具和平台：</p>
+<ul>
+<li><p><a href="https://feedly.com" target="_blank" rel="noopener"><code>Feedly</code></a> 对于目前知道来源的信息，可以订阅其<code>RSS</code>。作为<code>Google Reader</code>之后比较方便的平台，免费账号在功能上基本满足要求。其100个订阅的限度也可以帮助我们精简资源，每次临近额度的时候，都可以删除一些不再更新的<code>RSS</code>。</p>
+<p>本地的话，可以用<code>Reeder</code>同步Feedly账号，看有哪些更新阅读。</p>
+</li>
+<li><p><a href="https://www.reddit.com" target="_blank" rel="noopener"><code>Reddit</code></a> 如果没有用过的话，这个类似于<code>百度贴吧</code>，或者<code>抽屉</code>？受好评的帖子会被顶到上面。</p>
+</li>
+<li><p><a href="https://www.quora.com" target="_blank" rel="noopener"><code>Quora</code></a> 类似于国内的知乎，可以碰到好多牛人，比如<a href="https://www.quora.com/profile/Andrew-Ng" target="_blank" rel="noopener">Andrew Ng</a>，<a href="https://www.quora.com/profile/Yann-LeCun" target="_blank" rel="noopener">Yan Lecun</a>。在上面可以问各种问题，也会看到好多有趣的回答。</p>
+</li>
+</ul>
+<h3 id="稍后阅读"><a href="#稍后阅读" class="headerlink" title="稍后阅读"></a>稍后阅读</h3><p>按说浏览器、微信、Twitter等都可以直接阅读，并且方便回复。但是，信息收藏、阅读渠道太多会显得杂乱无章，而且不容易搜索或分享，所以后来我的非工作阅读就统一到一个软件：</p>
+<ul>
+<li><a href="https://getpocket.com" target="_blank" rel="noopener"><code>Pocket</code></a> Pocket在各主流浏览器上都有插件，碰到喜欢的网页，直接存到<code>Pocket</code>即可。阅读的时候，碰到喜欢的文章， <code>Favorite</code>一下；想分享的时候，<code>Tag</code>一下，比如标成<code>buffer</code>。</li>
+</ul>
+<h2 id="归档分享"><a href="#归档分享" class="headerlink" title="归档分享"></a>归档分享</h2><p>平时需要经常使用的信息，用<code>OneNote</code>记录，以便及时参考。系统化的信息，包括工作流、文件结构等等，用<a href="https://blog.tulip.org.au/categories/Workflow/"><code>Blog</code></a>整理出来，给其他人做参考。</p>
+<p>你可能觉得，<code>Pocket</code>中喜欢的内容，<code>Tag</code>或<code>Favorite</code>一下到底会发生什么呢？我主要是采用<a href="https://ifttt.com" target="_blank" rel="noopener"><code>If This Then That</code></a>的服务，结合如下平台：</p>
+<ul>
+<li><a href="https://evernote.com" target="_blank" rel="noopener">Evernote</a>是我用过的最佳归档工具。它的检索非常快，而且网页版插件也非常好用。</li>
+<li><a href="https://buffer.com" target="_blank" rel="noopener">BufferApp</a>可以作为社交网络帖子的缓存，你可以设置如何定期贴出去。有时间的话，可以琢磨着许多偷懒的办法。利用这个结合<code>IFTTT</code>把好多社交网络账号比如<code>Weibo</code>、<code>Twitter</code>还有<code>Yammer</code>统一起来，只要发一次，其他账号自动同步发。</li>
+</ul>
+<h2 id="偷懒如风"><a href="#偷懒如风" class="headerlink" title="偷懒如风"></a>偷懒如风</h2><p>除了研究之外，许多事务我尽量安排自动化进行。附上我目前的工作流：</p>
+<p><img src="/images/workflow.png" alt="Workflow"></p>
+<p>该流程用<a href="https://dreampuf.github.io/GraphvizOnline/" target="_blank" rel="noopener">Graphviz</a>生成，其<code>dot</code>源代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line">digraph G &#123;</span><br><span class="line">  rankdir = LR</span><br><span class="line">  IFTTT [shape=tripleoctagon,style=filled,color=lightblue];</span><br><span class="line">  Pocket [shape=folder,style=filled,color=lightblue];</span><br><span class="line">  Buffer [shape=tab,style=filled,color=lightblue];</span><br><span class="line">  Evernote [shape=folder,style=filled,color=lightgrey]</span><br><span class="line">  </span><br><span class="line">  subgraph cluster_0 &#123;</span><br><span class="line">    node [style=filled];</span><br><span class="line">    color=blue</span><br><span class="line">    label = &quot;Information Collection&quot;;</span><br><span class="line"></span><br><span class="line">    RSS -&gt; Feedly -&gt; Reeder  </span><br><span class="line">    StumbleUpon -&gt; Safari  </span><br><span class="line">    Reddit</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">    Reeder -&gt;  Pocket</span><br><span class="line">    Safari -&gt;  Pocket  </span><br><span class="line">    IFTTT  -&gt;  Pocket [label= &quot;from reddit&quot; ]</span><br><span class="line">    IFTTT  -&gt;  Buffer [label= &quot;tag `buffer&apos;&quot; ]</span><br><span class="line">    Pocket -&gt;  IFTTT [label= &quot;tag `omnifocus&apos;&quot; ]</span><br><span class="line">    Pocket -&gt;  IFTTT [label= &quot;flip `Favorite&apos;&quot; ]</span><br><span class="line">    Pocket -&gt;  IFTTT [label= &quot;tag `buffer&apos;&quot; ]</span><br><span class="line">    Reddit -&gt;  IFTTT [label= &quot;`upvote&apos; or `save&apos;&quot; ]</span><br><span class="line"></span><br><span class="line">  subgraph cluster_1 &#123;</span><br><span class="line">    node [style=filled];</span><br><span class="line">    label = &quot;Social Networks&quot;;</span><br><span class="line">    color=blue</span><br><span class="line">    Twitter</span><br><span class="line">    Yammer</span><br><span class="line">    Facebook</span><br><span class="line">    Linkedin</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">    Buffer -&gt; Twitter </span><br><span class="line">    Buffer -&gt; Yammer [style=dashed]</span><br><span class="line">    Buffer -&gt; Facebook [style=dashed]</span><br><span class="line">    Buffer -&gt; Linkedin [style=dashed]</span><br><span class="line">  </span><br><span class="line">  subgraph cluster_2 &#123;</span><br><span class="line">    node [style=filled];</span><br><span class="line">    label = &quot;Personal Records&quot;;</span><br><span class="line">    color=blue</span><br><span class="line">    Contacts</span><br><span class="line">    FourSquare</span><br><span class="line">    Calendar</span><br><span class="line">    Omnifocus</span><br><span class="line">    DayOne</span><br><span class="line">    Google -&gt; Contacts</span><br><span class="line">    Google -&gt; Calendar</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">    IFTTT -&gt; Yammer </span><br><span class="line">    IFTTT -&gt; Facebook</span><br><span class="line">    IFTTT -&gt; Linkedin</span><br><span class="line">    IFTTT -&gt; Calendar [label= &quot;personal record&quot; ]</span><br><span class="line">    IFTTT -&gt; DayOne [label= &quot;regular journal&quot; ]</span><br><span class="line">    IFTTT -&gt; Evernote  [label= &quot;`favorite&apos; in Pocket&quot; ]</span><br><span class="line">    IFTTT -&gt; Omnifocus [label= &quot;tag `omnifocus&apos;&quot; ]</span><br><span class="line">    FourSquare -&gt; IFTTT [label= &quot;check-in&quot; ]</span><br><span class="line">    Twitter    -&gt; IFTTT [label= &quot;new tweets&quot; ]</span><br><span class="line">    Contacts   -&gt; IFTTT  [label= &quot;newly added&quot; ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+    </div>
+
+    
+    
+    
+      
+  <div class="popular-posts-header">Related Posts</div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/2018/06/17/Tools-Security/" rel="bookmark">欲善其事先利其器（信息安全篇）</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/2019/02/17/Fitness/" rel="bookmark">以油腻避免油腻</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/2019/04/29/HowITravel/" rel="bookmark">How I Travel</a></div>
+    </li>
+  </ul>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Chinese/" rel="tag"># 中文</a>
+              <a href="/tags/GTD/" rel="tag"># GTD</a>
+              <a href="/tags/Tools/" rel="tag"># Tools</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+                <a href="/2018/04/07/Advices-to-Trainee/" rel="next" title="Advices to Undergraduate Research Trainee">
+                  <i class="fa fa-chevron-left"></i> Advices to Undergraduate Research Trainee
+                </a>
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+                <a href="/2018/04/21/Melancholy/" rel="prev" title="我是人间惆怅客">
+                  我是人间惆怅客 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+    
+  <div class="comments" id="comments">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC8zNTA3MS8xMTYwNg=="></div>
+  </div>
+  
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#电脑系统"><span class="nav-number">1.</span> <span class="nav-text">电脑系统</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#文件管理"><span class="nav-number">1.1.</span> <span class="nav-text">文件管理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#系统备份"><span class="nav-number">1.2.</span> <span class="nav-text">系统备份</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#信息获取"><span class="nav-number">2.</span> <span class="nav-text">信息获取</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#资源管理"><span class="nav-number">2.1.</span> <span class="nav-text">资源管理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#稍后阅读"><span class="nav-number">2.2.</span> <span class="nav-text">稍后阅读</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#归档分享"><span class="nav-number">3.</span> <span class="nav-text">归档分享</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#偷懒如风"><span class="nav-number">4.</span> <span class="nav-text">偷懒如风</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Gang Li"
+      src="/vi/graffiti-gli.jpg">
+  <p class="site-author-name" itemprop="name">Gang Li</p>
+  <div class="site-description" itemprop="description">帮主随笔</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">17</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="feed-link motion-element">
+    <a href="/atom.xml" rel="alternate">
+      <i class="fa fa-rss"></i>RSS
+    </a>
+  </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/tuliplab" title="GitHub → https://github.com/tuliplab" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://goo.gl/gnjEJn" title="Google Scholar → https://goo.gl/gnjEJn" rel="noopener" target="_blank"><i class="fa fa-fw fa-google"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/gangli" title="Twitter → https://twitter.com/gangli" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.linkedin.com/in/ligang" title="Linkedin → https://www.linkedin.com/in/ligang" rel="noopener" target="_blank"><i class="fa fa-fw fa-linkedin"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.reddit.com/r/tuliplab/" title="Reddit (tuliplab) → https://www.reddit.com/r/tuliplab/" rel="noopener" target="_blank"><i class="fa fa-fw fa-reddit"></i></a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title">
+      <i class="fa fa-fw fa-link"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://xiaojuancheng.github.io" title="https://xiaojuancheng.github.io" rel="noopener" target="_blank">Juan</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://shuli.tulip.academy" title="https://shuli.tulip.academy" rel="noopener" target="_blank">Shu Li</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://bear.tulip.org.au" title="https://bear.tulip.org.au" rel="noopener" target="_blank">QY Xiong</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="http://www.tulip.org.au" title="http://www.tulip.org.au" rel="noopener" target="_blank">TULIP Lab</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 2018 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Gang Li</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.6.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://mist.theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.5.0
+  </div>
+
+        
+
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-firestore.js"></script>
+  <script>
+    firebase.initializeApp({
+      apiKey: 'AIzaSyAwcNBZEGbWXI_llbtUpssylfKioaDCy8Y',
+      projectId: 'my1937-32170'
+    });
+
+    function getCount(doc, increaseCount) {
+      // IncreaseCount will be false when not in article page
+
+      return doc.get().then(d => {
+        var count = 0;
+        if (!d.exists) { // Has no data, initialize count
+          if (increaseCount) {
+            doc.set({
+              count: 1
+            });
+            count = 1;
+          }
+        } else { // Has data
+          count = d.data().count;
+          if (increaseCount) {
+            // If first view this article
+            doc.set({ // Increase count
+              count: count + 1
+            });
+            count++;
+          }
+        }
+
+        return count;
+      });
+    }
+
+    function appendCountTo(el) {
+      return count => {
+        el.innerText = count;
+      }
+    }
+  </script>
+  <script>
+    (function() {
+      var db = firebase.firestore();
+      var articles = db.collection('articles');
+
+      if (CONFIG.page.isPost) { // Is article page
+        var title = document.querySelector('.post-title').innerText.trim();
+        var doc = articles.doc(title);
+        var increaseCount = true;
+        if (localStorage.getItem(title)) {
+          increaseCount = false;
+        } else {
+          // Mark as visited
+          localStorage.setItem(title, true);
+        }
+        getCount(doc, increaseCount).then(appendCountTo(document.querySelector('.firestore-visitors-count')));
+      } else if (CONFIG.page.isHome) { // Is index page
+        var promises = [...document.querySelectorAll('.post-title')].map(element => {
+          var title = element.innerText.trim();
+          var doc = articles.doc(title);
+          return getCount(doc);
+        });
+        Promise.all(promises).then(counts => {
+          var metas = document.querySelectorAll('.firestore-visitors-count');
+          counts.forEach((val, idx) => {
+            appendCountTo(metas[idx])(val);
+          });
+        });
+      }
+    })();
+  </script>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/muse.js"></script>
+<script src="/js/next-boot.js"></script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+<script type="text/x-mathjax-config">
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') {
+          next = next.nextSibling;
+        }
+        if (next && next.nodeName.toLowerCase() === 'br') {
+          next.parentNode.removeChild(next);
+        }
+      }
+    });
+  });
+
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      element = document.getElementById(all[i].inputID + '-Frame').parentNode;
+      if (element.nodeName.toLowerCase() == 'li') {
+        element = element.parentNode;
+      }
+      element.classList.add('has-jax');
+    }
+  });
+</script>
+<script>
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML', () => {
+    MathJax.Hub.Typeset();
+  }, window.MathJax);
+</script>
+
+    
+
+  
+
+<script>
+  window.livereOptions = {
+    refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+</script>
+
+</body>
+</html>
