@@ -721,11 +721,11 @@
   <entry>
     <title>欲善其事先利其器（Zotero）</title>
     <url>/2020/05/10/Tools-Zotero/</url>
-    <content><![CDATA[<p>If you like <code>LaTeX</code>, you will also like <a href="https://www.zotero.org/support"><code>Zotero</code></a>, an open-source reference management software to manage bibliographic data and related research materials. Especially you can use it to manage all those PDF files you collected, share references with your collaborators and support academic writing in <code>LaTeX</code> or even MS Word. It provide notable features include web browser integration, online syncing, generation of in-text citations, footnotes, and bibliographies.</p>
-<p>In this post, you will know the recommended usage of Zotero in my team.</p>
+    <content><![CDATA[<p>If you like <code>LaTeX</code>, you will also like <a href="https://www.zotero.org/support"><code>Zotero</code></a>, an open-source reference management software to manage bibliographic data and related research materials. Especially you can use it to manage all those PDF files you collected, share references with your collaborators and support academic writing in <code>LaTeX</code> or even MS Word. It provides notable features including web browser integration, online syncing, generation of in-text citations, footnotes and bibliographies.</p>
+<p>In this post, you will know the recommended usage of Zotero in <a href="http://www.tulip.org.au">TULIP Lab</a>.</p>
 <a id="more"></a>
 <h3 id="Zotero-Koofr">Zotero &amp; Koofr</h3>
-<p>Zotero only provides 300M for storage, which is insufficient for documents of any reasonable research project. Luckily, it is one of the very few, if not the only one, reference manager that support WebDAV. Several free storage services provide WebDAV, and the one I used is Koofr. So you can use Koofr’s WebDAV as Zotero Storage, as in the following steps:</p>
+<p>Zotero only provides 300M free storage, which is insufficient for documents of any reasonable research project. Luckily, it is one of the very few, if not the only one, reference managers that support WebDAV. Several free storage services provide WebDAV, and the one I recommend is Koofr: You can use Koofr’s WebDAV as Zotero Storage, as in the following steps:</p>
 <ol>
 <li>
 <p>Create one Koofr account, you can use my <a href="https://k00.fr/qi0e92gf">invitation</a> link;</p>
@@ -734,10 +734,10 @@
 <p>Configure your <a href="https://app.koofr.net/app/admin/preferences">Koofr preferences</a>, and recommend to enable 2-step Verification;</p>
 </li>
 <li>
-<p>Configure the preferences on Zotero, make sure that <code>My Library</code> using <code>WebDAV</code> as in the Koofr URL (<a href="https://app.koofr.net/dav/Koofr/zotero">https://app.koofr.net/dav/Koofr/zotero</a>), as well as the account/password verification. If your group sharing files are not larger than 300M, yu should use Zotero storage for <code>group libraries</code> for the convenence.</p>
+<p>Configure the preferences on Zotero, make sure that <code>My Library</code> using <code>WebDAV</code> as in the Koofr URL (<a href="https://app.koofr.net/dav/Koofr/zotero">https://app.koofr.net/dav/Koofr/zotero</a>), as well as the usernmae/password verification. If your group sharing files are not larger than 300M, you are recommended to use Zotero storage for <code>group libraries</code> for convenience.</p>
 </li>
 <li>
-<p>If more details or a demonstration is needed, you can check one <a href="https://koofr.eu/blog/posts/koofr-with-zotero-via-webdav">Koofr Blog post</a>.</p>
+<p>If more details or demonstration is needed, you can check the <a href="https://koofr.eu/blog/posts/koofr-with-zotero-via-webdav">Koofr Blog post</a>.</p>
 </li>
 </ol>
 <table>
@@ -747,13 +747,13 @@
   </tr>
 </table>
 <h3 id="Zotero-Extensions">Zotero Extensions</h3>
-<p>Many extensions exist for Zotero, and I use the following extensions extensively:</p>
+<p>Many extensions have been available for Zotero, and I use the following extensions extensively:</p>
 <ul>
 <li><a href="https://github.com/retorquere/zotero-better-bibtex">Better BibTeX (BBT)</a>: A must for LaTeX writing</li>
 <li><a href="https://github.com/ethanwillis/zotero-scihub">Sci-Hub</a>: Get PDF from DOI</li>
 <li><a href="https://github.com/fei0810/markdownhere4zotero">Markdown Here</a>: Markdown Notes for Papers</li>
 </ul>
-<p>The above figure shows the list of extensions in my own system.</p>
+<p>Above figure shows the list of extensions in my own system.</p>
 <h3 id="Zotero-Reference-Management">Zotero Reference Management</h3>
 <h4 id="Adding-References">Adding References</h4>
 <p>Zotero Connectors are automatically installed for jajor web browsers including Firefox, Chrome and Safari (which seems not working as expected). If you would like to add webpages or references into Zotero, Firefox addons is the most convenient. Alternatively, you can always directly drag downloaded PDF into Zotero.</p>
