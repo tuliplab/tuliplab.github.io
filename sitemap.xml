@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.tulip.org.au/about/index.html</loc>
+    
+    <lastmod>2020-08-02T04:00:09.680Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.tulip.org.au/2018/07/31/Tools-LaTeX/</loc>
+    
+    <lastmod>2020-08-02T03:45:22.975Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.tulip.org.au/2020/04/28/Covid19-Days/</loc>
     
     <lastmod>2020-08-02T03:41:44.819Z</lastmod>
@@ -12,13 +26,6 @@
     <loc>http://blog.tulip.org.au/2019/04/29/HowITravel/</loc>
     
     <lastmod>2020-08-02T03:41:28.984Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.tulip.org.au/2018/07/31/Tools-LaTeX/</loc>
-    
-    <lastmod>2020-08-02T03:40:49.438Z</lastmod>
     
   </url>
   
@@ -89,13 +96,6 @@
     <loc>http://blog.tulip.org.au/2018/04/07/Advices-to-Trainee/</loc>
     
     <lastmod>2019-11-18T07:06:48.664Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.tulip.org.au/about/index.html</loc>
-    
-    <lastmod>2019-11-15T11:17:33.445Z</lastmod>
     
   </url>
   

@@ -550,7 +550,7 @@
 <li><code>LaTeX</code> distribution: <a href="https://tug.org/texlive/">TeXLive!</a> or online one such as <a href="https://www.overleaf.com">Overleaf</a></li>
 <li><code>*.tex</code> editor: <a href="https://www.texstudio.org">TexStudio</a>, or Visual Studio Code](<a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a>)with extensions such as <code>LaTeX Workshop</code>, <code>Markdown All in One</code>, etc.</li>
 <li><code>*.bib</code> editor: <a href="https://www.zotero.org/support">Zotero</a> with Better BibTex</li>
-<li><code>git</code> repository: <a href="https://github.com/">GitHub</a> private repository, <a href="http://bitbucket.org">Bitbucket</a> or <a href="https://www.overleaf.com">Overleaf</a>. All those can co-exist for a single paper, as remote repository</li>
+<li><code>git</code> repository: <a href="https://github.com/">GitHub</a> private repository, <a href="http://bitbucket.org">Bitbucket</a> or <a href="https://www.overleaf.com">Overleaf</a> (which I use mainly as another git server, for collaboration when no local <code>LaTeX</code> distribution installed). All those can co-exist for a single paper, as remote repository. For example, Overleaf can link/push/pull with a git private repository.</li>
 <li><code>git</code> client: <a href="https://www.syntevo.com/smartgit/">SmartGit</a> free for non-commertial use</li>
 <li>Changes Tracking: <a href="https://www.ctan.org/pkg/latexdiff?lang=en">LaTeXDiff</a> and <a href="https://gitlab.com/git-latexdiff/git-latexdiff">Git-LaTeXDiff</a>, for version difference extraction and visualization</li>
 </ul>
