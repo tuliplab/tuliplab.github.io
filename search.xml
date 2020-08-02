@@ -249,7 +249,7 @@
 <p>可以采用<code>Nike Run Club</code>、<code>Nike Training</code>、<code>Apple Activities</code>等软件工具。另外，记录自己的身体状态，体重、体脂率等，以便明了自己的近期趋势。</p>
 ]]></content>
       <categories>
-        <category>Workflow</category>
+        <category>Life</category>
       </categories>
       <tags>
         <tag>GTD</tag>
@@ -548,7 +548,7 @@
 <p>For the workflow related to <code>LaTeX</code> writing, I recommend the following cross platform packages:</p>
 <ul>
 <li><code>LaTeX</code> distribution: <a href="https://tug.org/texlive/">TeXLive!</a> or online one such as <a href="https://www.overleaf.com">Overleaf</a></li>
-<li><code>*.tex</code> editor: <a href="https://www.texstudio.org">TexStudio</a>, or Visual Studio Code](<a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a>)with extensions such as <code>LaTeX Workshop</code>, <code>Markdown All in One</code>, etc.</li>
+<li><code>*.tex</code> editor: <a href="https://www.texstudio.org">TexStudio</a>, or <a href="https://code.visualstudio.com/">Visual Studio Code</a> with extensions such as <code>LaTeX Workshop</code>, <code>Markdown All in One</code>, etc.</li>
 <li><code>*.bib</code> editor: <a href="https://www.zotero.org/support">Zotero</a> with Better BibTex</li>
 <li><code>git</code> repository: <a href="https://github.com/">GitHub</a> private repository, <a href="http://bitbucket.org">Bitbucket</a> or <a href="https://www.overleaf.com">Overleaf</a> (which I use mainly as another git server, for collaboration when no local <code>LaTeX</code> distribution installed). All those can co-exist for a single paper, as remote repository. For example, Overleaf can link/push/pull with a git private repository.</li>
 <li><code>git</code> client: <a href="https://www.syntevo.com/smartgit/">SmartGit</a> free for non-commertial use</li>
@@ -634,7 +634,11 @@
 <h4 id="Git-Flow"><code>Git-Flow</code></h4>
 <p>If you didn’t use branches sufficiently, you can use <code>git</code> in the old fashion of <code>svn</code>. However, branches allow much more flexible development of the project, and you should learn it from <a href="https://learngitbranching.js.org">here</a>.</p>
 <p>Once you have some general knowledge of git branches, I recommend to use the <code>Git-Flow</code>, <a href="https://nvie.com/posts/a-successful-git-branching-model/">a branch-based workflow</a> that supports teams and projects where deployments are made regularly and development is continuous. A good tutorial on it can be found at <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">Bitbucket</a>.</p>
-<p><img src="/images/git-flow.png" alt="Workflow"></p>
+<table>
+  <tr>
+    <td><img src="/images/git-flow.png" width=80%></td>
+  </tr>
+</table>
 <p>Typically, you will have two major kinds of branches:</p>
 <ul>
 <li><code>master</code> branch should be treated as the main flow of your work, and it should be always production ready, and in a <code>ready to submit</code> state.</li>
@@ -648,7 +652,11 @@
 </ul>
 <h4 id="LaTeX-Git-Flow"><code>LaTeX</code> + <code>Git-Flow</code></h4>
 <p>The main idea is that we will create one repository with different subfolders for one project (paper), and use the <code>git-flow</code> and <code>tagging</code> to develop the paper. The following figure illustrate the commit history of one paper repository.</p>
-<p><img src="/images/gitlatex-flow03.png" alt="Workflow"></p>
+<table>
+  <tr>
+    <td><img src="/images/gitlatex-flow03.png" width=40%></td>
+  </tr>
+</table>
 <h2 id="Rules-for-Collaborative-LaTeXing">Rules for Collaborative LaTeXing</h2>
 <p>You MUST follow the following rules when writing collaboratively. Otherwise, your co-author will find it impossible to work together.</p>
 <h3 id="Rules-for-LaTeX-Source-Code">Rules for <code>LaTeX</code> Source Code</h3>

@@ -35,7 +35,7 @@
 <meta property="og:image" content="http://blog.tulip.org.au/images/git-flow.png">
 <meta property="og:image" content="http://blog.tulip.org.au/images/gitlatex-flow03.png">
 <meta property="article:published_time" content="2018-07-30T15:22:19.000Z">
-<meta property="article:modified_time" content="2020-08-02T03:45:22.975Z">
+<meta property="article:modified_time" content="2020-08-02T04:05:40.438Z">
 <meta property="article:author" content="Gang Li">
 <meta property="article:tag" content="GTD">
 <meta property="article:tag" content="Tools">
@@ -344,7 +344,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-08-02 13:45:22" itemprop="dateModified" datetime="2020-08-02T13:45:22+10:00">2020-08-02</time>
+                <time title="Modified: 2020-08-02 14:05:40" itemprop="dateModified" datetime="2020-08-02T14:05:40+10:00">2020-08-02</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -379,7 +379,7 @@
 <p>For the workflow related to <code>LaTeX</code> writing, I recommend the following cross platform packages:</p>
 <ul>
 <li><code>LaTeX</code> distribution: <a target="_blank" rel="noopener" href="https://tug.org/texlive/">TeXLive!</a> or online one such as <a target="_blank" rel="noopener" href="https://www.overleaf.com">Overleaf</a></li>
-<li><code>*.tex</code> editor: <a target="_blank" rel="noopener" href="https://www.texstudio.org">TexStudio</a>, or Visual Studio Code](<a target="_blank" rel="noopener" href="https://code.visualstudio.com/">https://code.visualstudio.com/</a>)with extensions such as <code>LaTeX Workshop</code>, <code>Markdown All in One</code>, etc.</li>
+<li><code>*.tex</code> editor: <a target="_blank" rel="noopener" href="https://www.texstudio.org">TexStudio</a>, or <a target="_blank" rel="noopener" href="https://code.visualstudio.com/">Visual Studio Code</a> with extensions such as <code>LaTeX Workshop</code>, <code>Markdown All in One</code>, etc.</li>
 <li><code>*.bib</code> editor: <a target="_blank" rel="noopener" href="https://www.zotero.org/support">Zotero</a> with Better BibTex</li>
 <li><code>git</code> repository: <a target="_blank" rel="noopener" href="https://github.com/">GitHub</a> private repository, <a target="_blank" rel="noopener" href="http://bitbucket.org">Bitbucket</a> or <a target="_blank" rel="noopener" href="https://www.overleaf.com">Overleaf</a> (which I use mainly as another git server, for collaboration when no local <code>LaTeX</code> distribution installed). All those can co-exist for a single paper, as remote repository. For example, Overleaf can link/push/pull with a git private repository.</li>
 <li><code>git</code> client: <a target="_blank" rel="noopener" href="https://www.syntevo.com/smartgit/">SmartGit</a> free for non-commertial use</li>
@@ -465,7 +465,11 @@
 <h4 id="Git-Flow"><code>Git-Flow</code></h4>
 <p>If you didn’t use branches sufficiently, you can use <code>git</code> in the old fashion of <code>svn</code>. However, branches allow much more flexible development of the project, and you should learn it from <a target="_blank" rel="noopener" href="https://learngitbranching.js.org">here</a>.</p>
 <p>Once you have some general knowledge of git branches, I recommend to use the <code>Git-Flow</code>, <a target="_blank" rel="noopener" href="https://nvie.com/posts/a-successful-git-branching-model/">a branch-based workflow</a> that supports teams and projects where deployments are made regularly and development is continuous. A good tutorial on it can be found at <a target="_blank" rel="noopener" href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">Bitbucket</a>.</p>
-<p><img src="/images/git-flow.png" alt="Workflow"></p>
+<table>
+  <tr>
+    <td><img src="/images/git-flow.png" width=80%></td>
+  </tr>
+</table>
 <p>Typically, you will have two major kinds of branches:</p>
 <ul>
 <li><code>master</code> branch should be treated as the main flow of your work, and it should be always production ready, and in a <code>ready to submit</code> state.</li>
@@ -479,7 +483,11 @@
 </ul>
 <h4 id="LaTeX-Git-Flow"><code>LaTeX</code> + <code>Git-Flow</code></h4>
 <p>The main idea is that we will create one repository with different subfolders for one project (paper), and use the <code>git-flow</code> and <code>tagging</code> to develop the paper. The following figure illustrate the commit history of one paper repository.</p>
-<p><img src="/images/gitlatex-flow03.png" alt="Workflow"></p>
+<table>
+  <tr>
+    <td><img src="/images/gitlatex-flow03.png" width=40%></td>
+  </tr>
+</table>
 <h2 id="Rules-for-Collaborative-LaTeXing">Rules for Collaborative LaTeXing</h2>
 <p>You MUST follow the following rules when writing collaboratively. Otherwise, your co-author will find it impossible to work together.</p>
 <h3 id="Rules-for-LaTeX-Source-Code">Rules for <code>LaTeX</code> Source Code</h3>
