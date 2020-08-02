@@ -263,6 +263,9 @@
     </div>
     <ul class="links-of-blogroll-list">
         <li class="links-of-blogroll-item">
+          <a href="http://coco.tulip.org.au/" title="http:&#x2F;&#x2F;coco.tulip.org.au" rel="noopener" target="_blank">Coco</a>
+        </li>
+        <li class="links-of-blogroll-item">
           <a href="https://xiaojuancheng.github.io/" title="https:&#x2F;&#x2F;xiaojuancheng.github.io" rel="noopener" target="_blank">Juan</a>
         </li>
         <li class="links-of-blogroll-item">
@@ -355,13 +358,6 @@
             </span>
 
           
-            <span class="post-meta-item" title="Views">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-users"></i>
-              </span>
-              <span class="post-meta-item-text">Views: </span>
-              <span class="firestore-visitors-count"></span>
-            </span>
             <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
@@ -459,6 +455,16 @@
     <div class="social-list">
 
         <div class="social-item">
+          <a target="_blank" class="social-link" href="https://twitter.com/gangli">
+            <span class="icon">
+              <i class="fab fa-twitter"></i>
+            </span>
+
+            <span class="label">Twitter</span>
+          </a>
+        </div>
+
+        <div class="social-item">
           <a target="_blank" class="social-link" href="/atom.xml">
             <span class="icon">
               <i class="fa fa-rss"></i>
@@ -549,6 +555,8 @@
   </span>
   <span class="author" itemprop="copyrightHolder">Gang Li</span>
 </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a>
+  </div>
 
         
 <div class="busuanzi-count">
@@ -575,77 +583,6 @@
 
 
 
-  <script src="//cdn.jsdelivr.net/npm/firebase@7/firebase-app.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/firebase@7/firebase-firestore.js"></script>
-  <script>
-    firebase.initializeApp({
-      apiKey   : 'AIzaSyAwcNBZEGbWXI_llbtUpssylfKioaDCy8Y',
-      projectId: 'my1937-32170'
-    });
-
-    function getCount(doc, increaseCount) {
-      // IncreaseCount will be false when not in article page
-      return doc.get().then(d => {
-        let count = 0;
-        if (!d.exists) { // Has no data, initialize count
-          if (increaseCount) {
-            doc.set({
-              count: 1
-            });
-            count = 1;
-          }
-        } else { // Has data
-          count = d.data().count;
-          if (increaseCount) {
-            // If first view this article
-            doc.set({ // Increase count
-              count: count + 1
-            });
-            count++;
-          }
-        }
-
-        return count;
-      });
-    }
-
-    function appendCountTo(el) {
-      return count => {
-        el.innerText = count;
-      }
-    }
-  </script>
-  <script>
-    (function() {
-      const db = firebase.firestore();
-      const articles = db.collection('articles');
-
-      if (CONFIG.page.isPost) { // Is article page
-        const title = document.querySelector('.post-title').innerText.trim();
-        const doc = articles.doc(title);
-        let increaseCount = CONFIG.hostname === location.hostname;
-        if (localStorage.getItem(title)) {
-          increaseCount = false;
-        } else {
-          // Mark as visited
-          localStorage.setItem(title, true);
-        }
-        getCount(doc, increaseCount).then(appendCountTo(document.querySelector('.firestore-visitors-count')));
-      } else if (CONFIG.page.isHome) { // Is index page
-        const promises = [...document.querySelectorAll('.post-title')].map(element => {
-          const title = element.innerText.trim();
-          const doc = articles.doc(title);
-          return getCount(doc);
-        });
-        Promise.all(promises).then(counts => {
-          const metas = document.querySelectorAll('.firestore-visitors-count');
-          counts.forEach((val, idx) => {
-            appendCountTo(metas[idx])(val);
-          });
-        });
-      }
-    })();
-  </script>
 
 
 
@@ -686,6 +623,19 @@
 
 
 
+<script>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+    mermaid.init({
+      theme    : 'forest',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
+    }, '.mermaid');
+  }, window.mermaid);
+}
+</script>
 
 
   
