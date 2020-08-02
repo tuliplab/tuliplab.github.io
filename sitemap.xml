@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.tulip.org.au/about/index.html</loc>
+    
+    <lastmod>2020-08-02T04:51:08.458Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.tulip.org.au/2019/02/17/Fitness/</loc>
     
     <lastmod>2020-08-02T04:07:00.471Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>http://blog.tulip.org.au/2018/07/31/Tools-LaTeX/</loc>
     
     <lastmod>2020-08-02T04:05:40.438Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.tulip.org.au/about/index.html</loc>
-    
-    <lastmod>2020-08-02T04:00:09.680Z</lastmod>
     
   </url>
   
