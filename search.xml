@@ -23,7 +23,7 @@
   <entry>
     <title>致`TULIP Lab`新成员</title>
     <url>/2019/11/09/Advices-to-Flippers/</url>
-    <content><![CDATA[<p>首先祝贺大家成为<code>TULIP Lab</code>成员，此时的你也许自信满满、自豪爆棚，不过仅仅因此而自我感觉良好，往往只是由于平台太低、视野不够所造成的错觉。进入<code>TULIP Lab</code>只是你研究阶段的一个起点而已，<code>TULIP Lab</code>绝大多数成员在本科阶段缺乏系统的科研训练，不清楚读研究生究竟意味着什么，也不知道如何开启研究生的学习、工作和生活方式。因此，许多成员在加入研究组后仍以认真听课、考试高分为主要目标，觉得导师会安排好所有事情，按部就班就好，缺乏主观能动性，从而导致接下来在科研训练上的诸多不顺，甚至和研究组成员的磨合也历尽艰难。有鉴如此，有必要整理出这么一篇：致<code>TULIP Lab</code>新成员，清楚地说明研究组对新成员的期望，尽可能避免入组后的尴尬和苦痛。</p>
+    <content><![CDATA[<p>首先祝贺大家成为<code>TULIP Lab</code>成员，此时的你也许自信满满、自豪爆棚，不过仅仅因此而自我感觉良好，往往只是由于平台太低、视野不够所造成的错觉。进入<code>TULIP Lab</code>只是你研究阶段的一个起点而已，<code>TULIP Lab</code>绝大多数成员在本科阶段缺乏系统的科研训练，不清楚读研究生究竟意味着什么，也不知道如何开启研究生的学习、工作和生活方式。因此，许多成员在加入研究组后仍以认真听课、考试高分为主要目标，觉得导师会安排好所有事情，按部就班就好，缺乏主观能动性，从而导致接下来在科研训练上的诸多不顺，甚至和研究组成员的磨合也历尽艰难。有鉴如此，有必要整理出这么一篇：<a href="/2019/11/09/Advices-to-Flippers/" title="致&#96;TULIP Lab&#96;新成员">致&#96;TULIP Lab&#96;新成员</a> ，清楚地说明研究组对新成员的期望，尽可能避免入组后的尴尬和苦痛。</p>
 <a id="more"></a>
 <h2 id="科研训练的意义">科研训练的意义</h2>
 <p>太多研究生过早定义了自己的学习生涯和目标。比如我们经常听到大家问：<code>我是不是要提前找工作？</code>、<code>我找工作的话，研究就要放下了吗</code>、<code>研究训练会不会耽误找工作？</code>、<code>工作是不是就意味着更大的自由</code>等。这种不停的自问，让很多成员恐学、焦躁。</p>
@@ -455,6 +455,9 @@
 <p><a href="https://www.onedrive.com"><code>OneDrive</code></a> 免费账号可以拿到10G空间，好处是和IOS上面的各种MS工具无缝接入，所以用来存放PPTX文件，以及OneNote笔记</p>
 </li>
 <li>
+<p><a href="https://k00.fr/qi0e92gf"><code>Koofr</code></a> 免费存储，提供<code>WebDAV</code>，建议和<code>Zotero</code>一起使用，参见<a href="/2020/05/10/Tools-Zotero/" title="欲善其事先利其器（Zotero）">欲善其事先利其器（Zotero）</a>;</p>
+</li>
+<li>
 <p><a href="https://drive.google.com"><code>GoogleDrive</code></a> 免费账号可以有15G空间，主要用于<code>Google Doc</code>的在线编辑文档。国内使用需要翻墙</p>
 </li>
 <li>
@@ -712,11 +715,11 @@
   <entry>
     <title>欲善其事先利其器（Zotero）</title>
     <url>/2020/05/10/Tools-Zotero/</url>
-    <content><![CDATA[<p>If you like <code>LaTeX</code>, you will also like <a href="https://www.zotero.org/support"><code>Zotero</code></a>, an open-source reference management software to manage bibliographic data and related research materials. Especially you can use it to manage all those PDF files you collected, share references with your collaborators and support academic writing in <code>LaTeX</code> or even MS Word. It provides notable features including web browser integration, online syncing, generation of in-text citations, footnotes and bibliographies.</p>
+    <content><![CDATA[<p>If you like <code>LaTeX</code>, you will also like <a href="https://www.zotero.org/support"><code>Zotero</code></a>, an open-source reference management software to manage bibliographic data and related research materials. Especially you can use it to manage all those PDF files you collected, share references with your collaborators and support academic writing in <code>LaTeX</code> or even <code>MS Word</code>. It provides notable features including web browser integration, online syncing, generation of in-text citations, footnotes and bibliographies.</p>
 <p>In this post, you will know the recommended usage of Zotero in <a href="http://www.tulip.org.au">TULIP Lab</a>.</p>
 <a id="more"></a>
 <h3 id="Zotero-Koofr">Zotero &amp; Koofr</h3>
-<p>Zotero only provides 300M free storage, which is insufficient for documents of any reasonable research project. Luckily, it is one of the very few, if not the only one, reference managers that support WebDAV. Several free storage services provide WebDAV, and the one I recommend is Koofr: You can use Koofr’s WebDAV as Zotero Storage, as in the following steps:</p>
+<p>Zotero only provides 300M free storage, which is insufficient for documents of any reasonable research project. Luckily, it is one of the very few, if not the only free one, reference managers that support WebDAV. Several free storage services provide <code>WebDAV</code>, and the one I recommend is <code>Koofr</code>: You can use Koofr’s WebDAV as Zotero Storage, as in the following steps:</p>
 <ol>
 <li>
 <p>Create one Koofr account, you can use my <a href="https://k00.fr/qi0e92gf">invitation</a> link;</p>
@@ -816,6 +819,18 @@
       </categories>
       <tags>
         <tag>中文</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>The Art of Academic Writing</title>
+    <url>/2018/06/09/The-Art-of-Academic-Writing/</url>
+    <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Invalid password. Check and try again, please." data-whm="Oh, these decrypted content cannot be verified, but you can still have a look."><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="Hey, password is required here." /><label>Hey, password is required here.</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="e21caa8511adc8fa77c977d330d57c92ed92d398ddbbead9d53f567a1d5a460c">cb4c65bd84543352f7d551bf40f6072d327b366c15f27d2d3b67b18e45744feba878f5113e0d523b5607e208c59eca038f72ab8325388421f29d3f1e13f8d2b70959e210edb5296d4ff05b04d374107f</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>Students</category>
+      </categories>
+      <tags>
+        <tag>中文</tag>
+        <tag>Applications</tag>
       </tags>
   </entry>
 </search>
