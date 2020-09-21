@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.tulip.org.au/"/>
-  <updated>2020-08-17T06:40:59.465Z</updated>
+  <updated>2020-09-21T05:21:23.509Z</updated>
   <id>http://blog.tulip.org.au/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Australian Media Coverage 2020</title>
+    <link href="http://blog.tulip.org.au/2020/09/06/SBS-2020/"/>
+    <id>http://blog.tulip.org.au/2020/09/06/SBS-2020/</id>
+    <published>2020-09-06T05:15:44.000Z</published>
+    <updated>2020-09-21T05:21:23.509Z</updated>
+    
+    <content type="html"><![CDATA[<p>有趣的是，在整理完成相关隐私保护的博士生课程之后，澳洲SBS中文节目部就有一系列的采访，关于网络安全和信息隐私的问题；另外，一些电台比如悉尼2SER也进行了现场直播采访，讨论了在线商务平台中推荐系统的应用以及潜在的隐私问题。</p><a id="more"></a><p>全球最长封锁政策下，身为住在墨尔本的湖北人，在7个月内接受了5次澳洲SBS台中文频道的专访、以及若干英文广播台的采访，好像不小心把自己折腾成为了网红：</p><ul><li><a href="https://www.sbs.com.au/language/mandarin/zh-hans/audio/what-methods-can-be-unsed-to-track-criminals-on-the-dark-web">高度匿名的暗网不法分子是如何被追踪的？</a></li><li><a href="https://www.sbs.com.au/language/mandarin/zh-hans/audio/does-covidsafe-expose-personal-privacy">病例接触者追踪应用CovidSafe会暴露个人隐私吗？</a></li><li><a href="https://www.sbs.com.au/language/mandarin/zh-hans/audio/cybersecurity-in-australia-is-worrying">澳洲网络安全现状堪忧 专家称如“幼儿抱赤金行于闹市”</a></li><li><a href="https://2ser.com/recommended-for-you/">2SER Community Radio: RecSys</a></li><li><a href="https://www.sbs.com.au/language/mandarin/zh-hans/audio/security-risk-international-agreements-re-sharing-user-information">TikTok不安全？国际间用户数据分享有法可循</a></li><li><a href="https://www.sbs.com.au/language/mandarin/zh-hans/audio/these-cloud-storage-data-security-skills-are-worth-knowing">数万份驾照信息可公开查看 云存储数据安全技能你掌握了么？</a></li></ul><p>主要感觉和体会是：现场直播真上头，主播的英文居然当时听到就发蒙，反应不过来。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;有趣的是，在整理完成相关隐私保护的博士生课程之后，澳洲SBS中文节目部就有一系列的采访，关于网络安全和信息隐私的问题；另外，一些电台比如悉尼2SER也进行了现场直播采访，讨论了在线商务平台中推荐系统的应用以及潜在的隐私问题。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Life" scheme="http://blog.tulip.org.au/categories/Life/"/>
+    
+    
+      <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
+    
+  </entry>
   
   <entry>
     <title>COVID-19 Days (II)</title>
@@ -492,31 +515,6 @@
       <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
     
       <category term="Applications" scheme="http://blog.tulip.org.au/tags/Applications/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>My 1937</title>
-    <link href="http://blog.tulip.org.au/2015/06/09/My-1937/"/>
-    <id>http://blog.tulip.org.au/2015/06/09/My-1937/</id>
-    <published>2015-06-09T04:09:46.000Z</published>
-    <updated>2020-08-11T12:43:41.702Z</updated>
-    
-    <content type="html"><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Invalid password. Check and try again, please." data-whm="Oh, these decrypted content cannot be verified, but you can still have a look."><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="Hey, password is required here." /><label>Hey, password is required here.</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="fc807b2ac9a945a7d621813866d45a9bd49b450c4be3c26b3abdc9e5e104217d">ffc181dc14019ba970dc3549117063490a1be2b083f522d8623c1d462744f99c7e85a8f770c41dd9ffc463ae774bee5989e872fa6795b8a192528469fc1251720678f41e6b2a9fcc494d219d7e1fddfe3dbc4762348a3bb7c3f8bf674a0516772fc5f86936e0877e58a03e1f1f6289efc90de2262e8fb16d4840f062997ceb62c43a75af08a005fe3b115f264820abf0b3288b729b11a6c2569bdfb50eb2c24046ec881b822b3e8a0246c68a9eca3a92742b64409b4987315bfd8a55eb520c8e111da98384a39370bc9056ce89c275f80ad9eee8c9278e2e083648c39464cfb9e042c88ae25a0537244dbf66866eb9d29bdf559c74e7384f1399fcadc1b4cc82882a07e30cb0e27c320ba9a277eb051d94019e2159bd82095aca1f3963ca13f6cf147d8e27d61df792e87b7e6bc487c809a1abc01aa03786038892ff3fd06661544bfcdd4c51fd69470c5b3468f3712cd39aa06e8bc0d982213445c84ad5e88dcb4858b8874a0780d8f43cbe1bf8c6d2dded92c591dd019296101eaf026d1b3d101d23d1ebf1682decc4524a92c7210f34f2e13d3173dd106b8ef12fae7c7c88d88565c55941292963a521afdc7c185ce4569abc7187530913922790a44c2af90462eb61429a3faca7b8db7face07d595d3a1a234b241a4ae55d764ff761a3365ad5b2a809caabc31d78a7235d59a4b4c20d2473bbdeb4127cfb13ff936538856a375b2583eddb23eeb2468d3dc423ca5c40240bf96ea2c664bdece8886ba1850cec13f0a70173b0c9e130cb604a6d33f2bc9c2bf5f66bd63a3f6c67dbb39d806c4f778dd1adfc2d173879181a2181d37f538acd4a33a7d1f002b72bdbfe803df3a4a92274da2aa84c0efaab352d5b82f47f9562adfaeb47f3d8642310caa48e12e05656919f6b64cd5f9821c881a1edf117083dd62961798d94b4884cedd8f8d993b7d0a4639ba4839a2691374431c18dc9e1253720f43d7f501718ac4778d99e3f71c3ecc80833f0e1bcc106db0f26991f85e3fbcdaa07cbda980407744466a938a9be74a6c1a371a70a6d91ced02fc3941edacc6db7c6ff1a054766b5fa9896195fc673abce04b2b9e556cdf96c704e25c23efbd34f97fc429e55dca9d751baaec0d83fe76ac55f947555b9836ca2be7077120d3c73c57297068513b729cdcb7e500c9b647fcbc8054af83b55b1a51dd8a16026260b0fef8ab130023448626ab80fd1c4c823d48498babba61218c46bf072542b1a85f7f1dd76b752c61c0ed53bebab49fec484f8edb9caaaca69369f081276a723fab7f96bb0dfd13b27679a6d6ffd87b48b5509ea6f4b51f5662ca84c223d07bbbb5267e3921672160ea77c1fc791449f53af93cc7ea12ae5030e2176c634ecf9fe472bef92cb361e08feb98b962a298252f7ef9ced869dba6c190cfde9f2ee68d15619eec646da621167b6bd8c9cf13610843ca977fd6dddcb4c99519cb64e484b0e7330433d1923dbfefd425b6c1667aaa343716a68cca31df1e11453195f11fdec90d5ad81eb8069000a2290de4a38850de5237e8aad8c83e1caf264fa5e86d7134835b64b07c9eaad059512ac461bfc6af3a5cc944f0755a00a0ba0301eb3557729826eee055756a172d14efe0dc41631cf19abc1068fa128dd783a566a13adc63f3db82ebb5c607b98dfcda21d2e2efa8e32ee866431c9bf9c2d161f0f863104800681d0b2659ffd9c14330d5841923877c11ef4123c45645ec864e68d066b6cae009fbf2a1b26dbdca506248fc70d1d03b05616fe6d41e5f0056b8cc45453906680b95bf44e6d6b0ee14e3b3e555493ea706d72518dfa1038254b9416706c4c54ec067b1185f1b3e0902bb18bfed680d33d1f862525d7e15a7e44b2e90625a5ef451867aab2ef4beb9de139b272bc5bf84386665292d16bdadbf2db884b68ce422fccd92d1208e550071eadb80e7031fd99ed40107680da802ad7909497ec7d4e65d31684525bf21b5849a30e16b6b99055cda7c200c352c43862c473527dafbdd6378c1d5f09b6691f9a6ed6639c7da00b683155a7ba839539656fa9f6a0c67a927128c1fd4836c5edcede20d63ceaad8e50616012be35a0551e394647fd3a2bf3bab049b1a1edb6d0814ca1b253c9f077d755c1fa481921f7df9371fe6b7bb533e114a038959f66dd2a4ff86c53f393ee459cbac7ae45648dd1f8b627483748023623b0cf1fc9d0abd78e2386f3a91f87fc8feb2da7bc5ebc2ed0c4cfefb1ccba3a9fd11f5b2da69a5da855d71e4f3d9ed84a7b96e29b3e6f1f3d04e97f6b390af4a684c4de8696021523f24f0ea6e807fec423f1887bf05ac9d0d5887650bdfee9fb7774a48ceb056d5f38536718b422904684abdbe078193b222a017d954d15c1a5c47eca5e1eff4bf381c71b58e14609820cf2edef3ebf3e17d3ac20ab5c737d6af74c1c95dcfa6751c03ef22e67d4dc05348bf069116db1dc00f36e42a204e0bdd6d03abc508a1f8a4749dedbfa2f5efb2ba44abca92d59765d21541030c155881c852ca2652f6b4b8e1afc3fd8e6a840135c4f4a8ae9c763127f97d9ce8f7fd611e7156e1d07dd46dbfcb9526ef7ba2a632c6f8cf52f5b556e231335969e6ac3afbc6fd05ee38148b4c4008246902bfe226dbefae2ff136f1a17ae2761351f5f8620e50925de41f561256eaf3ae79df5813c2be41e3b2105ae3adfd0d899ded0836a12249b24b4705df091ffb236f7aff0f4cb2f6f777b297a5c26bce49f71e0a6d57eacbacc102616b9cd85a368d031f16fa8e3814308c91e835408fe932fcf3d9ad696657646f8eb526f4b0cae094fa18b230c516553b4ec70e1e6f8a77411f24c168b2b9f1b626a4f2685405f12a9bf1dcd29d83f13d97609f4714b39ceab0d10e3879c7b332f16f1e6d1c07077a36fd24a0e5a22d3f51f642f26290cda95172e1bb255baa4a894f7a993c69c98f7c54c031a60123b7a6a5a2cf0ac47691a1d845bc308f2b8ec0aedc7aff07e7dac0f33a2271874bf7023fb6f470d4ff45d21b76354c611dca01de61ce0022b17f2b5b393ad8aeaef3e84a29c6b002c6f338b3ade82e9e17667fecd41867bdfabe9d0d5d702dade34b6c8996471b339fa4f199c33830245f0554dd337909838e9ccbabbbbae6857d97c65f6283f2c77a9b06fbd29d5da5ed108ba6e25c0928c17e77c14acbc62e8b24426924ae2861cc578d26c0fa9e55962ba199edf67aa836db71bd3dc43692a5270fc6e1258859b2a6f0a96143e2baf05b70495c66fae513d39ebf46072226f227d65e8e554d0340c51a2a3d77eb99ec635f5ddde13f225b894b7d186f0c71f4e6a3810106e197527cca3f2a3f1775cc5fb86c64ed97e0251576e7d2a3fc39436abdc833def27e56e453b5ab3075c776093c2d9209930c1331f7aa753e29feeb0c634f1896715bd5a416dacda12ab15737e6ac9bdbcda5025be71a27c3e06ac2c84f43b8522d0e9f557c5e79c541bce0bda2f887314b704641c9adc7c1c131164c8a3e63320aec2fbb400f28cbfec00997d02fff998b977683e4f7f1c97f88204c5cac192c063e83ae2b16fd40f863f422514b5b9c484ba0e9f15b5ba3ce622672347b8b6ea047951d90e5a8ef9f8e36f9f12a813addab9cf973c4466ed967dfea2ca1c4fbc7e4602e06910ccaa708a24016026b874ba3a27ab3afa8c9f5132597b841fb50d2651858471ee86ddf269a8b4a39609856bfeb27fb9a2818c3ec9ba52914611cc6631e2dc3fc0c3fedf20a106861efe3deafe2253b2431f0d</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
-    
-    <summary type="html">
-    
-      Here&#39;s an encrypted post, password is required to continue reading.
-    
-    </summary>
-    
-    
-      <category term="Enterprise" scheme="http://blog.tulip.org.au/categories/Enterprise/"/>
-    
-    
-      <category term="mood" scheme="http://blog.tulip.org.au/tags/mood/"/>
-    
-      <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
     
   </entry>
   
