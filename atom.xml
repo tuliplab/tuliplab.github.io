@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.tulip.org.au/"/>
-  <updated>2020-12-31T09:04:46.302Z</updated>
+  <updated>2021-03-13T23:39:47.710Z</updated>
   <id>http://blog.tulip.org.au/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Australian Media Coverage 2021</title>
+    <link href="http://blog.tulip.org.au/2021/03/14/SBS-2021/"/>
+    <id>http://blog.tulip.org.au/2021/03/14/SBS-2021/</id>
+    <published>2021-03-13T23:15:44.000Z</published>
+    <updated>2021-03-13T23:39:47.710Z</updated>
+    
+    <content type="html"><![CDATA[<p>SBS新年伊始，就开始了一系列的技术采访，刚开始一波都是关于邮箱攻击和邮件服务器攻击的。</p><a id="more"></a><p>下面是有公开网络链接的相关采访音频部分：</p><ul><li><a href="https://www.sbs.com.au/chinese/mandarin/zh-hans/audio/protecting-your-email-security-needs-these-measures">电子邮件被监控损失数万 这些电邮安全技能必备</a></li></ul><p>主要感觉和体会是：</p><blockquote class="blockquote-center">英文现场直播真上头，主播的英文居然当时听到就发蒙，反应不过来；中文的现场直播有点类似于学生答疑，基本思路是引导、教育、解惑。。。</blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;SBS新年伊始，就开始了一系列的技术采访，刚开始一波都是关于邮箱攻击和邮件服务器攻击的。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Life" scheme="http://blog.tulip.org.au/categories/Life/"/>
+    
+    
+      <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
+    
+  </entry>
   
   <entry>
     <title>Acknowledgement 2020</title>
@@ -500,29 +523,6 @@
       <category term="mood" scheme="http://blog.tulip.org.au/tags/mood/"/>
     
       <category term="中文" scheme="http://blog.tulip.org.au/tags/Chinese/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Puppy</title>
-    <link href="http://blog.tulip.org.au/2016/01/09/Puppy/"/>
-    <id>http://blog.tulip.org.au/2016/01/09/Puppy/</id>
-    <published>2016-01-09T03:09:46.000Z</published>
-    <updated>2020-08-11T12:45:09.317Z</updated>
-    
-    <content type="html"><![CDATA[<p>A student pursuing a PhD is somehow like a dog chewing bones: novel ideas leading into great achievements are like fresh meats between bones. The first step is to sense where the meat bones are. Normally, wherever the dogs are gathering, the bones are abundant ;)</p><a id="more"></a><p>A creative dog will feed itself with fresh meat before the others finish it all, or be a dog explorer, questing in the desert where no other dog is around: When you find a pile of bones, congratulations, there are no competitors, hence all the bones are yours. If you finish all of the bones, you will grow into a big cow. Usually, these kinds of dogs will be awarded as Turing winner ;)</p><p>For the puppies that are pursuing a PhD, it is always a good idea to find a guide dog with a great sense of smell, who knows better on where there may be bones. What the puppies need to do is to simply follow the guidance and eat up the meat from the the bones.</p><p>Unfortunately, in most of the cases, the guide dogs are pretty stupid themselves, and know nothing about bone-seeking, or may only lick leftover bones. The puppies under their guidance will suffer from starvation and tear for their empty tummy. However, as it is hard for puppies to break a clue, it is miserable.</p><blockquote class="blockquote-center">读ph.d.做研究, 就像一条狗在啃骨头.做出新意出成就来, 就是在骨头里面发现了fresh的肉.首先, 要判断哪里能找到还有肉的骨头,一般而言, 狗群最多的地方, 骨头也最多;)做条creative的狗, 在别人吃精光以前, 发现一点肉填肚子;还有一种可能, 就是在完全看不到狗,还是有可能有骨头的沙漠中探索, 如果发现一堆骨头, 那么恭喜你, 没别的狗和你抢,这堆骨头全是你的,吃完就成了big cow,呵呵. 这种狗会被授予图灵奖;)<p>去读ph.d.做research的小狗们呢, 最好找个嗅觉灵敏的大狗做advisor,<br>他们知道什么地方可能有骨头, 在大狗的带领下去努力的发现骨头里面的肉就行了.<br>而普遍的情况是, 大狗也笨得很, 不知道哪里有骨头, 或者只会舔吃剩的骨头,<br>跟在后面的小狗, 没有肉吃, 肚子饿的汪汪叫, 独自去闯又难以摸着头绪,比较惨.</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;A student pursuing a PhD is somehow like a dog chewing bones: novel ideas leading into great achievements are like fresh meats between bones. The first step is to sense where the meat bones are. Normally, wherever the dogs are gathering, the bones are abundant ;)&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Students" scheme="http://blog.tulip.org.au/categories/Students/"/>
-    
-    
-      <category term="Methodology" scheme="http://blog.tulip.org.au/tags/Methodology/"/>
     
   </entry>
   
