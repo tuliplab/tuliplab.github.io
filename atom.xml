@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.tulip.org.au/"/>
-  <updated>2021-03-13T23:39:47.710Z</updated>
+  <updated>2021-04-03T13:06:39.735Z</updated>
   <id>http://blog.tulip.org.au/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://blog.tulip.org.au/2021/03/14/SBS-2021/"/>
     <id>http://blog.tulip.org.au/2021/03/14/SBS-2021/</id>
     <published>2021-03-13T23:15:44.000Z</published>
-    <updated>2021-03-13T23:39:47.710Z</updated>
+    <updated>2021-04-03T13:06:39.735Z</updated>
     
-    <content type="html"><![CDATA[<p>SBS新年伊始，就开始了一系列的技术采访，刚开始一波都是关于邮箱攻击和邮件服务器攻击的。</p><a id="more"></a><p>下面是有公开网络链接的相关采访音频部分：</p><ul><li><a href="https://www.sbs.com.au/chinese/mandarin/zh-hans/audio/protecting-your-email-security-needs-these-measures">电子邮件被监控损失数万 这些电邮安全技能必备</a></li></ul><p>主要感觉和体会是：</p><blockquote class="blockquote-center">英文现场直播真上头，主播的英文居然当时听到就发蒙，反应不过来；中文的现场直播有点类似于学生答疑，基本思路是引导、教育、解惑。。。</blockquote>]]></content>
+    <content type="html"><![CDATA[<p>SBS新年伊始，就开始了一系列的技术采访，刚开始一波都是关于邮箱攻击和邮件服务器攻击的。</p><a id="more"></a><p>下面是有公开网络链接的相关采访音频部分：</p><ul><li><a href="https://www.sbs.com.au/chinese/mandarin/zh-hans/audio/sign-and-encrypt-emails-to-prevent-tampering-and-illegal-reading">防止邮件篡改和非法阅读应该签名和加密</a></li><li><a href="https://www.sbs.com.au/chinese/mandarin/zh-hans/audio/protecting-your-email-security-needs-these-measures">电子邮件被监控损失数万 这些电邮安全技能必备</a></li></ul><p>主要感觉和体会是：</p><blockquote class="blockquote-center">英文现场直播真上头，主播的英文居然当时听到就发蒙，反应不过来；中文的现场直播有点类似于学生答疑，基本思路是引导、教育、解惑。。。</blockquote>]]></content>
     
     <summary type="html">
     
